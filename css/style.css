@@ -494,6 +494,8 @@ footer .footer-dark .links a:hover {
 }
 
 #seattle {
+  margin: auto;
+  width: 95%;
   background-image: url("../img/Seattle.jpg"), -webkit-gradient(linear, left top, left bottom, from(#B2C5E3), to(#9F4B30));
   background-image: url("../img/Seattle.jpg"), linear-gradient(#B2C5E3, #9F4B30);
   background-size: cover;

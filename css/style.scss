@@ -158,7 +158,7 @@ button {
     }
 
     .universities
-    {   
+    {
         display: flex;
         text-align: left;
         align-items: flex-end;
@@ -464,6 +464,8 @@ footer {
 
 #seattle
 {
+    margin: auto;
+    width: 95%;
     background-image: url('../img/Seattle.jpg'), linear-gradient(#B2C5E3, #9F4B30);
     background-size: cover;
     background-position: top top;
