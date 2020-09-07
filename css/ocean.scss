@@ -1,0 +1,248 @@
+$theme_color : rgba(119,187,232,1);
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+    background: $theme_color;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{   
+    background: $theme_color;
+}
+#sakura
+{
+    background-image: url('../img/ocean-1.jpg'), linear-gradient(#D0E5F3, #B7D7EC);
+    .snow-bg
+    {
+        display: none;
+    }
+    .ml16
+    {
+        i
+        {
+            color: $theme_color;
+        }
+    }
+}
+
+.flip-content-back
+{
+    background-image: url('../img/ocean-1.jpg'), linear-gradient(#D0E5F3, #B7D7EC);
+    background-size: cover;
+    background-position: center center;
+    
+    ul
+    {
+        li
+        {
+            &:hover
+            {
+                background: rgba($theme_color, 0.8);
+            }
+        }
+    }
+}
+.contact-me
+{
+    background-image: url('../img/ocean-1.jpg'), linear-gradient(#D0E5F3, #B7D7EC);
+    border-top: 10px solid $theme_color;
+    border-bottom: 10px solid $theme_color;
+    button
+    {
+        background-color: $theme_color;
+    }
+}
+footer
+{
+    .footer-dark
+    {
+        ul
+        {
+            li
+            {
+                &::after
+                {
+                    color: $theme_color;
+                }
+            }
+        }
+    }
+}
+
+.modal-footer
+{
+    .btn
+    {
+        background-color: $theme_color;
+    }
+}
+
+#the_waves
+{
+    display: block;
+}
+
+// Birds start
+// .container-birds {
+//     margin: auto;
+//     background-color: rgba(#000000,0.2);
+//     height: 70vh;
+//     z-index: 1;
+//     position: relative;
+//     overflow: hidden;
+//     display: flex;
+//     align-items: center;
+    
+//     padding: 2rem;
+//     border-radius: 5px;
+// }
+
+.bird {
+    background-image: url("../img/bird-cells_white.svg");
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    will-change: background-position;
+
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+
+    &--one {
+        animation-duration: 1s;
+        animation-delay: -0.5s;
+    }
+
+    &--two {
+        animation-duration: 0.9s;
+        animation-delay: -0.75s;
+    }
+
+    &--three {
+        animation-duration: 1.25s;
+        animation-delay: -0.25s;
+    }
+
+    &--four {
+        animation-duration: 1.1s;
+        animation-delay: -0.5s;
+    }
+
+}
+
+.bird-container {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    transform: scale(0) translateX(-10vw);
+    will-change: transform;
+
+    animation-name: fly-right-one;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    &--one {
+        animation-duration: 15s;
+        animation-delay: 0;
+    }
+
+    &--two {
+        animation-duration: 16s;
+        animation-delay: 1s;
+    }
+
+    &--three {
+        animation-duration: 14.6s;
+        animation-delay: 9.5s;
+    }
+
+    &--four {
+        animation-duration: 16s;
+        animation-delay: 10.25s;
+    }
+
+}
+
+@keyframes fly-cycle {
+
+    100% {
+        background-position: -900px 0;
+    }
+
+}
+
+@keyframes fly-right-one {
+
+    0% {
+        transform: scale(0.3) translateX(-10vw);
+    }
+
+    10% {
+        transform: translateY(2vh) translateX(10vw) scale(0.4);
+    }
+
+    20% {
+        transform: translateY(0vh) translateX(30vw) scale(0.5);
+    }
+
+    30% {
+        transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+
+    40% {
+        transform: translateY(2vh) translateX(70vw) scale(0.6);
+    }
+
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+
+    60% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+
+}
+
+@keyframes fly-right-two {
+
+    0% {
+        transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+    }
+
+    10% {
+        transform: translateY(0vh) translateX(10vw) scale(0.4);
+    }
+
+    20% {
+        transform: translateY(-4vh) translateX(30vw) scale(0.6);
+    }
+
+    30% {
+        transform: translateY(1vh) translateX(50vw) scale(0.45);
+    }
+
+    40% {
+        transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+    }
+
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.45);
+    }
+
+    51% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+
+}
+
+// Birds Finish

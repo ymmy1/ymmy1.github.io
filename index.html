@@ -16,49 +16,46 @@
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ocean.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header id="home" class="noselect">
-        <nav class="navbar navbar-expand-md navbar-dark">
+        <nav class="navbar navbar-expand-md navbar-light">
             <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ml-auto" data-target="#navbar" data-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav m-auto mt-2">
-                        <li class="nav-item ml-auto"><a class="nav-link" href="img/certificates/Oleg_Nosyrev_Front_End_Portfolio.pdf" target="_blank">Resume</a></li>
-                        <li class="nav-item ml-auto"><a class="nav-link" href="#" data-toggle="modal" data-target="#UW">University of Washington</a></li>
-                        <li class="nav-item dropdown ml-auto">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                CS50 by Harvard
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#CS50x" >CS50x by Harvard</a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#CS50w" >Web Programming by Harvard</a>
-                            </div>
-                          </li>
-                        
-                        <li class="nav-item ml-auto">
-                            <div class="nav-link">
-                                <a class="nav-social-link" href="https://github.com/ymmy1" target="_blank"><i class="fab fa-github-square"></i></a>
-                                <a class="nav-social-link" href="https://www.linkedin.com/in/oleg-nosyrev-440640114" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a class="nav-social-link" href="mailto:oleg.ymmy@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
-                            </div>
-                        </li>
-                    </ul>
-               </div>
-            </nav>
-    </header>
-    <section id="seattle" class="noselect">
-        <div class="container-birds">
-            <div class="title">
-                <h1 class="main-title">Front End Web Developer</h1>
-                <a href="https://maps.google.com/?q=Seattle" class="location" target="_blank">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Seattle, Washington, USA
-                </a>
+                <ul class="navbar-nav m-auto mt-2">
+                    <li class="nav-item ml-auto"><button id="sakura-btn" class="nav-link theme" data-page="sakura">Sakura Theme</button></li>
+                    <li class="nav-item ml-auto"><a class="nav-link contact-link" href="#my-projects">My Projects</a></li>
+                    <li class="nav-item ml-auto"><a class="nav-link" href="img/certificates/Oleg_Nosyrev_Front_End_Portfolio.pdf" target="_blank">Resume</a></li>
+                    <li class="nav-item ml-auto"><a class="nav-link" href="#" data-toggle="modal" data-target="#UW">University of Washington</a></li>
+                    <li class="nav-item dropdown ml-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CS50 by Harvard
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#CS50x" >CS50x by Harvard</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#CS50w" >Web Programming by Harvard</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item ml-auto">
+                        <div class="nav-link">
+                            <a class="nav-social-link" href="https://github.com/ymmy1" target="_blank"><i class="fab fa-github-square"></i></a>
+                            <a class="nav-social-link" href="https://www.linkedin.com/in/oleg-nosyrev-440640114" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a id="contact-link" class="nav-social-link contact-link" href="#contact-me"><i class="fas fa-at"></i></a>
+                        </div>
+                    </li>
+                    <li class="nav-item ml-auto"><button id="ocean-btn" class="nav-link theme" data-page="ocean">Ocean Theme</button></li>
+                </ul>
             </div>
+        </nav>
+    </header>
+    <section id="sakura" class="noselect">
+        <div id="theme_change" class="container-leaf">
             <div class="bird-container bird-container--one">
                 <div class="bird bird--one"></div>
             </div>
@@ -71,242 +68,371 @@
             <div class="bird-container bird-container--four">
                 <div class="bird bird--four"></div>
             </div>
+            <div class="title ">
+                <span class="small-title ml3">Front&nbsp;End&nbsp;Web&nbsp;Developer</span>
+                <h1 class="main-title ml14">Oleg Nosyrev</h1>
+                <a href="https://maps.google.com/?q=Seattle" class="ml16" target="_blank">
+                    <i class="fas fa-map-marker-alt letter"></i>
+                    Seattle, Washington, USA
+                </a>
+            </div>
+            <div>
+                <a href="#about" id="arrow-link">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Scroll
+                </a>
+            </div>
+            <div id="the_waves">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(119,187,232,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(119,187,232,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(119,187,232,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(119,187,232,1)" />
+                </g>
+                </svg>
+            </div>
         </div>
     </section>
-    <section id="projects-main" class="projects-main">
+    
+    <section id="about" class="about">
+        <h2>About</h2>
+        <div class="content">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>MOTIVATED, QUICK LEARNING, SELF-TAUGHT FRONT END DEVELOPER</p>
+                        <P>UNIVERSITY OF WASHINGTON & HARVARD UNIVERSITY COURSES STUDENT</P>
+                        <P>PRIMARY FOCUSING ON FRONT END DEVELOPMENT WITH A BASIC KNOWLEDGE OF BACK END</P>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="skills">
+                            <div class="skill skill-html"><p>HTML5</p> <img src="img/icon/html.png" alt="skill-html"> </div>
+                            <div class="skill skill-css"><p>CSS3 / SASS</p><img src="img/icon/css.png" alt="skill-css"> </div>
+                            <div class="skill skill-js"><p>JavaScript</p><img src="img/icon/js.png" alt="skill-js"></div>
+                            <div class="skill skill-python"><p>Python&nbsp;/&nbsp;Django</p><img src="img/icon/python.png" alt="skill-python"></div>
+                            <div class="skill skill-vue"><p>Vue / NUXT</p><img src="img/icon/vue.png" alt="skill-vue"></div>
+                            <div class="skill skill-react"><p>REACT</p><img src="img/icon/react.png" alt="skill-react"> </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="snow-bg leaf-right"></div>
+        <div class="snow-bg leaf-left"></div>
+    </section>
+    <section id="my-projects" class="projects-main">
+        <div class="snow-bg leaf-right"></div>
+        <div class="snow-bg leaf-left"></div>
         <h2>My projects</h2>
-        <div >
-            <span class="universities"><img src="img/icon/harvard-university-logo-png-transparent.png" alt="Harvard Logo"><h5>CS50's Web Programming by Harvard Projects</h5></span>
-            <hr>
             <div class="my-projects">
                 <div class="project-block">
-                    <h3>FlackyChat</h3>
-                    <p>SocketIO</p>
                     <div class="hover_place">
-                        <img class="imge" src="img/projects/covers/3_in_one_big.jpg" alt="">
-                        <div class="hover">
-                            <ul>
-                                <li><a href="https://github.com/ymmy1/FlackyChat" target="_blank">GitHub</a></li>
-                                <li><a class="disabled" href="#">Visit Site</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=Q8chuGwnHvk&t=18s" target="_blank">YouTube</a></li>    
-                            </ul>
+                        <img class="imge" src="img/projects/covers/3_in_one_big2.png" alt="">
+                    </div>
+                    <div class="flip-content">
+                        <div class="flip-content-inner">
+                            <div class="flip-content-front">
+                                <div class="text">
+                                    <h3>FlackyChat</h3>
+                                    <p><strong>SocketIO</strong></p>
+                                    <p>
+                                        <strong>Socket IO</strong> Chat App. Remembers a nickname without registration, lets 
+                                        you enter rooms chat and sending messages without reloading the page. 
+                                        You can also send private messages and change themes of your own choice.
+                                    </p>
+                                    
+                                        <p>Not available for demo just yet</p>
+                                </div>
+                                <div class="hidden-links">
+                                    <ul>
+                                        <li><a href="https://github.com/ymmy1/FlackyChat" target="_blank">GitHub</a></li>
+                                        <li class="disabled">Visit Site</li>
+                                        <li><a href="https://www.youtube.com/watch?v=Q8chuGwnHvk&t=18s" target="_blank">YouTube</a></li>    
+                                    </ul>
+                                </div>
+                                <div class="languages">
+                                    <span>Languages</span>
+                                    <div class="skill-bar">
+                                        <div class="js" style="width: 47.1%;"></div>
+                                        <div class="css" style="width: 24.7%;"></div>
+                                        <div class="html" style="width: 16.8%;"></div>
+                                        <div class="py" style="width: 11.4%;"></div>
+                                    </div>
+                                    <div class="details">
+                                        <ul>
+                                            <li><div class="js"></div>JavaScript 47.1%</li>
+                                            <li><div class="css"></div>CSS 24.7%</li>
+                                            <li><div class="html"></div>HTML 16.8%</li>
+                                            <li><div class="py"></div>Python 11.4%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-content-back" id="flackychat-flip">
+                                <ul>
+                                    <li><a href="https://github.com/ymmy1/FlackyChat" target="_blank">GitHub</a></li>
+                                    <li class="disabled">Visit Site</li>
+                                    <li><a href="https://www.youtube.com/watch?v=Q8chuGwnHvk&t=18s" target="_blank">YouTube</a></li>    
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    
-                        <!-- <video src="img/projects/finance.mp4" autoplay muted loop></video> -->
-                    <div class="languages">
-                        <span>Languages</span>
-                        <img src="/img/skills/flacky_chat.jpg" alt="">
-                        <div class="details">
-                            <ul>
-                                <li><div class="js"></div>JavaScript 47.1%</li>
-                                <li><div class="css"></div>CSS 24.7%</li>
-                                <li><div class="html"></div>HTML 16.8%</li>
-                                <li><div class="py"></div>Python 11.4%</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <br>
                 </div>
-                
                 <div  class="project-block">
-                    <h3>Django Wiki</h3>
-                    <p>Django</p>
                     <div class="hover_place">
-                        <img class="imge" src="img/projects/covers/wiki_cover.jpg" alt="">
-                        <div class="hover">
-                            <ul>
-                                <li><a href="https://github.com/ymmy1/wiki" target="_blank">GitHub</a></li>
-                                <li><a  href="http://wiki-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=6jgPvegaE-g" target="_blank">YouTube</a></li>    
-                            </ul>
+                        <img class="imge" src="img/projects/covers/mail_cover.png" alt="">
+                    </div>
+                    <div class="flip-content">
+                        <div class="flip-content-inner">
+                            <div class="flip-content-front">
+                                <div class="text">
+                                    <h3>Django Mail App</h3>
+                                    <p><strong>Django</strong></p>
+                                    <p>The mail app built with <strong>Python Dango</strong> allows you to Register your mailbox(user@example.com)
+                                         and send out emails to other email adresses in the system. The app does not send emails out of its own 
+                                         <strong>database</strong>. Features as Send/Read/Archive/Compose and Reply are available to use</p>
+                                </div>
+                                <div class="hidden-links">
+                                    <ul>
+                                        <li><a href="https://github.com/ymmy1/mail" target="_blank">GitHub</a></li>
+                                        <li><a href="http://mail-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
+                                        <li><a href="https://www.youtube.com/watch?v=tqNhI5HGPsk" target="_blank">YouTube</a></li>    
+                                    </ul>
+                                </div>
+                                <div class="languages">
+                                    <span>Languages</span>
+                                    <div class="skill-bar">
+                                        <div class="py" style="width: 32.5%;"></div>
+                                        <div class="js" style="width: 30.1%;"></div>
+                                        <div class="css" style="width: 28.3%;"></div>
+                                        <div class="html" style="width: 9.1%;"></div>
+                                    </div>
+                                    <div class="details">
+                                        <ul>
+                                            <li><div class="py"></div>Python 32.5%</li>
+                                            <li><div class="js"></div>JavaScript 30.1%</li>
+                                            <li><div class="css"></div>CSS 28.3%</li>
+                                            <li><div class="html"></div>HTML 9.1%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-content-back" id="mail-flip">
+                                <ul>
+                                    <li><a href="https://github.com/ymmy1/mail" target="_blank">GitHub</a></li>
+                                    <li><a href="http://mail-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=tqNhI5HGPsk" target="_blank">YouTube</a></li>    
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="languages">
-                        <span>Languages</span>
-                        <img src="/img/skills/wiki.jpg" alt="">
-                        <div class="details">
-                            <ul>
-                                <li><div class="py"></div>Python 53.8%</li>
-                                <li><div class="css"></div>CSS 25.5%</li>
-                                <li><div class="html"></div>HTML 20.7%</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <br>
-                    This Course is still ongoing (Updated 8/27/2020)
                 </div>
+                <div class="project-block">
+                    <div class="hover_place">
+                        <img class="imge" src="img/projects/covers/blogger-gram_cover.png" alt="">
+                    </div>
+                    <div class="flip-content">
+                        <div class="flip-content-inner">
+                            <div class="flip-content-front">
+                                <div class="text">
+                                    <h3>BloggerGram</h3>
+                                    <p><strong>SQLite</strong></p>
+                                    <p>A small one page instagram clone, allowing user to register and login. Using <strong>SQLite database</strong> 
+                                        to store comments likes and user detalis such as nickname and password. Features available: you can scroll 
+                                        down the images, <strong>like them and leave comments</strong></p>
+                                    <P>Not available for demo. Needs to be rewritten in PostgreSQL to upload to <strong>Heroku(in proccess)</strong></P>
+                                    
+                                </div>
+                                <div class="hidden-links">
+                                    <ul>
+                                        <li><a href="https://github.com/ymmy1/BloggerGram" target="_blank">GitHub</a></li>
+                                        <li class="disabled">Visit Site</li>
+                                        <li><a href="https://youtu.be/ErZqklvnL-I" target="_blank">YouTube</a></li>    
+                                    </ul>
+                                </div>
+                                <div class="languages">
+                                    <span>Languages</span>
+                                    <div class="skill-bar">
+                                        <div class="html" style="width: 59.8%;"></div>
+                                        <div class="py" style="width: 29.7%;"></div>
+                                        <div class="css" style="width: 24.7%;"></div>
+                                    </div>
+                                    <div class="details">
+                                        <ul>
+                                            <li><div class="html"></div>HTML 59.8%</li>
+                                            <li><div class="py"></div>Python 29.7%</li>
+                                            <li><div class="css"></div>CSS 10.5%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-content-back" id="bloggergram-flip">
+                                <ul>
+                                    <li><a href="https://github.com/ymmy1/BloggerGram" target="_blank">GitHub</a></li>
+                                    <li class="disabled">Visit Site</li>
+                                    <li><a href="https://youtu.be/ErZqklvnL-I" target="_blank">YouTube</a></li>    
+                                </ul>
 
-                <div  class="project-block">
-                    <h3>Django Mail App</h3>
-                    <p>Django</p>
-                    <div class="hover_place">
-                        <img class="imge" src="img/projects/covers/mail_cover.jpg" alt="">
-                        <div class="hover">
-                            <ul>
-                                <li><a href="https://github.com/ymmy1/mail" target="_blank">GitHub</a></li>
-                                <li><a href="http://mail-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=tqNhI5HGPsk" target="_blank">YouTube</a></li>    
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="languages">
-                        <span>Languages</span>
-                        <img src="/img/skills/mail.jpg" alt="">
-                        <div class="details">
-                            <ul>
-                                <li><div class="py"></div>Python 32.5%</li>
-                                <li><div class="js"></div>JavaScript 30.1%</li>
-                                <li><div class="css"></div>CSS 28.3%</li>
-                                <li><div class="html"></div>HTML 9.1%</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <br>
-                    This Course is still ongoing (Updated 8/8/2020)
-                </div>
-            </div>
-        </div>
-        <div >
-            <span  class="universities"><img src="img/icon/harvard-university-logo-png-transparent.png" alt="Harvard Logo"><h5>CS50x by Harvard Projects</h5></span>
-            <hr>
-            <div class="my-projects">
-                <div class="project-block">
-                    <h3>CS50 Trading App</h3>
-                    <p>PostgreSQL</p>
-                    <div class="hover_place">
-                        <video src="img/projects/finance.mp4" autoplay muted loop></video>
-                        <div class="hover">
-                            <ul>
-                                <li><a href="https://github.com/ymmy1/finance" target="_blank">GitHub</a></li>
-                                <li><a href="https://finance-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
-                                <li><a href="https://youtu.be/DS4GYnYPHaw" target="_blank">YouTube</a></li>    
-                            </ul>
-                        </div>
-                    </div>
-                        
-                    <div class="languages">
-                        <span>Languages</span>
-                        <img src="/img/skills/finance.jpg" alt="">
-                        <div class="details">
-                            <ul>
-                                <li><div class="py"></div>Python 51.0%</li>
-                                <li><div class="html"></div>HTML 46.7%</li>
-                                <li><div class="css"></div>CSS 2.3%</li>
-                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="project-block">
-                    <h3>Book Review</h3>
-                    <p>PostgreSQL</p>
                     <div class="hover_place">
-                        <video src="img/projects/book-review.mp4" autoplay muted loop></video>
-                        <div class="hover">
-                            <ul>
-                                <li><a href="https://github.com/ymmy1/book-review" target="_blank">GitHub</a></li>
-                                <li><a href="https://bookreview-ymmy.herokuapp.com/l" target="_blank">Visit Site</a></li>
-                                <li><a href="https://youtu.be/-tfpc1wXBzM" target="_blank">YouTube</a></li>    
-                            </ul>
-                        </div>
+                        <img class="imge" src="img/projects/covers/book-review_cover.png" alt="">
                     </div>
-                    <div class="languages">
-                        <span>Languages</span>
-                        <img src="/img/skills/book-review.jpg" alt="">
-                        
-                        <div class="details">
-                            <ul>
-                                <li><div class="py"></div>Python 42.5%</li>
-                                <li><div class="html"></div>HTML 34.3%</li>
-                                <li><div class="css"></div>CSS 23.2%</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-block">
-                    <h3>BloggerGram</h3>
-                    <p>SQLite</p>
-                    <div class="hover_place">
-                        <video src="img/projects/bloggerGram.mp4" autoplay muted loop></video>
-                        <div class="hover">
-                            <ul>
-                                <li><a href="https://github.com/ymmy1/BloggerGram" target="_blank">GitHub</a></li>
-                                <li><a class="disabled" href="#">Visit Site</a></li>
-                                <li><a href="https://youtu.be/ErZqklvnL-I" target="_blank">YouTube</a></li>    
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="languages">
-                        <span>Languages</span>
-                        <img src="/img/skills/blogger_gram.jpg" alt="">
-                        <div class="details">
-                            <ul>
-                                <li><div class="html"></div>HTML 59.8%</li>
-                                <li><div class="py"></div>Python 29.7%</li>
-                                <li><div class="css"></div>CSS 10.5%</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div >
-            <span class="universities"><img src="img/icon/UW_square_180x180.jpg" alt="UW Logo"><h5>University of Washington Projects</h5></span>
-            <hr>
-            <div class="my-projects">
-                <div class="project-block">
-                    <h3>Adopt a Dog</h3>
-                    <div class="hover_place">
-                        <video src="img/projects/compressed_video/dog.mp4" autoplay muted loop></video>
-                            <div class="hover">
+                    <div class="flip-content">
+                        <div class="flip-content-inner">
+                            <div class="flip-content-front">
+                                <div class="text">
+                                    <h3>Book Review</h3>
+                                    <p><strong>PostgreSQL</strong></p>
+                                    <p>One of my favorite apps. A gentle copy of goodreads.com. Allows user to register login and review 
+                                        one of the 5000 books in our collection. Using the <strong>API</strong> from goodreads to display 
+                                        the reviewing book's credentials, once user leaves a star and posts a review, a <strong>new API</strong> now of our 
+                                        website is now generated for future access </p>
+                                        
+                                </div>
+                                <div class="hidden-links">
+                                    <ul>
+                                        <li><a href="https://github.com/ymmy1/book-review" target="_blank">GitHub</a></li>
+                                        <li><a href="https://bookreview-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
+                                        <li><a href="https://youtu.be/-tfpc1wXBzM" target="_blank">YouTube</a></li>    
+                                    </ul>
+                                </div>
+                                <div class="languages">
+                                    <span>Languages</span>
+                                    <div class="skill-bar">
+                                        <div class="py" style="width: 42.5%;"></div>
+                                        <div class="html" style="width: 34.3%;"></div>
+                                        <div class="css" style="width: 23.2%;"></div>
+                                    </div>
+                                    <div class="details">
+                                        <ul>
+                                            <li><div class="py"></div>Python 42.5%</li>
+                                            <li><div class="html"></div>HTML 34.3%</li>
+                                            <li><div class="css"></div>CSS 23.2%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-content-back" id="bookreview-flip">
                                 <ul>
-                                    <li><a href="https://github.com/ymmy1/adopt-a-dog-spring2019" target="_blank">GitHub</a></li>
-                                    <li><a href="https://ymmy1.github.io/adopt-a-dog-spring2019/" target="_blank">Visit Site</a></li>
-                                    <li><a href="https://youtu.be/AtXu5YZxhp0" target="_blank">YouTube</a></li>    
+                                    <li><a href="https://github.com/ymmy1/book-review" target="_blank">GitHub</a></li>
+                                    <li><a href="https://bookreview-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
+                                    <li><a href="https://youtu.be/-tfpc1wXBzM" target="_blank">YouTube</a></li>    
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-block">
+                    <div class="hover_place">
+                        <img class="imge" src="img/projects/covers/trading_cover.png" alt="">
+                    </div>
+                    <div class="flip-content">
+                        <div class="flip-content-inner">
+                            <div class="flip-content-front">
+                                <div class="text">
+                                    <h3>CS50 Trading App</h3>
+                                    <p><strong>PostgreSQL</strong></p>
+                                    <p><strong>Trading app</strong>, allows user to Sign in/Register and buy or sell stocks with not real money 
+                                        (delault when registered: $10000). Using the <strong>API</strong> to get the <strong>real-time data</strong> 
+                                        about current 
+                                        stocks. Features available: Quote for a stock price / Buy shares of any stock available / 
+                                        Sell one of multiple stocks and shares / History to keep a track on your buys and sells / 
+                                        And the main page to track your current <strong>stock prices</strong></p>
+                                </div>
+                                <div class="hidden-links">
+                                    <ul>
+                                        <li><a href="https://github.com/ymmy1/finance" target="_blank">GitHub</a></li>
+                                        <li><a href="https://finance-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
+                                        <li><a href="https://youtu.be/DS4GYnYPHaw" target="_blank">YouTube</a></li>    
+                                    </ul>
+                                </div>
+                                <div class="languages">
+                                    <span>Languages</span>
+                                    <div class="skill-bar">
+                                        <div class="py" style="width: 51%;"></div>
+                                        <div class="html" style="width: 46.7%;"></div>
+                                        <div class="css" style="width: 2.3%;"></div>
+                                    </div>
+                                    <div class="details">
+                                        <ul>
+                                            <li><div class="py"></div>Python 51.0%</li>
+                                            <li><div class="html"></div>HTML 46.7%</li>
+                                            <li><div class="css"></div>CSS 2.3%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-content-back" id="trading-flip">
+                                <ul>
+                                    <li><a href="https://github.com/ymmy1/finance" target="_blank">GitHub</a></li>
+                                    <li><a href="https://finance-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
+                                    <li><a href="https://youtu.be/DS4GYnYPHaw" target="_blank">YouTube</a></li>    
                                 </ul>
                             </div>
                         </div>
-                    <div class="languages">
-                        <span>Languages</span>
-                        <img src="/img/skills/adopt_a_dog.jpg" alt="">
-                        <div class="details">
-                            <ul>
-                                <li><div class="html"></div>HTML 73.2%</li>
-                                <li><div class="css"></div>CSS 15.6%</li>
-                                <li><div class="js"></div>JavaScript 11.2%</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <div class="project-block">
-                    <h3>Portfolio</h3>
                     <div class="hover_place">
-                        <video src="img/projects/compressed_video/portfolio.mp4" autoplay muted loop></video>
-                            <div class="hover">
-                                <ul>
-                                    <li><a href="https://github.com/ymmy1/portfolio" target="_blank">GitHub</a></li>
-                                    <li><a class="portfolio_link" href="#home">Visit Site</a></li>
-                                    <li><a class="disabled" href="">YouTube</a></li>    
-                                </ul>
+                        <img class="imge" src="img/projects/covers/future-world_cover.png" alt="">
+                    </div>
+                    <div class="flip-content">
+                        <div class="flip-content-inner">
+                            <div class="flip-content-front">
+                                <div class="text">
+                                    <h3>Future World</h3>
+                                    <p><strong>Vue</strong></p>
+                                    <p><strong>A Vue app</strong>. Main purpose of this app is to tell about one of the world problems, 
+                                        the global warming and suggest some solutions for it such as switching gasoline cars to electric
+                                        or hybrid. Created json file for future API requests for Electric Cars & Hybrid Cars links. 
+                                        <strong>The API</strong> is being use to get data for Price/Title/Image/Youtube Review link and more</p>
+                                </div>
+                                <div class="hidden-links">
+                                    <ul>
+                                        <li><a href="https://github.com/ymmy1/Future_World" target="_blank">GitHub</a></li>
+                                        <li><a href="https://future-world.netlify.com/" target="_blank">Visit Site</a></li>
+                                        <li><a href="https://youtu.be/zk5ik1IuRaI" target="_blank">YouTube</a></li>    
+                                    </ul>
+                                </div>
+                                <div class="languages">
+                                    <span>Languages</span>
+                                    <div class="skill-bar">
+                                        <div class="vue" style="width: 92.6%;"></div>
+                                        <div class="js" style="width: 7.4%;"></div>
+                                    </div>
+                                    <div class="details">
+                                        <ul>
+                                            <li><div class="vue"></div>Vue 92.6%</li>
+                                            <li><div class="js"></div>JavaScript 7.4%</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    <div class="languages">
-                        <span>Languages</span>
-                        <img src="/img/skills/portfolio.jpg" alt="">
-                        <div class="details">
-                            <ul>
-                                <li><div class="html"></div>HTML 58.1%</li>
-                                <li><div class="css"></div>CSS 40.9%</li>
-                                <li><div class="js"></div>JavaScript 1.0%</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-block">
-                    <h3>Future World</h3>
-                    <div class="hover_place">
-                        <video src="img/projects/compressed_video/dw.mp4" autoplay muted loop></video>
-                            <div class="hover">
+                            <div class="flip-content-back" id="futureworld-flip">
                                 <ul>
                                     <li><a href="https://github.com/ymmy1/Future_World" target="_blank">GitHub</a></li>
                                     <li><a href="https://future-world.netlify.com/" target="_blank">Visit Site</a></li>
@@ -314,43 +440,102 @@
                                 </ul>
                             </div>
                         </div>
-                    <div class="languages">
-                        <span>Languages</span>
-                        <img src="/img/skills/future_world.jpg" alt="">
-                        <div class="details">
-                            <ul>
-                                <li><div class="vue"></div>Vue 92.6%</li>
-                                <li><div class="js"></div>JavaScript 7.4%</li>
-                            </ul>
+                    </div>
+                </div>
+                <div  class="project-block">
+                    <div class="hover_place">
+                        <img class="imge" src="img/projects/covers/wiki_cover.png" alt="">
+                    </div>
+                    <div class="flip-content">
+                        <div class="flip-content-inner">
+                            <div class="flip-content-front">
+                                <div class="text">
+                                    <h3>Django Wiki</h3>
+                                    <p>Django</p>
+                                    <p><strong>Django app</strong> Wiki. A gentle clone of Wikipidea, allows user to search for 
+                                        article and get information about it for our <strong>database</strong>. Users can also make their <strong>own pages</strong> 
+                                        if the article is not created yet as well as Editing other articles</p>
+                                </div>
+                                <div class="hidden-links">
+                                    <ul>
+                                        <li><a href="https://github.com/ymmy1/wiki" target="_blank">GitHub</a></li>
+                                        <li><a  href="http://wiki-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
+                                        <li><a href="https://www.youtube.com/watch?v=6jgPvegaE-g" target="_blank">YouTube</a></li>    
+                                    </ul>
+                                </div>
+                                <div class="languages">
+                                    <span>Languages</span>
+                                    <div class="skill-bar">
+                                        <div class="py" style="width: 53.8%;"></div>
+                                        <div class="css" style="width: 25.5%;"></div>
+                                        <div class="html" style="width: 20.7%;"></div>
+                                    </div>
+                                    <div class="details">
+                                        <ul>
+                                            <li><div class="py"></div>Python 53.8%</li>
+                                            <li><div class="css"></div>CSS 25.5%</li>
+                                            <li><div class="html"></div>HTML 20.7%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-content-back" id="wiki-flip">
+                                <ul>
+                                    <li><a href="https://github.com/ymmy1/wiki" target="_blank">GitHub</a></li>
+                                    <li><a  href="http://wiki-ymmy.herokuapp.com/" target="_blank">Visit Site</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=6jgPvegaE-g" target="_blank">YouTube</a></li>    
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- <hr> -->
+    <section id="contact-me" class="contact-me">
+        <h2>Contact Me</h2>
+       <form>
+            <input type="text" id="mySubject" placeholder="Subject">
+            <textarea id="myText" placeholder="Body"></textarea>
+            <button onclick="sendMail(); return false">Send</button>
+       </form>
+    </section>
     <footer id="footer">
         <div class="footer-dark">
-            <div class="links">
-                <a href="https://github.com/ymmy1" target="_blank">
-                    <div class="github">
-                        <i class="fab fa-github-square"></i>
-                        <p class="github">GitHub</p>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/oleg-nosyrev-440640114" target="_blank">
-                    <div class="linkedin">
-                        <i class="fab fa-linkedin"></i>
-                        <p class="linkedin">LinkedIn</p>
-                    </div>
-                </a>
-                <a href="mailto:oleg.ymmy@gmail.com" target="_blank">
-                    <div class="email">
-                        <i class="fas fa-at"></i>
-                        <p class="email">Email</p>
-                    </div>
+            <div class="title noselect">
+                <a href="img/certificates/Oleg_Nosyrev_Front_End_Portfolio.pdf" download>
+                    Oleg&nbsp;Nosyrev
                 </a>
             </div>
+            <ul>
+                <li><a class="contact-link" href="img/certificates/Oleg_Nosyrev_Front_End_Portfolio.pdf" download>Resume</a></li>
+                <li><a class="contact-link" href="#home">Oleg Nosyrev</a></li>
+                <li><a class="contact-link" href="#about">About</a></li>
+                <li><a class="contact-link" href="#my-projects">My Projects</a></li>
+                <li><a class="contact-link" href="#contact-me">Contact Me</a></li>
+                <li>
+                    <div class="links">
+                        <a href="https://github.com/ymmy1" target="_blank">
+                            <div class="github">
+                                <i class="fab fa-github-square"></i>
+                                <p class="github"></p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/oleg-nosyrev-440640114" target="_blank">
+                            <div class="linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <p class="linkedin"></p>
+                            </div>
+                        </a>
+                        <a href="mailto:oleg.ymmy@gmail.com" target="_blank">
+                            <div class="email">
+                                <i class="fas fa-at"></i>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            
         </div>
     </footer>
 
@@ -453,9 +638,7 @@
 </div>
       
     <script src="script.js"></script>
-    <script>
-        AOS.init();
-      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
 
 </html>

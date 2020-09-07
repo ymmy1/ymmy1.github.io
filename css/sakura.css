@@ -1,0 +1,59 @@
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffb9c8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb9c8;
+}
+
+#sakura {
+  background-image: url("../img/sakura2in2.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
+  background-image: url("../img/sakura2in2.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+}
+
+#sakura .ml16 i {
+  color: #ffb9c8;
+}
+
+.flip-content-back {
+  background-image: url("../img/sakura2in2.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
+  background-image: url("../img/sakura2in2.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+  background-size: cover;
+  background-position: center center;
+}
+
+.flip-content-back ul li:hover {
+  background: rgba(255, 185, 200, 0.8);
+}
+
+.contact-me {
+  background-image: url("../img/sakura2.jpg");
+  border-top: 10px solid #ffb9c8;
+  border-bottom: 10px solid #ffb9c8;
+}
+
+.contact-me button {
+  background-color: #ffb9c8;
+}
+
+footer .footer-dark ul li::after {
+  color: #ffb9c8;
+}
+
+.modal-footer .btn {
+  background-color: #ffb9c8;
+}
+
+#the_waves {
+  display: none;
+}
+
+@media (max-width: 662px) {
+  #sakura {
+    background-image: url("../img/sakura2_flipped.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
+    background-image: url("../img/sakura2_flipped.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+  }
+}
+/*# sourceMappingURL=sakura.css.map */
