@@ -1,4 +1,3 @@
-// Wrap every letter in a span
 $( document ).ready(function() {
     var offSet = 1700
     setTimeout(function(){ navBarAnimate()}, offSet + 900);
@@ -33,6 +32,10 @@ $( document ).ready(function() {
             
             }
     });
+    document.getElementById("send_mail").addEventListener("click", function(e) {
+        e.preventDefault();
+        sendMail();
+      });
 });
 
 function sendMail() {
@@ -43,6 +46,8 @@ function sendMail() {
     ;
     
     window.location.href = link;
+       
+    
 }
 
 // Good Morning Animate
