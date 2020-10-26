@@ -329,6 +329,41 @@ body .projects-main .my-projects {
       flex-wrap: wrap;
 }
 
+body .projects-main .my-projects .new_project, body .projects-main .my-projects .favorite_project, body .projects-main .my-projects .recent_project {
+  position: relative;
+  border-radius: 10px;
+}
+
+body .projects-main .my-projects .new_project .new_img, body .projects-main .my-projects .favorite_project .new_img, body .projects-main .my-projects .recent_project .new_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  z-index: 999;
+}
+
+body .projects-main .my-projects .new_project .new_img img, body .projects-main .my-projects .favorite_project .new_img img, body .projects-main .my-projects .recent_project .new_img img {
+  width: 100%;
+}
+
+body .projects-main .my-projects .new_project {
+  border: 5px solid #007FFF;
+  -webkit-box-shadow: 1px 0px 43px 4px #007FFF;
+          box-shadow: 1px 0px 43px 4px #007FFF;
+}
+
+body .projects-main .my-projects .favorite_project {
+  border: 5px solid #CF2323;
+  -webkit-box-shadow: 1px 0px 43px 4px #CF2323;
+          box-shadow: 1px 0px 43px 4px #CF2323;
+}
+
+body .projects-main .my-projects .recent_project {
+  border: 5px solid #EAE543;
+  -webkit-box-shadow: 1px 0px 43px 4px #EAE543;
+          box-shadow: 1px 0px 43px 4px #EAE543;
+}
+
 body .projects-main .my-projects .project-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,6 +380,7 @@ body .projects-main .my-projects .project-block {
           justify-content: space-between;
   width: 90%;
   padding: 60px 0;
+  margin-bottom: 30px;
 }
 
 body .projects-main .my-projects .project-block .hover_place {
@@ -548,6 +584,10 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .css {
   background-color: #563D7C;
+}
+
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .scss {
+  background-color: #C6538C;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .js {

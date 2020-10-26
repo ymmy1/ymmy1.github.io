@@ -344,7 +344,38 @@ body
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            
+            .new_project, .favorite_project, .recent_project
+            {
+                position: relative; 
+                border-radius: 10px;
+                .new_img
+                {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100px;
+                    z-index: 999;
+                    img
+                    {
+                        width: 100%;
+                    }
+                }
+            }
+            .new_project
+            {
+                border: 5px solid #007FFF;
+                box-shadow: 1px 0px 43px 4px #007FFF;
+            } 
+            .favorite_project
+            {
+                border: 5px solid #CF2323;
+                box-shadow: 1px 0px 43px 4px #CF2323;
+            }
+            .recent_project
+            {
+                border: 5px solid #EAE543;
+                box-shadow: 1px 0px 43px 4px #EAE543;
+            }
             .project-block 
             {
                 display: flex;
@@ -353,6 +384,7 @@ body
                 justify-content: space-between;
                 width: 90%;
                 padding: 60px 0;
+                margin-bottom: 30px ;
                 .hover_place
                 {
                     width: 35%;
@@ -531,6 +563,10 @@ body
                                     .css
                                     {
                                         background-color: #563D7C;
+                                    }
+                                    .scss
+                                    {
+                                        background-color: #C6538C;
                                     }
                                     .js
                                     {
