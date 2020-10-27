@@ -637,6 +637,10 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
   background-color: #E34C26;
 }
 
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .scss {
+  background-color: #C6538C;
+}
+
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .css {
   background-color: #563D7C;
 }
