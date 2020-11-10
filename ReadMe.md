@@ -1,3 +1,3 @@
 # Front End Portfolio
-Portfolio Link:
+Portfolio link:
 ## http://ymmy1.github.io/
