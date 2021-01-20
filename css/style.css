@@ -838,7 +838,7 @@ body footer .footer-dark ul li:last-child::after {
 .snow-bg {
   content: '';
   z-index: 2;
-  background-image: url("http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-1-1.png"), url("http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-2.png");
+  background-image: url("../img/sakura-1-1.png"), url("../img/sakura-2.png");
   -webkit-animation: snow 20s linear infinite;
           animation: snow 20s linear infinite;
 }
