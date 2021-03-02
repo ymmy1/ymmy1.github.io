@@ -13,24 +13,7 @@
   background-image: url("../img/ocean-1.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
 }
 
-#sakura .snow-bg {
-  display: none;
-}
 
-#sakura .ml16 i {
-  color: #77bbe8;
-}
-
-.flip-content-back {
-  background-image: url("../img/ocean-1.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
-  background-image: url("../img/ocean-1.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
-  background-size: cover;
-  background-position: center center;
-}
-
-.flip-content-back ul li:hover {
-  background: rgba(119, 187, 232, 0.8);
-}
 
 .contact-me {
   background-image: url("../img/ocean-1.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
