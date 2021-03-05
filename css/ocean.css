@@ -51,7 +51,23 @@ footer .footer-dark ul li::after {
   background-color: #77bbe8;
 }
 
+#the_waves {
+  display: block;
+}
 
+.bird {
+  background-image: url("../img/bird-cells_white.svg");
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+  will-change: background-position;
+  -webkit-animation-name: fly-cycle;
+          animation-name: fly-cycle;
+  -webkit-animation-timing-function: steps(10);
+          animation-timing-function: steps(10);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
 
 .bird--one {
   -webkit-animation-duration: 1s;
