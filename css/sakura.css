@@ -8,6 +8,21 @@
   background: #ffb9c8;
 }
 
+#sakura {
+  background-image: url("../img/sakura2in2.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
+  background-image: url("../img/sakura2in2.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+}
+
+#sakura .ml16 i {
+  color: #ffb9c8;
+}
+
+.flip-content-back {
+  background-image: url("../img/sakura2in2.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
+  background-image: url("../img/sakura2in2.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+  background-size: cover;
+  background-position: center center;
+}
 
 .flip-content-back ul li:hover {
   background: rgba(255, 185, 200, 0.8);
