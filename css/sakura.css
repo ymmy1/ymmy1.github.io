@@ -50,5 +50,10 @@ footer .footer-dark ul li::after {
   display: none;
 }
 
-
+@media (max-width: 662px) {
+  #sakura {
+    background-image: url("../img/sakura2_flipped.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
+    background-image: url("../img/sakura2_flipped.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+  }
+}
 /*# sourceMappingURL=sakura.css.map */
