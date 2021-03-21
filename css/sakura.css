@@ -28,6 +28,23 @@
   background: rgba(255, 185, 200, 0.75);
 }
 
+.contact-me {
+  background-image: url("../img/sakura2.jpg");
+  border-top: 10px solid #ffb9c8;
+  border-bottom: 10px solid #ffb9c8;
+}
+
+.contact-me button {
+  background-color: #ffb9c8;
+}
+
+footer .footer-dark ul li::after {
+  color: #ffb9c8;
+}
+
+.modal-footer .btn {
+  background-color: #ffb9c8;
+}
 
 #the_waves {
   display: none;
