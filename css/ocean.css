@@ -69,12 +69,12 @@ footer .footer-dark ul li::after {
           animation-iteration-count: infinite;
 }
 
-/* .bird--one {
+.bird--one {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-delay: -0.5s;
           animation-delay: -0.5s;
-} */
+}
 
 .bird--two {
   -webkit-animation-duration: 0.9s;
