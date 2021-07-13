@@ -11,6 +11,7 @@
 #sakura {
   background-image: url("../img/ocean-1.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
   background-image: url("../img/ocean-1.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+  background-attachment: fixed;
 }
 
 #sakura .snow-bg {
@@ -24,6 +25,7 @@
 .flip-content-back {
   background-image: url("../img/ocean-1.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
   background-image: url("../img/ocean-1.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -35,6 +37,7 @@
 .contact-me {
   background-image: url("../img/ocean-1.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
   background-image: url("../img/ocean-1.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+  background-attachment: fixed;
   border-top: 10px solid #77bbe8;
   border-bottom: 10px solid #77bbe8;
 }
