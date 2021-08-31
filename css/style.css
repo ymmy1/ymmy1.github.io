@@ -347,9 +347,9 @@ body .projects-main .my-projects .new_project .new_img img, body .projects-main 
 }
 
 body .projects-main .my-projects .new_project {
-  border: 5px solid #007FFF;
-  -webkit-box-shadow: 1px 0px 43px 4px #007FFF;
-          box-shadow: 1px 0px 43px 4px #007FFF;
+  border: 5px solid #49c22b;
+  -webkit-box-shadow: 1px 0px 43px 4px #49c22b;
+          box-shadow: 1px 0px 43px 4px #49c22b;
 }
 
 body .projects-main .my-projects .favorite_project {
@@ -560,7 +560,7 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar div {
   height: inherit;
-  border-right: 5px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar div:first-child {
@@ -595,7 +595,7 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .vue {
-  background-color: #2C3E50;
+  background-color: #41B883;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul {
@@ -650,7 +650,7 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .vue {
-  background-color: #2C3E50;
+  background-color: #41B883;
 }
 
 body .contact-me {
@@ -837,7 +837,7 @@ body footer .footer-dark ul li:last-child::after {
 
 .snow-bg {
   content: '';
-  z-index: 2;
+  z-index: 3;
   background-image: url("../img/sakura-1-1.png"), url("../img/sakura-2.png");
   -webkit-animation: snow 20s linear infinite;
           animation: snow 20s linear infinite;

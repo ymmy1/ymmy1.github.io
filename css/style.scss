@@ -363,8 +363,8 @@ body
             }
             .new_project
             {
-                border: 5px solid #007FFF;
-                box-shadow: 1px 0px 43px 4px #007FFF;
+                border: 5px solid #49c22b;
+                box-shadow: 1px 0px 43px 4px #49c22b;
             } 
             .favorite_project
             {
@@ -540,7 +540,7 @@ body
                                     div
                                     {
                                         height: inherit;
-                                        border-right: 5px solid #e1e1e1;
+                                        border-right: 1px solid #e1e1e1;
                                         &:first-child
                                         {
                                             border-top-left-radius: 50px;
@@ -575,7 +575,7 @@ body
                                     }
                                     .vue
                                     {
-                                        background-color: #2C3E50;
+                                        background-color: #41B883;
                                     }
                                 }
                                 
@@ -622,7 +622,7 @@ body
                                         }
                                         .vue
                                         {
-                                            background-color: #2C3E50;
+                                            background-color: #41B883;
                                         }
                                     }
                                 }
