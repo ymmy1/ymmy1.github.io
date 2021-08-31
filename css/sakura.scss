@@ -14,6 +14,7 @@ $theme_color : #ffb9c8;
 #sakura
 {
     background-image: url('../img/sakura2in2.jpg'), linear-gradient(#D0E5F3, #B7D7EC);
+    background-attachment: fixed;
     .ml16
     {
         i
@@ -48,6 +49,7 @@ $theme_color : #ffb9c8;
     background-image: url("../img/sakura2.jpg");
     border-top: 10px solid $theme_color;
     border-bottom: 10px solid $theme_color;
+    background-attachment: fixed;
     button
     {
         background-color: $theme_color;

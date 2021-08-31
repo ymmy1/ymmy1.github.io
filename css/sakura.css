@@ -11,6 +11,7 @@
 #sakura {
   background-image: url("../img/sakura2in2.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
   background-image: url("../img/sakura2in2.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
+  background-attachment: fixed;
 }
 
 #sakura .ml16 i {
@@ -32,6 +33,7 @@
   background-image: url("../img/sakura2.jpg");
   border-top: 10px solid #ffb9c8;
   border-bottom: 10px solid #ffb9c8;
+  background-attachment: fixed;
 }
 
 .contact-me button {
