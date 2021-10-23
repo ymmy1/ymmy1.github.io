@@ -67,7 +67,8 @@ body header .navbar #ocean-btn {
   background-position: center center;
 }
 
-body header .navbar #sakura-btn:active, body header .navbar #ocean-btn:active {
+body header .navbar #sakura-btn:active,
+body header .navbar #ocean-btn:active {
   position: relative;
   top: 5px;
 }
@@ -88,12 +89,12 @@ body header .navbar .dropdown-menu a.dropdown-item {
 
 body header .navbar .dropdown-menu a.dropdown-item:hover {
   background: none;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 body header .navbar .nav-social-link {
-  padding-right: .3rem;
-  padding-left: .3rem;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
   color: #fafafa;
   text-shadow: 0px 0px 5px black;
 }
@@ -252,10 +253,10 @@ body .about .content .skills {
 body .about .content .skills .skill {
   width: 100px;
   margin-right: 3%;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   cursor: pointer;
 }
 
@@ -275,7 +276,8 @@ body .about .content .skills .skill:hover {
           transform: scale(1.5);
 }
 
-body .about .leaf-right, body .about .leaf-left {
+body .about .leaf-right,
+body .about .leaf-left {
   position: absolute;
   width: 20%;
   height: -webkit-fill-available;
@@ -294,7 +296,8 @@ body .projects-main {
   position: relative;
 }
 
-body .projects-main .leaf-right, body .projects-main .leaf-left {
+body .projects-main .leaf-right,
+body .projects-main .leaf-left {
   position: absolute;
   width: 15%;
   height: inherit;
@@ -329,12 +332,16 @@ body .projects-main .my-projects {
       flex-wrap: wrap;
 }
 
-body .projects-main .my-projects .new_project, body .projects-main .my-projects .favorite_project, body .projects-main .my-projects .recent_project {
+body .projects-main .my-projects .new_project,
+body .projects-main .my-projects .favorite_project,
+body .projects-main .my-projects .recent_project {
   position: relative;
   border-radius: 10px;
 }
 
-body .projects-main .my-projects .new_project .new_img, body .projects-main .my-projects .favorite_project .new_img, body .projects-main .my-projects .recent_project .new_img {
+body .projects-main .my-projects .new_project .new_img,
+body .projects-main .my-projects .favorite_project .new_img,
+body .projects-main .my-projects .recent_project .new_img {
   position: absolute;
   top: 0;
   right: 0;
@@ -342,7 +349,9 @@ body .projects-main .my-projects .new_project .new_img, body .projects-main .my-
   z-index: 999;
 }
 
-body .projects-main .my-projects .new_project .new_img img, body .projects-main .my-projects .favorite_project .new_img img, body .projects-main .my-projects .recent_project .new_img img {
+body .projects-main .my-projects .new_project .new_img img,
+body .projects-main .my-projects .favorite_project .new_img img,
+body .projects-main .my-projects .recent_project .new_img img {
   width: 100%;
 }
 
@@ -353,15 +362,15 @@ body .projects-main .my-projects .new_project {
 }
 
 body .projects-main .my-projects .favorite_project {
-  border: 5px solid #CF2323;
-  -webkit-box-shadow: 1px 0px 43px 4px #CF2323;
-          box-shadow: 1px 0px 43px 4px #CF2323;
+  border: 5px solid #cf2323;
+  -webkit-box-shadow: 1px 0px 43px 4px #cf2323;
+          box-shadow: 1px 0px 43px 4px #cf2323;
 }
 
 body .projects-main .my-projects .recent_project {
-  border: 5px solid #EAE543;
-  -webkit-box-shadow: 1px 0px 43px 4px #EAE543;
-          box-shadow: 1px 0px 43px 4px #EAE543;
+  border: 5px solid #eae543;
+  -webkit-box-shadow: 1px 0px 43px 4px #eae543;
+          box-shadow: 1px 0px 43px 4px #eae543;
 }
 
 body .projects-main .my-projects .project-block {
@@ -384,10 +393,10 @@ body .projects-main .my-projects .project-block {
 
 body .projects-main .my-projects .project-block .hover_place {
   width: 35%;
-  -webkit-transition: -webkit-transform .6s;
-  transition: -webkit-transform .6s;
-  transition: transform .6s;
-  transition: transform .6s, -webkit-transform .6s;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
   cursor: pointer;
   z-index: 999;
 }
@@ -429,7 +438,8 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
           transform-style: preserve-3d;
 }
 
-body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front, body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front,
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -471,8 +481,8 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
   box-shadow: 0px 0px 14px 3px #f5e7ea;
   border-radius: 50px;
   margin-right: 20px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   font-size: 2em;
   cursor: pointer;
 }
@@ -575,27 +585,27 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .py {
-  background-color: #3572A5;
+  background-color: #3572a5;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .html {
-  background-color: #E34C26;
+  background-color: #e34c26;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .css {
-  background-color: #563D7C;
+  background-color: #563d7c;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .scss {
-  background-color: #C6538C;
+  background-color: #c6538c;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .js {
-  background-color: #F1E05A;
+  background-color: #f1e05a;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .vue {
-  background-color: #41B883;
+  background-color: #41b883;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul {
@@ -630,27 +640,27 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .py {
-  background-color: #3572A5;
+  background-color: #3572a5;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .html {
-  background-color: #E34C26;
+  background-color: #e34c26;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .scss {
-  background-color: #C6538C;
+  background-color: #c6538c;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .css {
-  background-color: #563D7C;
+  background-color: #563d7c;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .js {
-  background-color: #F1E05A;
+  background-color: #f1e05a;
 }
 
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .vue {
-  background-color: #41B883;
+  background-color: #41b883;
 }
 
 body .contact-me {
@@ -693,7 +703,8 @@ body .contact-me form {
   height: 45%;
 }
 
-body .contact-me form input, body .contact-me form textarea {
+body .contact-me form input,
+body .contact-me form textarea {
   background: rgba(255, 255, 255, 0.5);
   padding: 1em;
   margin-bottom: 10px;
@@ -786,13 +797,13 @@ body footer .footer-dark ul li a {
 }
 
 body footer .footer-dark ul li::after {
-  content: " | ";
+  content: ' | ';
   text-shadow: inherit;
   font-size: inherit;
 }
 
 body footer .footer-dark ul li:last-child::after {
-  content: "";
+  content: '';
 }
 
 .modal-dialog {
@@ -870,8 +881,8 @@ body footer .footer-dark ul li:last-child::after {
 @media (max-width: 768px) {
   .woocommerce ul.products li.product,
   .woocommerce-page ul.products li.product,
-  .woocommerce-page[class*=columns-] ul.products li.product,
-  .woocommerce[class*=columns-] ul.products li.product {
+  .woocommerce-page[class*='columns-'] ul.products li.product,
+  .woocommerce[class*='columns-'] ul.products li.product {
     width: 100%;
     float: left;
     clear: both;
@@ -888,14 +899,14 @@ body footer .footer-dark ul li:last-child::after {
   transform: translate(0, -50%);
   color: #fff;
   font: normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 #arrow-link:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #arrow-link {
@@ -927,14 +938,14 @@ body footer .footer-dark ul li:last-child::after {
 
 #arrow-link span:nth-of-type(2) {
   top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 
 #arrow-link span:nth-of-type(3) {
   top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 @-webkit-keyframes sdb07 {
