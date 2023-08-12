@@ -1,0 +1,79 @@
+.head-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 36%;
+  right: 21%;
+  z-index: 2;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.head-box h1 {
+  font-size: 9vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-stroke: 1px #252525;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.head-box p {
+  font-size: 3vh;
+  text-align: center;
+  color: #fff;
+}
+
+.button-orange {
+  background-color: #fa6400;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 2vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  width: auto;
+}
+.button-orange:hover, .button-orange:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+.button-orange:hover {
+  transform: translateY(-1px);
+}
+.button-orange:disabled {
+  background-color: dimgrey;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 1440px) {
+  .head-box {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 536px) {
+  .head-box h1 {
+    font-size: 3em;
+  }
+  .head-box p {
+    font-size: 1.3em;
+  }
+}/*# sourceMappingURL=headbox.css.map */
