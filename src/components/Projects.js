@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Parallax } from 'react-parallax';
 
 import '../styles/css/projects.css';
-import bg from '../assets/projects.png';
-import resume from '../assets/Oleg_Nosyrev_Resume.pdf';
+import bg from '../assets/AVIF/projects.avif';
+import resume from '../assets/png&jpg/Oleg_Nosyrev_Resume.pdf';
 
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

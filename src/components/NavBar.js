@@ -5,7 +5,7 @@ import '../styles/css/entry.css';
 import '../styles/css/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import audioFile from '../assets/bg_music.mp3';
+import audioFile from '../assets/png&jpg/bg_music.mp3';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';

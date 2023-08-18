@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 
 import '../styles/css/education.css';
-import bg from '../assets/ed.png';
-import h from '../assets/h-logo-sm.png';
-import harvard from '../assets/h-logo.png';
-import u from '../assets/uw-logo-sm.jpg';
-import uw from '../assets/uw-logo.png';
+import bg from '../assets/AVIF/ed.avif';
+import h from '../assets/AVIF/h-logo-sm.avif';
+import harvard from '../assets/AVIF/h-logo.avif';
+import u from '../assets/AVIF/uw-logo-sm.avif';
+import uw from '../assets/AVIF/uw-logo.avif';
 
-import CS50 from '../assets/CS50.png';
-import CS50W from '../assets/CS50W.png';
-import MPA from '../assets/MPA-Internship-Completion-Certificate-Oleg-1.png';
-import UWC from '../assets/UW_certificate.jpg';
+import CS50 from '../assets/AVIF/CS50.avif';
+import CS50W from '../assets/AVIF/CS50W.avif';
+import MPA from '../assets/png&jpg/MPA-Internship-Completion-Certificate-Oleg-1.png';
+import UWC from '../assets/AVIF/UW_certificate.avif';
 
 export default function Section2() {
   const reveal = () => {
@@ -37,13 +37,13 @@ export default function Section2() {
   }, []);
   return (
     <section id='education' className='section_2'>
-      <img id='ed_img' src={bg} alt='' loading='lazy' />
+      <img id='ed_img' src={bg} alt='' />
       <div className='boxes fade-bottom'>
         <div className='left-box'>
           <h4>Education</h4>
           <div className='img-container'>
-            <img src={harvard} alt='' loading='lazy' />
-            <img className='uw_title' src={uw} alt='' loading='lazy' />
+            <img src={harvard} alt='' />
+            <img className='uw_title' src={uw} alt='' />
           </div>
         </div>
         <div className='right-box'>
@@ -54,8 +54,8 @@ export default function Section2() {
               target='_blank'
               rel='noreferrer'
             >
-              <img className='smallLogo' src={h} alt='' loading='lazy' />
-              <img className='certificate' src={CS50} alt='' loading='lazy' />
+              <img className='smallLogo' src={h} alt='' />
+              <img className='certificate' src={CS50} alt='' />
             </a>
             <a
               className='img_certificate mid-cert'
@@ -63,8 +63,8 @@ export default function Section2() {
               target='_blank'
               rel='noreferrer'
             >
-              <img className='smallLogo' src={u} alt='' loading='lazy' />
-              <img className='certificate' src={UWC} alt='' loading='lazy' />
+              <img className='smallLogo' src={u} alt='' />
+              <img className='certificate' src={UWC} alt='' />
             </a>
             <a
               className='img_certificate right-cert'
@@ -72,8 +72,8 @@ export default function Section2() {
               target='_blank'
               rel='noreferrer'
             >
-              <img className='smallLogo' src={h} alt='' loading='lazy' />
-              <img className='certificate' src={CS50W} alt='' loading='lazy' />
+              <img className='smallLogo' src={h} alt='' />
+              <img className='certificate' src={CS50W} alt='' />
             </a>
           </div>
           <a

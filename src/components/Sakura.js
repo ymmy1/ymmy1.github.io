@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import '../styles/css/sakura.css';
 import { Parallax } from 'react-parallax';
-import bg from '../assets/bg.png';
+import bg from '../assets/AVIF/bg.avif';
 import HeadBox from './HeadBox';
 import NavBar from './NavBar';
-import rocks from '../assets/rocks.png';
+import rocks from '../assets/png&jpg/rocks.png';
 
 export default class LeafSceneComponent extends Component {
   constructor(props) {
@@ -186,7 +186,7 @@ export default class LeafSceneComponent extends Component {
           <div ref={this.worldRef} style={{ perspective: '400px' }}></div>
           <NavBar main={true} />
           <HeadBox />
-          <img className='rocks' src={rocks} alt='' loading='lazy' />
+          <img className='rocks' src={rocks} alt='' />
         </div>
       </Parallax>
     );

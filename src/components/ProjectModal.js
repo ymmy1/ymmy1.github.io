@@ -12,11 +12,7 @@ export default function ProjectBox(props) {
       <div className={'modal_box ' + opennedProject.labelClass}>
         {opennedProject.labelClass && (
           <div className='new_img'>
-            <img
-              src={opennedProject.label}
-              alt='status of a project'
-              loading='lazy'
-            />
+            <img src={opennedProject.label} alt='status of a project' />
           </div>
         )}
         <h1 className='project_title'>{opennedProject.name}</h1>
@@ -25,7 +21,7 @@ export default function ProjectBox(props) {
         </p>
         <div className='box_content'>
           <div className='left_box'>
-            <img src={opennedProject.img} alt='project look' loading='lazy' />
+            <img src={opennedProject.img} alt='project look' />
           </div>
           <div className='right_box'>
             <p>{opennedProject.content}</p>

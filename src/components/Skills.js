@@ -34,7 +34,7 @@ export default function Section2() {
         <div className='main-skills'>
           {main.map((skill, index) => (
             <div key={index} className='skill-box'>
-              <img src={skill.icon} alt='aws' loading='lazy' />
+              <img src={skill.icon} alt='aws' />
               <p>{skill.name}</p>
             </div>
           ))}
@@ -43,7 +43,7 @@ export default function Section2() {
         <div className='other-skills'>
           {other.map((skill, index) => (
             <div key={index} className='skill-box'>
-              <img src={skill.icon} alt='aws' loading='lazy' />
+              <img src={skill.icon} alt='aws' />
               <p>{skill.name}</p>
             </div>
           ))}
