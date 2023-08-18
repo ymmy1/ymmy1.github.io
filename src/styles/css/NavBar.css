@@ -11,10 +11,10 @@ audio {
 }
 
 nav {
-  font-size: 2vh;
+  font-size: 2dvh;
 }
 nav .navbar-brand {
-  font-size: 2.5vh;
+  font-size: 2.5dvh;
   text-transform: uppercase;
   color: #fff;
   cursor: pointer;

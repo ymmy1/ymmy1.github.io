@@ -7,7 +7,7 @@
 }
 
 #main_container {
-  height: 100vh;
+  height: 100dvh;
 }
 #main_container > * {
   box-sizing: border-box;
