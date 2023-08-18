@@ -50,8 +50,8 @@
     "static/media/html.avif": "/static/media/html.387dab223d1fab7c5cbf.avif",
     "static/media/h-logo-sm.avif": "/static/media/h-logo-sm.ba9a21bac8cef7e40cdc.avif",
     "static/media/git.avif": "/static/media/git.4380510fdc2aa404d7e4.avif",
-    "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif",
-    "index.html": "/index.html"
+    "index.html": "/index.html",
+    "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif"
   },
   "entrypoints": [
     "static/css/main.d04931a6.css",
