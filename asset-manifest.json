@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e748820.css",
-    "main.js": "/static/js/main.38aa05ba.js",
+    "main.css": "/static/css/main.83e3dd57.css",
+    "main.js": "/static/js/main.ea8370e9.js",
     "static/media/bg.png": "/static/media/bg.fc68580dc51208061346.png",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/netflix.png": "/static/media/netflix.eb1d951d369eb05c3109.png",
@@ -12,7 +12,7 @@
     "static/media/blogger-gram.png": "/static/media/blogger-gram.536c14575e031f8ab55a.png",
     "static/media/future-world.png": "/static/media/future-world.cc5f192e9093b452c84d.png",
     "static/media/book-review.png": "/static/media/book-review.3fa5d68bdaa2de46da1a.png",
-    "static/media/rocks.png": "/static/media/rocks.1722243bd06c0663323a.png",
+    "static/media/rocks.png": "/static/media/rocks.e035e5754ae97e602688.png",
     "static/media/facebook.png": "/static/media/facebook.2aab8202c86ec3a552e4.png",
     "static/media/mail.png": "/static/media/mail.b57c1208c198a5a45713.png",
     "static/media/ed.png": "/static/media/ed.faf145514f27be3e51e0.png",
@@ -49,7 +49,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.8e748820.css",
-    "static/js/main.38aa05ba.js"
+    "static/css/main.83e3dd57.css",
+    "static/js/main.ea8370e9.js"
   ]
 }
