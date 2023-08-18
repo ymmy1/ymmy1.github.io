@@ -7,7 +7,7 @@ export default function ProjectBox(props) {
     >
       {api.labelClass && (
         <div className='new_img'>
-          <img src={api.label} alt='new_img' />
+          <img src={api.label} alt='new_img' loading='lazy' />
         </div>
       )}
 
@@ -15,7 +15,12 @@ export default function ProjectBox(props) {
       <p>
         <strong>{api.desc}</strong>
       </p>
-      <img className='project_img' src={api.img} alt='project look' />
+      <img
+        className='project_img'
+        src={api.img}
+        alt='project look'
+        loading='lazy'
+      />
       <div className='languages'>
         <div className='skill-bar'>
           {api?.languages.map((lng, index) => (

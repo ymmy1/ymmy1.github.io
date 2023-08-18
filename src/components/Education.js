@@ -37,13 +37,13 @@ export default function Section2() {
   }, []);
   return (
     <section id='education' className='section_2'>
-      <img id='ed_img' src={bg} alt='' />
+      <img id='ed_img' src={bg} alt='' loading='lazy' />
       <div className='boxes fade-bottom'>
         <div className='left-box'>
           <h4>Education</h4>
           <div className='img-container'>
-            <img src={harvard} alt='' />
-            <img className='uw_title' src={uw} alt='' />
+            <img src={harvard} alt='' loading='lazy' />
+            <img className='uw_title' src={uw} alt='' loading='lazy' />
           </div>
         </div>
         <div className='right-box'>
@@ -54,8 +54,8 @@ export default function Section2() {
               target='_blank'
               rel='noreferrer'
             >
-              <img className='smallLogo' src={h} alt='' />
-              <img className='certificate' src={CS50} alt='' />
+              <img className='smallLogo' src={h} alt='' loading='lazy' />
+              <img className='certificate' src={CS50} alt='' loading='lazy' />
             </a>
             <a
               className='img_certificate mid-cert'
@@ -63,8 +63,8 @@ export default function Section2() {
               target='_blank'
               rel='noreferrer'
             >
-              <img className='smallLogo' src={u} alt='' />
-              <img className='certificate' src={UWC} alt='' />
+              <img className='smallLogo' src={u} alt='' loading='lazy' />
+              <img className='certificate' src={UWC} alt='' loading='lazy' />
             </a>
             <a
               className='img_certificate right-cert'
@@ -72,8 +72,8 @@ export default function Section2() {
               target='_blank'
               rel='noreferrer'
             >
-              <img className='smallLogo' src={h} alt='' />
-              <img className='certificate' src={CS50W} alt='' />
+              <img className='smallLogo' src={h} alt='' loading='lazy' />
+              <img className='certificate' src={CS50W} alt='' loading='lazy' />
             </a>
           </div>
           <a
