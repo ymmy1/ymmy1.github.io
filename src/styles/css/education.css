@@ -1,24 +1,24 @@
 .section_2 {
-  height: 100dvh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
   display: flex;
+  display: flex;
+  height: 100dvh;
+  justify-content: center;
   justify-content: space-between;
   overflow-y: scroll;
+  position: relative;
+  width: 100%;
 }
 .section_2::-webkit-scrollbar {
   display: none;
 }
 .section_2 .boxes {
-  opacity: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
   align-items: center;
+  display: flex;
   gap: 7%;
+  justify-content: space-between;
+  opacity: 0;
+  width: 100%;
 }
 .section_2 .boxes.active {
   opacity: 1;
@@ -29,12 +29,12 @@
 }
 @keyframes fade-bottom {
   0% {
-    transform: translateY(450px);
     opacity: 0;
+    transform: translateY(450px);
   }
   100% {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .section_2 .left-box {
@@ -52,47 +52,46 @@
   justify-content: space-around;
 }
 .section_2 .left-box .img-container img {
-  width: 8rem;
   padding-bottom: 10px;
+  width: 8rem;
 }
 .section_2 .left-box .img-container .uw_title {
   width: 10rem;
 }
 .section_2 .right-box {
-  padding: 0 40px;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 40px;
 }
 .section_2 .right-box .img-container {
-  padding-bottom: 20px;
   display: flex;
+  padding-bottom: 20px;
 }
 .section_2 .right-box .img-container .img_certificate {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  transition: transform 0.5s;
   padding: 10px;
+  transition: transform 0.5s;
 }
 .section_2 .right-box .img-container .img_certificate .smallLogo {
   width: 50px;
 }
 .section_2 .right-box .img-container .img_certificate .certificate {
-  min-width: 100px;
   box-shadow: 0px 0px 19px -2px rgb(0, 0, 0);
   max-width: 500px;
+  min-width: 100px;
   width: 100%;
-  box-shadow: 0px 0px 19px -2px rgb(0, 0, 0);
 }
 .section_2 .right-box .img-container .img_certificate:hover {
   transform: scale(1.1);
 }
 .section_2 #ed_img {
+  height: 100%;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
-  height: 100%;
   width: 100%;
   z-index: -1;
 }

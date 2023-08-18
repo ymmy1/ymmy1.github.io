@@ -1,36 +1,36 @@
 .section_4 {
-  height: 100dvh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
+  display: flex;
   flex-direction: column;
+  height: 100dvh;
+  justify-content: center;
+  position: relative;
+  width: 100%;
   span {
     color: #fff;
     font-size: 80px;
   }
   .all_projects {
-    display: flex;
-    overflow-y: scroll;
     align-items: center;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow-y: scroll;
     padding: 0 20px;
     &::-webkit-scrollbar {
       display: none;
     }
     .project_block {
+      align-content: center;
+      color: #fff;
+      cursor: pointer;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-content: center;
+      max-width: 600px;
       padding: 20px;
-      cursor: pointer;
-      color: #fff;
       text-align: center;
       width: 100%;
-      max-width: 600px;
 
       &:hover {
         transition: ease transform 0.3s;
@@ -59,8 +59,8 @@
     }
   }
   .bottom-section {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
     padding-bottom: 40px;
     .bottom_text {
@@ -79,15 +79,15 @@
   margin-top: 30px;
   span {
     display: block;
-    margin: 5px 0;
-    font-weight: bold;
     font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0;
   }
   .skill-bar {
-    height: 20px;
-    width: 100%;
     display: flex;
+    height: 20px;
     margin-bottom: 15px;
+    width: 100%;
     div {
       height: inherit;
       border-right: 1px solid #e1e1e1;
@@ -122,22 +122,22 @@
   }
 
   ul {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
     li {
-      display: flex;
       align-items: center;
+      display: flex;
+      font-weight: bold;
       list-style: none;
       margin-right: 10px;
-      font-weight: bold;
       div {
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
         background-color: #fff;
+        border-radius: 50%;
+        height: 10px;
         margin-right: 10px;
+        width: 10px;
       }
       .py {
         background-color: #3572a5;
@@ -161,27 +161,27 @@
   }
 }
 .modal_box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
+  -moz-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 1);
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 40px;
-  width: 90%;
-  height: auto;
-  color: #fff;
   background: #2e2a2a;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 1);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
   .box_content {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     .left_box {
       display: flex;
       align-items: center;
@@ -193,10 +193,10 @@
     .right_box {
       margin-left: 20px;
       .project_links {
-        width: 100%;
+        align-items: center;
         display: flex;
         justify-content: center;
-        align-items: center;
+        width: 100%;
         ul {
           display: flex;
           gap: 20px;
@@ -204,12 +204,12 @@
           li {
             list-style-type: none;
             a {
-              text-decoration: none;
-              display: block;
-              color: #fff;
-              padding: 10px 40px;
               border-radius: 12px;
               border: 1px solid #fff;
+              color: #fff;
+              display: block;
+              padding: 10px 40px;
+              text-decoration: none;
               transition: all 0.1s ease;
               width: 180px;
             }
@@ -239,8 +239,8 @@
 
   .new_img {
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
     width: 100px;
     z-index: 999;
     img {

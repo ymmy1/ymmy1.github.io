@@ -3,11 +3,11 @@
   height: 100dvh;
   width: 100%;
   .rocks {
-    position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
     height: auto;
+    left: 0;
+    position: absolute;
+    width: 100%;
     z-index: 1;
   }
 
@@ -20,15 +20,15 @@
     transform-style: preserve-3d;
 
     div {
+      backface-visibility: visible;
+      background-size: 100%;
+      background: url('../../assets/sakura_petal.png') no-repeat;
+      height: 100px;
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
-      width: 100px;
-      height: 100px;
-      background: url('../../assets/sakura_petal.png') no-repeat;
-      background-size: 100%;
       transform-style: preserve-3d;
-      backface-visibility: visible;
+      width: 100px;
     }
   }
 }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../styles/css/sakura.css';
-import rocks from '../assets/rocks.png';
-import bg from '../assets/bg.png';
-import { Parallax } from 'react-parallax';
 
-import NavBar from './NavBar';
+import '../styles/css/sakura.css';
+import { Parallax } from 'react-parallax';
+import bg from '../assets/bg.png';
 import HeadBox from './HeadBox';
+import NavBar from './NavBar';
+import rocks from '../assets/rocks.png';
 
 export default class LeafSceneComponent extends Component {
   constructor(props) {

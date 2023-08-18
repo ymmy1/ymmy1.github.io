@@ -4,11 +4,11 @@
   width: 100%;
 }
 .relative .rocks {
-  position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
   height: auto;
+  left: 0;
+  position: absolute;
+  width: 100%;
   z-index: 1;
 }
 .relative .leaf-scene {
@@ -20,13 +20,13 @@
   transform-style: preserve-3d;
 }
 .relative .leaf-scene div {
+  backface-visibility: visible;
+  background-size: 100%;
+  background: url("../../assets/sakura_petal.png") no-repeat;
+  height: 100px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background: url("../../assets/sakura_petal.png") no-repeat;
-  background-size: 100%;
   transform-style: preserve-3d;
-  backface-visibility: visible;
+  width: 100px;
 }/*# sourceMappingURL=sakura.css.map */

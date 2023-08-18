@@ -1,11 +1,11 @@
 import React from 'react';
 
 import './styles/css/App.css';
+import Footer from './components/Footer.js';
 import Section1 from './components/Sakura.js';
 import Section2 from './components/Education.js';
 import Section3 from './components/Skills.js';
 import Section4 from './components/Projects.js';
-import Footer from './components/Footer.js';
 
 function App() {
   return (

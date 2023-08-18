@@ -2,15 +2,15 @@ import React, { useEffect } from 'react';
 
 import '../styles/css/education.css';
 import bg from '../assets/ed.png';
-import harvard from '../assets/h-logo.png';
-import uw from '../assets/uw-logo.png';
 import h from '../assets/h-logo-sm.png';
+import harvard from '../assets/h-logo.png';
 import u from '../assets/uw-logo-sm.jpg';
+import uw from '../assets/uw-logo.png';
 
 import CS50 from '../assets/CS50.png';
 import CS50W from '../assets/CS50W.png';
-import UWC from '../assets/UW_certificate.jpg';
 import MPA from '../assets/MPA-Internship-Completion-Certificate-Oleg-1.png';
+import UWC from '../assets/UW_certificate.jpg';
 
 export default function Section2() {
   const reveal = () => {

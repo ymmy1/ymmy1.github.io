@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Parallax } from 'react-parallax';
+
 import '../styles/css/projects.css';
 import bg from '../assets/projects.png';
-import { Parallax } from 'react-parallax';
 import resume from '../assets/Oleg_Nosyrev_Resume.pdf';
 
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
@@ -9,7 +10,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import ProjectBox from './ProjectBox';
 import ProjectModal from './ProjectModal';
-
 import { api } from './API/projectsApi';
 
 export default function Projects() {

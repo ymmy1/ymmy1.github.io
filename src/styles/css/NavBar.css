@@ -3,28 +3,28 @@ audio {
 }
 
 #nav {
+  left: 0;
+  padding: 20px;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  padding: 20px;
 }
 
 nav {
   font-size: 2dvh;
 }
 nav .navbar-brand {
-  font-size: 2.5dvh;
-  text-transform: uppercase;
   color: #fff;
   cursor: pointer;
-  transition: ease all 0.5s;
   display: flex;
+  font-size: 2.5dvh;
   justify-content: center;
+  text-transform: uppercase;
+  transition: ease all 0.5s;
 }
 nav .nav-item {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   padding: 0 20px;
 }
@@ -37,8 +37,8 @@ nav .nav-item a:hover {
   transition: ease all 0.5s;
 }
 nav .nav-item svg {
-  cursor: pointer;
   color: #fff;
+  cursor: pointer;
   stroke: #000;
 }
 nav .nav-item svg:hover {
