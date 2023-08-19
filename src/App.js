@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './styles/css/App.css';
 
 // main Bg
 import bgLarge from './assets/AVIF/bg.avif';
@@ -10,12 +11,10 @@ import edLarge from './assets/AVIF/ed.avif';
 import edMedium from './assets/AVIF/edMedium.avif';
 import edSmall from './assets/AVIF/edSmall.avif';
 
-import './styles/css/App.css';
 import Footer from './components/Footer.js';
 import Section1 from './components/Sakura.js';
 import Section2 from './components/Education.js';
-import Section3 from './components/Skills.js';
-import Section4 from './components/Projects.js';
+import Section3 from './components/Projects.js';
 
 function App() {
   const [bgImage, setBgImage] = useState(bgSmall); // Default image
@@ -56,7 +55,6 @@ function App() {
       <Section1 bg={bgImage} />
       <Section2 bg={edImage} />
       <Section3 />
-      <Section4 />
       <Footer />
     </div>
   );

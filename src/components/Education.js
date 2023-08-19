@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import '../styles/css/education.css';
+
 import h from '../assets/AVIF/h-logo-sm.avif';
 import harvard from '../assets/AVIF/h-logo.avif';
 import u from '../assets/AVIF/uw-logo-sm.avif';
@@ -11,15 +12,17 @@ import CS50W from '../assets/AVIF/CS50W.avif';
 import MPA from '../assets/png&jpg/MPA-Internship-Completion-Certificate-Oleg-1.png';
 import UWC from '../assets/AVIF/UW_certificate.avif';
 
+import { main, other } from './API/skills';
+
 export default function Section2(props) {
   const { bg } = props;
   const reveal = () => {
-    const reveals = document.querySelectorAll('.boxes');
+    const reveals = document.querySelectorAll('.boxes, .skillsbox');
 
     for (let i = 0; i < reveals.length; i++) {
       const windowHeight = window.innerHeight;
       const elementTop = reveals[i].getBoundingClientRect().top;
-      const elementVisible = 150;
+      const elementVisible = 200;
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add('active');
@@ -37,13 +40,13 @@ export default function Section2(props) {
   }, []);
   return (
     <section id='education' className='section_2'>
-      <img id='ed_img' src={bg} alt='' />
+      <img id='ed_img' src={bg} alt='candleLight' />
       <div className='boxes fade-bottom'>
         <div className='left-box'>
-          <h4>Education</h4>
+          <h1>Education</h1>
           <div className='img-container'>
-            <img src={harvard} alt='' />
-            <img className='uw_title' src={uw} alt='' />
+            <img src={harvard} alt='harvard title' />
+            <img className='uw_title' src={uw} alt='uw title' />
           </div>
         </div>
         <div className='right-box'>
@@ -54,8 +57,8 @@ export default function Section2(props) {
               target='_blank'
               rel='noreferrer'
             >
-              <img className='smallLogo' src={h} alt='' />
-              <img className='certificate' src={CS50} alt='' />
+              <img className='smallLogo' src={h} alt='harvard logo' />
+              <img className='certificate' src={CS50} alt='CS50 certificate' />
             </a>
             <a
               className='img_certificate mid-cert'
@@ -63,8 +66,8 @@ export default function Section2(props) {
               target='_blank'
               rel='noreferrer'
             >
-              <img className='smallLogo' src={u} alt='' />
-              <img className='certificate' src={UWC} alt='' />
+              <img className='smallLogo' src={u} alt='UW logo' />
+              <img className='certificate' src={UWC} alt='UW certificate' />
             </a>
             <a
               className='img_certificate right-cert'
@@ -72,8 +75,12 @@ export default function Section2(props) {
               target='_blank'
               rel='noreferrer'
             >
-              <img className='smallLogo' src={h} alt='' />
-              <img className='certificate' src={CS50W} alt='' />
+              <img className='smallLogo' src={h} alt='harvard logo' />
+              <img
+                className='certificate'
+                src={CS50W}
+                alt='CS50 Web certificate'
+              />
             </a>
           </div>
           <a
@@ -84,6 +91,27 @@ export default function Section2(props) {
           >
             Internship
           </a>
+        </div>
+      </div>
+
+      <div className='skillsbox fade-bottom'>
+        <h1>Main Skills</h1>
+        <div className='main-skills'>
+          {main.map((skill, index) => (
+            <div key={index} className='skill-box'>
+              <img src={skill.icon} alt='aws' />
+              <p>{skill.name}</p>
+            </div>
+          ))}
+        </div>
+        <h1>Other Skills</h1>
+        <div className='other-skills'>
+          {other.map((skill, index) => (
+            <div key={index} className='skill-box'>
+              <img src={skill.icon} alt='aws' />
+              <p>{skill.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

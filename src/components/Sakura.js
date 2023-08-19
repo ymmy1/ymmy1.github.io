@@ -186,7 +186,7 @@ export default class LeafSceneComponent extends Component {
           <div ref={this.worldRef} style={{ perspective: '400px' }}></div>
           <NavBar main={true} />
           <HeadBox />
-          <img className='rocks' src={rocks} alt='' />
+          <img className='rocks' src={rocks} alt='rocks' />
         </div>
       </Parallax>
     );

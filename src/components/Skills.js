@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 
-import '../styles/css/skills.css';
-
 import { main, other } from './API/skills';
 
 export default function Section2() {
