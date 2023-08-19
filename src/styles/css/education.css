@@ -26,16 +26,20 @@
 .section_2 .boxes .left-box h1 {
   color: #fff;
   font-size: 4vw;
+  margin: 0;
+  padding: 0;
 }
 .section_2 .boxes .left-box .img-container {
   display: flex;
+  border-top: 1px solid rgba(177, 177, 177, 0.7960784314);
+  padding-top: 20px;
 }
 .section_2 .boxes .left-box .img-container img {
-  width: 150px;
+  width: 7vw;
 }
 .section_2 .boxes .left-box .img-container .uw_title {
-  margin-left: 20px;
-  width: 200px;
+  margin-left: 2vw;
+  width: 9vw;
 }
 .section_2 .boxes .right-box {
   display: flex;
@@ -58,7 +62,7 @@
 }
 .section_2 .boxes .right-box .img-container a .certificate {
   box-shadow: 0 0 19px -2px #000;
-  width: 300px;
+  width: 15vw;
 }
 .section_2 .boxes .right-box .img-container a:hover {
   transform: scale(1.2);
@@ -77,7 +81,7 @@
   opacity: 0;
 }
 .section_2 .skillsbox h1 {
-  margin: auto;
+  margin: 0 auto;
   color: #fff;
   font-size: 4vw;
   padding-top: 100px;
@@ -89,6 +93,8 @@
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
+  border-top: 1px solid rgba(177, 177, 177, 0.7960784314);
+  padding-top: 20px;
 }
 .section_2 .skillsbox .main-skills .skill-box,
 .section_2 .skillsbox .other-skills .skill-box {

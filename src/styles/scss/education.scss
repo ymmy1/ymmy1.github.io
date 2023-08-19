@@ -23,16 +23,20 @@
       h1 {
         color: #fff;
         font-size: 4vw;
+        margin: 0;
+        padding: 0;
       }
 
       .img-container {
         display: flex;
+        border-top: 1px solid #b1b1b1cb;
+        padding-top: 20px;
         img {
-          width: 150px;
+          width: 7vw;
         }
         .uw_title {
-          margin-left: 20px;
-          width: 200px;
+          margin-left: 2vw;
+          width: 9vw;
         }
       }
     }
@@ -54,7 +58,7 @@
           }
           .certificate {
             box-shadow: 0 0 19px -2px #000;
-            width: 300px;
+            width: 15vw;
           }
           &:hover {
             transform: scale(1.2);
@@ -76,7 +80,7 @@
     padding-bottom: 300px;
     opacity: 0;
     h1 {
-      margin: auto;
+      margin: 0 auto;
       color: #fff;
       font-size: 4vw;
       padding-top: 100px;
@@ -88,6 +92,8 @@
       flex-wrap: wrap;
       gap: 40px;
       justify-content: center;
+      border-top: 1px solid #b1b1b1cb;
+      padding-top: 20px;
 
       .skill-box {
         display: flex;
