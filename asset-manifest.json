@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d04931a6.css",
-    "main.js": "/static/js/main.a32a2267.js",
+    "main.css": "/static/css/main.e781fe3e.css",
+    "main.js": "/static/js/main.2f82e1a1.js",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
     "static/media/netflix.avif": "/static/media/netflix.1b83c4ac73e600ff9580.avif",
@@ -10,6 +10,7 @@
     "static/media/flackyChat.avif": "/static/media/flackyChat.ef7837eaa49dac8efd8b.avif",
     "static/media/blogger-gram.avif": "/static/media/blogger-gram.632f58c839f261b43ea0.avif",
     "static/media/future-world.avif": "/static/media/future-world.55e14eaf1190c03b1f68.avif",
+    "static/media/bgSmall.avif": "/static/media/bgSmall.6b5ca2b85b9a73fb32db.avif",
     "static/media/book-review.avif": "/static/media/book-review.567f4da3dd224ab9931b.avif",
     "static/media/facebook.avif": "/static/media/facebook.3c56e33940d63b513560.avif",
     "static/media/bg.avif": "/static/media/bg.dec1c951153bda243748.avif",
@@ -17,6 +18,7 @@
     "static/media/sakura_petal.png": "/static/media/sakura_petal.07d1c20dea1b21cc2349.png",
     "static/media/mail.avif": "/static/media/mail.adf64d4a5b4aed3bc952.avif",
     "static/media/twitter.avif": "/static/media/twitter.c0f7a69250be0870bfdd.avif",
+    "static/media/bgMedium.avif": "/static/media/bgMedium.8a0a2f59d92275226a79.avif",
     "static/media/Oleg_Nosyrev_Resume.pdf": "/static/media/Oleg_Nosyrev_Resume.e2c7876be3458a3bcd87.pdf",
     "static/media/trading.avif": "/static/media/trading.53f213346694ef92d277.avif",
     "static/media/projects.avif": "/static/media/projects.cb78b8e5db84a9e482f3.avif",
@@ -25,9 +27,11 @@
     "static/media/CS50.avif": "/static/media/CS50.baccca4754586ba60dc6.avif",
     "static/media/ed.avif": "/static/media/ed.041b9b01299d44d59153.avif",
     "static/media/aws.avif": "/static/media/aws.d5c92536fed156f4a725.avif",
+    "static/media/edMedium.avif": "/static/media/edMedium.1142ff13f3fc1285fd67.avif",
     "static/media/js.avif": "/static/media/js.9af1803dbbdd3dc18e4e.avif",
     "static/media/css.avif": "/static/media/css.37c630d2004e446f7023.avif",
     "static/media/uw-logo.avif": "/static/media/uw-logo.b39ed04d46c4dad470f5.avif",
+    "static/media/edSmall.avif": "/static/media/edSmall.598bef8018b694aab540.avif",
     "static/media/recent.avif": "/static/media/recent.171ed19b08c3ed619a51.avif",
     "static/media/favorite.avif": "/static/media/favorite.cc9897bbd5b95e05669b.avif",
     "static/media/react.avif": "/static/media/react.b26ee453028ffb1be378.avif",
@@ -54,7 +58,7 @@
     "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif"
   },
   "entrypoints": [
-    "static/css/main.d04931a6.css",
-    "static/js/main.a32a2267.js"
+    "static/css/main.e781fe3e.css",
+    "static/js/main.2f82e1a1.js"
   ]
 }
