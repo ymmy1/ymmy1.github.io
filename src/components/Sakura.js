@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import '../styles/css/sakura.css';
 import { Parallax } from 'react-parallax';
-import bg from '../assets/AVIF/bg.avif';
 import HeadBox from './HeadBox';
 import NavBar from './NavBar';
 import rocks from '../assets/png&jpg/rocks.png';
@@ -180,6 +179,7 @@ export default class LeafSceneComponent extends Component {
     requestAnimationFrame(this.renderScene);
   };
   render() {
+    const { bg } = this.props;
     return (
       <Parallax strength={200} bgImage={bg}>
         <div ref={this.viewportRef} className='relative falling-leaves'>

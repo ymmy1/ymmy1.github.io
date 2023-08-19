@@ -3,6 +3,7 @@
   display: flex;
   display: flex;
   height: 100dvh;
+  transition: height 0.5s ease;
   justify-content: center;
   justify-content: space-between;
   overflow-y: scroll;
@@ -27,6 +28,7 @@
   .active.fade-bottom {
     animation: fade-bottom 0.5s ease-in;
     height: 100dvh;
+    transition: height 0.5s ease;
   }
   @keyframes fade-bottom {
     0% {
@@ -107,9 +109,6 @@
       gap: 40px;
       justify-content: center;
     }
-    #ed_img {
-      width: auto;
-    }
   }
 }
 @media screen and (max-width: 460px) {
@@ -132,10 +131,6 @@
           flex-direction: column;
         }
       }
-    }
-    #ed_img {
-      left: -150%;
-      width: auto;
     }
   }
 }

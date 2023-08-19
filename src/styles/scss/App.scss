@@ -7,6 +7,7 @@
 }
 #main_container {
   height: 100dvh;
+  transition: height 0.5s ease;
 
   & > * {
     box-sizing: border-box;

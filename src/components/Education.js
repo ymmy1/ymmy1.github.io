@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
 import '../styles/css/education.css';
-import bg from '../assets/AVIF/ed.avif';
 import h from '../assets/AVIF/h-logo-sm.avif';
 import harvard from '../assets/AVIF/h-logo.avif';
 import u from '../assets/AVIF/uw-logo-sm.avif';
@@ -12,7 +11,8 @@ import CS50W from '../assets/AVIF/CS50W.avif';
 import MPA from '../assets/png&jpg/MPA-Internship-Completion-Certificate-Oleg-1.png';
 import UWC from '../assets/AVIF/UW_certificate.avif';
 
-export default function Section2() {
+export default function Section2(props) {
+  const { bg } = props;
   const reveal = () => {
     const reveals = document.querySelectorAll('.boxes');
 

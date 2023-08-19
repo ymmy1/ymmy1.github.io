@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   height: 100dvh;
+  transition: height 0.5s ease;
   justify-content: center;
   left: 0;
   opacity: 1;
