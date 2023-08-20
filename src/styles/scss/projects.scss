@@ -2,22 +2,27 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100dvh;
   transition: height 0.5s ease;
 
   justify-content: center;
   position: relative;
   width: 100%;
-  span {
+  background-image: url('../../assets/AVIF/projects.avif');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  h1 {
+    margin-top: 100px;
     color: #fff;
-    font-size: 80px;
+    font-size: 4vw;
   }
   .all_projects {
+    border-top: 1px solid #b1b1b1cb;
+
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    overflow-y: scroll;
     padding: 0 20px;
     &::-webkit-scrollbar {
       display: none;
@@ -71,6 +76,8 @@
       margin: 0;
     }
     .bottom_buttons {
+      padding-top: 20px;
+      border-top: 1px solid #b1b1b1cb;
       display: flex;
       gap: 20px;
     }
@@ -79,12 +86,6 @@
 .languages {
   width: 100%;
   margin-top: 30px;
-  span {
-    display: block;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 5px 0;
-  }
   .skill-bar {
     display: flex;
     height: 20px;
@@ -180,6 +181,13 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
+  .closeIcon {
+    position: absolute;
+    z-index: 5000;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
   .box_content {
     align-items: center;
     display: flex;
@@ -253,12 +261,16 @@
 
 @media screen and (max-width: 1024px) {
   .section_4 {
+    h1 {
+      font-size: calc(25px + 6vw);
+    }
     .all_projects {
       justify-content: flex-start;
     }
   }
   .modal_box {
     padding: 30px;
+    position: relative;
     .box_content {
       flex-direction: column;
       gap: 30px;
@@ -283,6 +295,10 @@
 
     overflow-y: scroll;
     justify-content: flex-start;
+    .closeIcon {
+      top: 10px;
+      right: 10px;
+    }
     .box_content {
       .right_box {
         .project_links {
@@ -296,8 +312,8 @@
 }
 @media screen and (max-width: 522px) {
   .section_4 {
-    span {
-      font-size: 13vw;
+    h1 {
+      font-size: calc(25px + 6vw);
     }
     .all_projects {
       .new_project,
@@ -339,6 +355,17 @@
           ul {
             flex-direction: column;
           }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 288px) {
+  .section_4 {
+    .all_projects {
+      .bottom-section {
+        .bottom_buttons {
+          flex-direction: column;
         }
       }
     }

@@ -2,22 +2,26 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100dvh;
   transition: height 0.5s ease;
   justify-content: center;
   position: relative;
   width: 100%;
+  background-image: url("../../assets/AVIF/projects.avif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
-.section_4 span {
+.section_4 h1 {
+  margin-top: 100px;
   color: #fff;
-  font-size: 80px;
+  font-size: 4vw;
 }
 .section_4 .all_projects {
+  border-top: 1px solid rgba(177, 177, 177, 0.7960784314);
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  overflow-y: scroll;
   padding: 0 20px;
 }
 .section_4 .all_projects::-webkit-scrollbar {
@@ -75,6 +79,8 @@
   margin: 0;
 }
 .section_4 .bottom-section .bottom_buttons {
+  padding-top: 20px;
+  border-top: 1px solid rgba(177, 177, 177, 0.7960784314);
   display: flex;
   gap: 20px;
 }
@@ -82,12 +88,6 @@
 .languages {
   width: 100%;
   margin-top: 30px;
-}
-.languages span {
-  display: block;
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 5px 0;
 }
 .languages .skill-bar {
   display: flex;
@@ -184,6 +184,13 @@
   transform: translate(-50%, -50%);
   width: 90%;
 }
+.modal_box .closeIcon {
+  position: absolute;
+  z-index: 5000;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
 .modal_box .box_content {
   align-items: center;
   display: flex;
@@ -253,11 +260,15 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .section_4 h1 {
+    font-size: calc(25px + 6vw);
+  }
   .section_4 .all_projects {
     justify-content: flex-start;
   }
   .modal_box {
     padding: 30px;
+    position: relative;
   }
   .modal_box .box_content {
     flex-direction: column;
@@ -279,13 +290,17 @@
     overflow-y: scroll;
     justify-content: flex-start;
   }
+  .modal_box .closeIcon {
+    top: 10px;
+    right: 10px;
+  }
   .modal_box .box_content .right_box .project_links ul {
     flex-direction: column;
   }
 }
 @media screen and (max-width: 522px) {
-  .section_4 span {
-    font-size: 13vw;
+  .section_4 h1 {
+    font-size: calc(25px + 6vw);
   }
   .section_4 .all_projects .new_project,
   .section_4 .all_projects .favorite_project,
@@ -314,6 +329,11 @@
     display: none;
   }
   .modal_box .box_content .right_box .project_links ul {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 288px) {
+  .section_4 .all_projects .bottom-section .bottom_buttons {
     flex-direction: column;
   }
 }/*# sourceMappingURL=projects.css.map */
