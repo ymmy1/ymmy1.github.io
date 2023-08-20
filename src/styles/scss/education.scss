@@ -59,6 +59,7 @@
           .certificate {
             box-shadow: 0 0 19px -2px #000;
             width: 15vw;
+            min-width: 300px;
           }
           &:hover {
             transform: scale(1.2);
@@ -75,7 +76,6 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    max-width: 900px;
     margin: auto;
     padding-bottom: 300px;
     opacity: 0;
@@ -94,6 +94,8 @@
       justify-content: center;
       border-top: 1px solid #b1b1b1cb;
       padding-top: 20px;
+      width: 100%;
+      max-width: 885px;
 
       .skill-box {
         display: flex;
@@ -115,8 +117,8 @@
 }
 
 .active.fade-bottom {
-  animation: fade-bottom 1s ease-in;
-  transition: height 1s ease;
+  animation: fade-bottom 0.5s ease-in;
+  transition: height 0.5s ease;
 }
 @keyframes fade-bottom {
   0% {
@@ -126,5 +128,95 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media screen and (max-width: 1299px) {
+  .section_2 {
+    .boxes {
+      flex-direction: column;
+      .left-box {
+        width: auto;
+        margin: 0 auto 40px;
+        h1 {
+          font-size: calc(25px + 6vw);
+          margin: 0 auto;
+        }
+
+        .img-container {
+          justify-content: space-around;
+          img {
+            width: 150px;
+          }
+          .uw_title {
+            margin-left: 0;
+            width: 175px;
+          }
+        }
+      }
+    }
+    .skillsbox {
+      h1 {
+        font-size: calc(25px + 6vw);
+      }
+    }
+  }
+}
+@media screen and (max-width: 952px) {
+  .section_2 {
+    display: flex;
+    flex-direction: column;
+    .boxes {
+      padding: 300px 0 100px 0;
+      .right-box {
+        .img-container {
+          flex-direction: column;
+          a {
+            .certificate {
+              box-shadow: 0 0 19px -2px #000;
+              width: 80%;
+              min-width: 300px;
+              margin: auto;
+              max-width: 700px;
+            }
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 330px) {
+  .section_2 {
+    .boxes {
+      .left-box {
+        .img-container {
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+        }
+      }
+      .right-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img-container {
+          display: flex;
+          gap: 20px;
+          a {
+            .certificate {
+              width: 80%;
+              min-width: 150px;
+            }
+          }
+        }
+      }
+    }
+    .skillsbox {
+      h1 {
+        text-align: center;
+      }
+    }
   }
 }
