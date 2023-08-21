@@ -102,6 +102,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
+        transition: transform 0.3s ease;
         img {
           width: 75px;
           height: 75px;
@@ -109,6 +111,9 @@
         p {
           color: #fff;
           margin-top: 10px;
+        }
+        &:hover {
+          transform: scale(1.3);
         }
       }
     }

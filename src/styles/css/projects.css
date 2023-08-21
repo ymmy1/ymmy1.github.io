@@ -38,10 +38,10 @@
   padding: 20px;
   text-align: center;
   width: 100%;
+  transition: transform 0.3s ease;
 }
 .section_4 .all_projects .project_block:hover {
-  transition: ease transform 0.3s;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .section_4 .all_projects .project_block .project_img {
   width: 100%;

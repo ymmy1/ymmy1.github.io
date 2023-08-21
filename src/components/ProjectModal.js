@@ -30,7 +30,9 @@ export default function ProjectBox(props) {
           </p>
           <div className='box_content'>
             <div className='left_box'>
-              <img src={opennedProject.img} alt='project look' />
+              <a href={opennedProject.imgOpen} target='_blank' rel='noreferrer'>
+                <img src={opennedProject.img} alt='project look' />
+              </a>
             </div>
             <div className='right_box'>
               <p>{opennedProject.content}</p>
