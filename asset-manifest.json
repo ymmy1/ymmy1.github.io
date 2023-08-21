@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0bd8369.css",
-    "main.js": "/static/js/main.69db96ab.js",
+    "main.css": "/static/css/main.18abb187.css",
+    "main.js": "/static/js/main.98883e70.js",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
     "static/media/netflix.avif": "/static/media/netflix.1b83c4ac73e600ff9580.avif",
@@ -22,11 +22,20 @@
     "static/media/Oleg_Nosyrev_Resume.pdf": "/static/media/Oleg_Nosyrev_Resume.e2c7876be3458a3bcd87.pdf",
     "static/media/trading.avif": "/static/media/trading.53f213346694ef92d277.avif",
     "static/media/projects.avif": "/static/media/projects.cb78b8e5db84a9e482f3.avif",
+    "static/media/netflix_resized.avif": "/static/media/netflix_resized.c0aa4ae91ebeeebc4db0.avif",
+    "static/media/flackyChat_resized.avif": "/static/media/flackyChat_resized.d9f14300ba7d947bfcdf.avif",
+    "static/media/weather_resized.avif": "/static/media/weather_resized.abb984500e49ab9606f7.avif",
+    "static/media/blogger-gram_resized.avif": "/static/media/blogger-gram_resized.469a9b16f1c8302f98c7.avif",
     "static/media/CS50.avif": "/static/media/CS50.3ec59da503121b7e868b.avif",
     "static/media/CS50W.avif": "/static/media/CS50W.ea80a357c9ad47d11ae7.avif",
+    "static/media/book-review_resized.avif": "/static/media/book-review_resized.0993f859692ec1298258.avif",
+    "static/media/future-world_resized.avif": "/static/media/future-world_resized.5a20ba4d4b032e891ee2.avif",
+    "static/media/facebook_resized.avif": "/static/media/facebook_resized.abca4e0755b50afd21fe.avif",
     "static/media/ed.avif": "/static/media/ed.041b9b01299d44d59153.avif",
+    "static/media/twitter_resized.avif": "/static/media/twitter_resized.706b97cdb87cb77e6cb4.avif",
     "static/media/edMedium.avif": "/static/media/edMedium.1142ff13f3fc1285fd67.avif",
     "static/media/edSmall.avif": "/static/media/edSmall.598bef8018b694aab540.avif",
+    "static/media/trading_resized.avif": "/static/media/trading_resized.c9815088f6a8f549dfa5.avif",
     "static/media/uw-logo.avif": "/static/media/uw-logo.b31fe8418504a54db0b1.avif",
     "static/media/recent.avif": "/static/media/recent.171ed19b08c3ed619a51.avif",
     "static/media/h-logo.avif": "/static/media/h-logo.799f92d3b2a127c762a3.avif",
@@ -58,7 +67,7 @@
     "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif"
   },
   "entrypoints": [
-    "static/css/main.b0bd8369.css",
-    "static/js/main.69db96ab.js"
+    "static/css/main.18abb187.css",
+    "static/js/main.98883e70.js"
   ]
 }
