@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.22ce4ea8.css",
+    "main.css": "/static/css/main.b0bd8369.css",
     "main.js": "/static/js/main.69db96ab.js",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
@@ -58,7 +58,7 @@
     "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif"
   },
   "entrypoints": [
-    "static/css/main.22ce4ea8.css",
+    "static/css/main.b0bd8369.css",
     "static/js/main.69db96ab.js"
   ]
 }
