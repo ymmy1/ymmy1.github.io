@@ -53,8 +53,8 @@ function App() {
   return (
     <div id='main_container'>
       <Section1 bg={bgImage} />
-      <Section2 bg={edImage} />
       <Section3 />
+      <Section2 bg={edImage} />
       <Footer />
     </div>
   );

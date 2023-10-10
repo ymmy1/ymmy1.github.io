@@ -181,6 +181,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
+  max-width: 1400px;
   .closeIcon {
     position: absolute;
     z-index: 5000;
@@ -189,7 +190,7 @@
     cursor: pointer;
   }
   .box_content {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
     .left_box {
@@ -201,6 +202,7 @@
       }
     }
     .right_box {
+      max-width: 580px;
       margin-left: 20px;
       .project_links {
         align-items: center;

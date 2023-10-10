@@ -113,24 +113,6 @@ export default function NavBar(main) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      {isMain && (
-        <section id='entry_section' className={'entry ' + entryClass}>
-          <p>
-            {loadingComplete
-              ? 'Loading Complete'
-              : `Loading ${loadingPercentage}%`}
-          </p>
-          <button
-            className='button-orange'
-            disabled={!loadingComplete}
-            onClick={() => {
-              enter();
-            }}
-          >
-            Enter Website
-          </button>
-        </section>
-      )}
     </>
   );
 }
