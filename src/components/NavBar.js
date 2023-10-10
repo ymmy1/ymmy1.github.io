@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
 import '../styles/css/entry.css';
@@ -12,7 +12,6 @@ import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 export default function NavBar(main) {
   const [isPaused, setIsPaused] = useState(true);
-  const [entryClass, setEntryClass] = useState('show_entry');
   const [isMain] = useState(main.main);
 
   const toggle = (action) => {
@@ -23,42 +22,6 @@ export default function NavBar(main) {
       setIsPaused(!isPaused);
     }
   };
-  const enter = () => {
-    setEntryClass('hide_entry');
-    toggle('play');
-  };
-
-  const [loadingComplete, setLoadingComplete] = useState(false);
-  const [loadingPercentage, setLoadingPercentage] = useState(1);
-
-  useEffect(() => {
-    const checkLoadingStatus = () => {
-      if (document.readyState === 'complete') {
-        setLoadingComplete(true);
-      }
-    };
-
-    const interval = setInterval(checkLoadingStatus, 300);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setLoadingPercentage((prevPercentage) => {
-        let newPercentage = prevPercentage;
-        if (newPercentage < 99) {
-          newPercentage = prevPercentage + 1;
-        }
-        return newPercentage;
-      });
-    }, 100); // Change this interval to control the speed of progress
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
 
   return (
     <>
