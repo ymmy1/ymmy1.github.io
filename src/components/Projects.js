@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import '../styles/css/projects.css';
-import resume from '../assets/png&jpg/Oleg_Nosyrev.pdf';
+import resume from '../assets/png&jpg/Oleg_Nosyrev_CV.pdf';
 
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
