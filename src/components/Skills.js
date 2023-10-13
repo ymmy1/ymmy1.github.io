@@ -32,7 +32,7 @@ export default function Section2() {
         <div className='main-skills'>
           {main.map((skill, index) => (
             <div key={index} className='skill-box'>
-              <img src={skill.icon} alt='aws' />
+              <img src={skill.icon} alt={skill.name} />
               <p>{skill.name}</p>
             </div>
           ))}
