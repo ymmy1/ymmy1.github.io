@@ -94,12 +94,12 @@ export default function Section2(props) {
         </div>
       </div>
 
-      <div className='skillsbox fade-bottom'>
+      <div id='skills' className='skillsbox fade-bottom'>
         <h1>Main Skills</h1>
         <div className='main-skills'>
           {main.map((skill, index) => (
             <div key={index} className='skill-box'>
-              <img src={skill.icon} alt='aws' />
+              <img src={skill.icon} alt={skill.name} />
               <p>{skill.name}</p>
             </div>
           ))}
