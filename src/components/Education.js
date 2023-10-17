@@ -10,6 +10,7 @@ import uw from '../assets/AVIF/uw-logo.avif';
 import CS50 from '../assets/AVIF/CS50.avif';
 import CS50W from '../assets/AVIF/CS50W.avif';
 import MPA from '../assets/png&jpg/MPA-Internship-Completion-Certificate-Oleg-1.png';
+import FE from '../assets/png&jpg/FrontendExpert_Certificate.pdf';
 import UWC from '../assets/AVIF/UW_certificate.avif';
 
 import { main, other } from './API/skills';
@@ -83,14 +84,24 @@ export default function Section2(props) {
               />
             </a>
           </div>
-          <a
-            href={MPA}
-            className='button-orange'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Internship
-          </a>
+          <div className='button-section'>
+            <a
+              href={FE}
+              className='button-orange'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Frontend Expert
+            </a>
+            <a
+              href={MPA}
+              className='button-orange'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Internship
+            </a>
+          </div>
         </div>
       </div>
 

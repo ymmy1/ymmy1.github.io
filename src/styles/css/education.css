@@ -68,6 +68,18 @@
 .section_2 .boxes .right-box .img-container a:hover {
   transform: scale(1.2);
 }
+.section_2 .boxes .right-box .button-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+.section_2 .boxes .right-box .button-section .button-orange {
+  max-width: 200px;
+  width: 95%;
+}
 .section_2 .boxes.active,
 .section_2 .skillsbox.active {
   opacity: 1;
