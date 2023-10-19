@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.02e090fa.css",
-    "main.js": "/static/js/main.bb992141.js",
+    "main.js": "/static/js/main.1cdd1bae.js",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
     "static/media/netflix.avif": "/static/media/netflix.1b83c4ac73e600ff9580.avif",
@@ -20,7 +20,7 @@
     "static/media/FrontendExpert_Certificate.pdf": "/static/media/FrontendExpert_Certificate.dc8575d64f14a24f8184.pdf",
     "static/media/bgMedium.avif": "/static/media/bgMedium.8a0a2f59d92275226a79.avif",
     "static/media/UW_certificate.avif": "/static/media/UW_certificate.fe365195f9c9bcaa1ab8.avif",
-    "static/media/Oleg_Nosyrev_CV.pdf": "/static/media/Oleg_Nosyrev_CV.27d05a61db2bae4f436c.pdf",
+    "static/media/Oleg_Nosyrev_CV.pdf": "/static/media/Oleg_Nosyrev_CV.a4638a446ad7fc80da36.pdf",
     "static/media/trading.avif": "/static/media/trading.53f213346694ef92d277.avif",
     "static/media/projects.avif": "/static/media/projects.cb78b8e5db84a9e482f3.avif",
     "static/media/netflix_resized.avif": "/static/media/netflix_resized.c0aa4ae91ebeeebc4db0.avif",
@@ -69,6 +69,6 @@
   },
   "entrypoints": [
     "static/css/main.02e090fa.css",
-    "static/js/main.bb992141.js"
+    "static/js/main.1cdd1bae.js"
   ]
 }
