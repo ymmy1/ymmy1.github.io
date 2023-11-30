@@ -123,6 +123,8 @@
 .section_2 .skillsbox .other-skills .skill-box img {
   width: 75px;
   height: 75px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .section_2 .skillsbox .main-skills .skill-box p,
 .section_2 .skillsbox .other-skills .skill-box p {

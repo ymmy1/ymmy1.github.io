@@ -1,13 +1,26 @@
 footer {
   align-items: center;
   background: rgb(1, 4, 5);
-  color: #fff;
   display: flex;
   font-size: 30px;
   height: 85px;
   justify-content: center;
   position: relative;
   width: 100%;
+  nav {
+    .navbar-brand {
+      color: #fff;
+    }
+    .nav-item {
+      color: #fff;
+      a {
+        color: #fff;
+      }
+      svg {
+        color: #fff;
+      }
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   footer {

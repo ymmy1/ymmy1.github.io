@@ -38,16 +38,35 @@ function App() {
         setEdImage(edSmall);
       }
     };
+    const handleHashChange = () => {
+      // Check if there's a fragment identifier in the URL
+      if (window.location.hash) {
+        // Get the target element using the fragment identifier
+        const targetElement = document.querySelector(window.location.hash);
+
+        // Scroll to the target element if it exists
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    // Attach the event listener for hash changes
+
+    // Check on component mount
+    handleHashChange();
 
     // Initial call
     handleResize();
 
     // Attach event listener for window resize
+    window.addEventListener('hashchange', handleHashChange);
     window.addEventListener('resize', handleResize);
 
     // Clean up the event listener when component unmounts
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('hashchange', handleHashChange);
     };
   }, []);
   return (

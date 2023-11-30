@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import '../styles/css/projects.css';
-import resume from '../assets/png&jpg/Oleg_Nosyrev_CV.pdf';
+import resume from '../assets/png&jpg/Oleg_Nosyrev_FE.pdf';
 
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -36,7 +36,12 @@ export default function Projects() {
               <LinkedInIcon fontSize='medium' color='#fff' />
               LinkedIn
             </a>
-            <a className='button-orange' href={resume} download>
+            <a
+              className='button-orange'
+              href={resume}
+              target='_blank'
+              rel='noreferrer'
+            >
               <FileDownloadIcon fontSize='medium' color='#fff' /> Resume
             </a>
           </div>

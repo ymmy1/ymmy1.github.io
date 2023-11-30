@@ -106,7 +106,7 @@ export default function Section2(props) {
       </div>
 
       <div id='skills' className='skillsbox fade-bottom'>
-        <h1>Main Skills</h1>
+        <h1 id='main_skills'>Main Skills</h1>
         <div className='main-skills'>
           {main.map((skill, index) => (
             <div key={index} className='skill-box'>
@@ -115,10 +115,10 @@ export default function Section2(props) {
             </div>
           ))}
         </div>
-        <h1>Other Skills</h1>
+        <h1>Additional Skills</h1>
         <div className='other-skills'>
           {other.map((skill, index) => (
-            <div key={index} className='skill-box'>
+            <div id={skill} key={index} className='skill-box'>
               <img src={skill.icon} alt='aws' />
               <p>{skill.name}</p>
             </div>

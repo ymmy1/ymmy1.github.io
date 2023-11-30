@@ -34,6 +34,27 @@ export default class LeafSceneComponent extends Component {
     this.updateDimensions();
     window.addEventListener('resize', this.updateDimensions);
 
+    // Initialize wind options right away
+    this.options.wind.magnitude = Math.random() * this.options.wind.maxSpeed;
+    this.options.wind.duration =
+      this.options.wind.magnitude * 50 + (Math.random() * 20 - 10);
+    this.options.wind.start = this.timer;
+
+    const screenHeight = this.state.height;
+
+    this.options.wind.speed = (t, y) => {
+      const a =
+        ((this.options.wind.magnitude / 2) * (screenHeight - (2 * y) / 3)) /
+        screenHeight;
+      return (
+        a *
+          Math.sin(
+            ((2 * Math.PI) / this.options.wind.duration) * t + (3 * Math.PI) / 2
+          ) +
+        a
+      );
+    };
+
     for (let i = 0; i < this.options.numLeaves; i++) {
       const leaf = {
         el: document.createElement('div'),
@@ -61,7 +82,8 @@ export default class LeafSceneComponent extends Component {
 
     this.worldRef.current.classList.add('leaf-scene');
 
-    this.renderScene();
+    // Start the animation right away
+    requestAnimationFrame(this.renderScene);
   }
 
   componentWillUnmount() {
@@ -169,7 +191,9 @@ export default class LeafSceneComponent extends Component {
   };
 
   renderScene = () => {
+    // Update wind options at the beginning of each frame
     this._updateWind();
+
     for (let i = 0; i < this.leaves.length; i++) {
       this._updateLeaf(this.leaves[i]);
     }
