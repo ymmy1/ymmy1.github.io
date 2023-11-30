@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.02e090fa.css",
-    "main.js": "/static/js/main.6d8968be.js",
+    "main.css": "/static/css/main.cc29efb4.css",
+    "main.js": "/static/js/main.79f59bf1.js",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
     "static/media/netflix.avif": "/static/media/netflix.1b83c4ac73e600ff9580.avif",
@@ -20,7 +20,7 @@
     "static/media/FrontendExpert_Certificate.pdf": "/static/media/FrontendExpert_Certificate.dc8575d64f14a24f8184.pdf",
     "static/media/bgMedium.avif": "/static/media/bgMedium.8a0a2f59d92275226a79.avif",
     "static/media/UW_certificate.avif": "/static/media/UW_certificate.fe365195f9c9bcaa1ab8.avif",
-    "static/media/Oleg_Nosyrev-CV.pdf": "/static/media/Oleg_Nosyrev-CV.f413f0608018d3d7123e.pdf",
+    "static/media/Oleg_Nosyrev_FE.pdf": "/static/media/Oleg_Nosyrev_FE.3af29ddc54cfe7fa77fc.pdf",
     "static/media/trading.avif": "/static/media/trading.53f213346694ef92d277.avif",
     "static/media/projects.avif": "/static/media/projects.cb78b8e5db84a9e482f3.avif",
     "static/media/netflix_resized.avif": "/static/media/netflix_resized.c0aa4ae91ebeeebc4db0.avif",
@@ -53,22 +53,29 @@
     "static/media/slack.avif": "/static/media/slack.91a80ce8f8f810c86c0c.avif",
     "static/media/html.avif": "/static/media/html.158cd2181c317d64f8d2.avif",
     "static/media/python.avif": "/static/media/python.684e73eae37109bbab92.avif",
+    "static/media/vite.avif": "/static/media/vite.605cd1a6a6a8e6114c65.avif",
     "static/media/js.avif": "/static/media/js.56a64cce28981343642e.avif",
     "static/media/c.avif": "/static/media/c.f437d82b6d49d1c773a7.avif",
     "static/media/sqlite.avif": "/static/media/sqlite.069695491089fb9e6eff.avif",
+    "static/media/nuxt.avif": "/static/media/nuxt.9ba3d1357121dfc2a7ab.avif",
     "static/media/django.avif": "/static/media/django.6c9f4d76c5fd70002094.avif",
     "static/media/vue.avif": "/static/media/vue.a7b3925395a72c397151.avif",
+    "static/media/three.avif": "/static/media/three.d73cb3fdd9d7459f1ef0.avif",
     "static/media/ts.avif": "/static/media/ts.ee98ed54f8e53a1f3a64.avif",
+    "static/media/tailwind.avif": "/static/media/tailwind.a775be1730263c6f56c0.avif",
     "static/media/figma.avif": "/static/media/figma.ca1697a518b01fa029fc.avif",
+    "static/media/azure.avif": "/static/media/azure.d1a283e8774390be0ae3.avif",
     "static/media/jira.avif": "/static/media/jira.d589e5955042e92e804f.avif",
     "static/media/git.avif": "/static/media/git.d77825d7faafc7dd7316.avif",
+    "static/media/next.avif": "/static/media/next.0b2ed433178a08caf65d.avif",
     "static/media/h-logo-sm.avif": "/static/media/h-logo-sm.ba9a21bac8cef7e40cdc.avif",
+    "static/media/npm.avif": "/static/media/npm.245f74f3447e5419838b.avif",
     "static/media/bootstrap.avif": "/static/media/bootstrap.14a675b9baaafbd6ff89.avif",
     "index.html": "/index.html",
     "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif"
   },
   "entrypoints": [
-    "static/css/main.02e090fa.css",
-    "static/js/main.6d8968be.js"
+    "static/css/main.cc29efb4.css",
+    "static/js/main.79f59bf1.js"
   ]
 }
