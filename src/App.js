@@ -43,10 +43,13 @@ function App() {
       if (window.location.hash) {
         // Get the target element using the fragment identifier
         const targetElement = document.querySelector(window.location.hash);
+        console.log(targetElement);
 
         // Scroll to the target element if it exists
         if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+          setTimeout(() => {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }, 2000);
         }
       }
     };
@@ -60,13 +63,12 @@ function App() {
     handleResize();
 
     // Attach event listener for window resize
-    window.addEventListener('hashchange', handleHashChange);
+    // window.addEventListener('hashchange', handleHashChange);
     window.addEventListener('resize', handleResize);
 
     // Clean up the event listener when component unmounts
     return () => {
       window.removeEventListener('resize', handleResize);
-      window.removeEventListener('hashchange', handleHashChange);
     };
   }, []);
   return (

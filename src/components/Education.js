@@ -118,7 +118,7 @@ export default function Section2(props) {
         <h1>Additional Skills</h1>
         <div className='other-skills'>
           {other.map((skill, index) => (
-            <div id={skill} key={index} className='skill-box'>
+            <div id={skill.name} key={index} className='skill-box'>
               <img src={skill.icon} alt='aws' />
               <p>{skill.name}</p>
             </div>
