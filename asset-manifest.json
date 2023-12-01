@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cc29efb4.css",
-    "main.js": "/static/js/main.79f59bf1.js",
+    "main.js": "/static/js/main.48d2a22f.js",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
     "static/media/netflix.avif": "/static/media/netflix.1b83c4ac73e600ff9580.avif",
@@ -76,6 +76,6 @@
   },
   "entrypoints": [
     "static/css/main.cc29efb4.css",
-    "static/js/main.79f59bf1.js"
+    "static/js/main.48d2a22f.js"
   ]
 }
