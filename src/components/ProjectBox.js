@@ -15,7 +15,9 @@ export default function ProjectBox(props) {
       <p>
         <strong>{api.desc}</strong>
       </p>
-      <img className='project_img' src={api.img} alt='project look' />
+      <figure>
+        <img className='project_img' src={api.img} alt='project look' />
+      </figure>
       <div className='languages'>
         <div className='skill-bar'>
           {api?.languages.map((lng, index) => (

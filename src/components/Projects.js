@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 
 import '../styles/css/projects.css';
-import resume from '../assets/png&jpg/Oleg_Nosyrev_FE.pdf';
-
-import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import ProjectBox from './ProjectBox';
 import ProjectModal from './ProjectModal';
 import { api } from './API/projectsApi';
+
+import Carousel from 'react-bootstrap/Carousel';
 
 export default function Projects() {
   const [opennedProject, setOpennedProject] = useState({});
@@ -21,31 +19,14 @@ export default function Projects() {
     <section id='projects' className='section_4'>
       <h1>Projects</h1>
       <div className='all_projects'>
-        {api.map((api, index) => (
-          <ProjectBox api={api} key={index} handleOpen={handleOpen} />
-        ))}
-        <div className='bottom-section'>
-          <p className='bottom_text'>Find Out More</p>
-          <div className='bottom_buttons'>
-            <a
-              className='button-orange'
-              href='https://www.linkedin.com/in/oleg-nosyrev-440640114'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <LinkedInIcon fontSize='medium' color='#fff' />
-              LinkedIn
-            </a>
-            <a
-              className='button-orange'
-              href={resume}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <FileDownloadIcon fontSize='medium' color='#fff' /> Resume
-            </a>
-          </div>
-        </div>
+        <Carousel interval={null}>
+          {api.map((api, index) => (
+            <Carousel.Item key={index}>
+              <ProjectBox api={api} handleOpen={handleOpen} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+
         <ProjectModal
           opennedProject={opennedProject}
           handleClose={handleClose}

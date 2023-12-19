@@ -211,6 +211,7 @@ export default class LeafSceneComponent extends Component {
           <NavBar main={true} />
           <HeadBox />
           <img className='rocks' src={rocks} alt='rocks' />
+          <div className='icon-scroll'></div>
         </div>
       </Parallax>
     );

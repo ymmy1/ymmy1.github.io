@@ -4,6 +4,56 @@
   transition: height 0.5s ease;
   width: 100%;
 }
+.relative .icon-scroll,
+.relative .icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.relative .icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  bottom: 15px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+  z-index: 100;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: opacity;
+}
+.relative .icon-scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .relative .rocks {
   bottom: 0;
   height: auto;

@@ -13,6 +13,13 @@ import MPA from '../assets/png&jpg/MPA-Internship-Completion-Certificate-Oleg-1.
 import FE from '../assets/png&jpg/FrontendExpert_Certificate.pdf';
 import UWC from '../assets/AVIF/UW_certificate.avif';
 
+import resume from '../assets/png&jpg/Oleg_Nosyrev_FE.pdf';
+
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import SendIcon from '@mui/icons-material/Send';
+import DescriptionIcon from '@mui/icons-material/Description';
+
 import { main, other } from './API/skills';
 
 export default function Section2(props) {
@@ -91,7 +98,7 @@ export default function Section2(props) {
               target='_blank'
               rel='noreferrer'
             >
-              Frontend Expert
+              <DescriptionIcon fontSize='medium' color='#fff' /> Frontend Expert
             </a>
             <a
               href={MPA}
@@ -99,7 +106,7 @@ export default function Section2(props) {
               target='_blank'
               rel='noreferrer'
             >
-              Internship
+              <DescriptionIcon fontSize='medium' color='#fff' /> Internship
             </a>
           </div>
         </div>
@@ -123,6 +130,36 @@ export default function Section2(props) {
               <p>{skill.name}</p>
             </div>
           ))}
+        </div>
+      </div>
+      <div className='bottom-section'>
+        <p className='bottom_text'>Find Out More</p>
+        <div className='bottom_buttons'>
+          <a
+            className='button-orange'
+            href='https://www.linkedin.com/in/oleg-nosyrev-440640114'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <LinkedInIcon fontSize='medium' color='#fff' />
+            LinkedIn
+          </a>
+          <a
+            className='button-orange'
+            href={resume}
+            target='_blank'
+            rel='noreferrer'
+          >
+            <FileDownloadIcon fontSize='medium' color='#fff' /> Resume
+          </a>
+          <a
+            className='button-orange'
+            href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=oleg.ymmy@gmail.com.com'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <SendIcon fontSize='medium' color='#fff' /> Contact Me
+          </a>
         </div>
       </div>
     </section>

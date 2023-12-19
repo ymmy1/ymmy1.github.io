@@ -2,26 +2,26 @@ import favorite from '../../assets/AVIF/projects/favorite.avif';
 import newL from '../../assets/AVIF/projects/new.avif';
 import recent from '../../assets/AVIF/projects/recent.avif';
 
-import cover1 from '../../assets/AVIF/projects/flackyChat.avif';
-import cover2 from '../../assets/AVIF/projects/weather.avif';
-import cover3 from '../../assets/AVIF/projects/netflix.avif';
-import cover4 from '../../assets/AVIF/projects/facebook.avif';
-import cover5 from '../../assets/AVIF/projects/twitter.avif';
-import cover6 from '../../assets/AVIF/projects/mail.avif';
-import cover7 from '../../assets/AVIF/projects/blogger-gram.avif';
-import cover8 from '../../assets/AVIF/projects/book-review.avif';
-import cover9 from '../../assets/AVIF/projects/trading.avif';
-import cover10 from '../../assets/AVIF/projects/future-world.avif';
+import cover1 from '../../assets/AVIF/projects/PC/flackyChat.avif';
+import cover2 from '../../assets/AVIF/projects/PC/weather.avif';
+import cover3 from '../../assets/AVIF/projects/PC/netflix.avif';
+import cover4 from '../../assets/AVIF/projects/PC/facebook.avif';
+// import cover5 from '../../assets/AVIF/projects/PC/twitter.avif';
+// import cover6 from '../../assets/AVIF/projects/PC/mail.avif';
+import cover7 from '../../assets/AVIF/projects/PC/blogger-gram.avif';
+import cover8 from '../../assets/AVIF/projects/PC/book-review.avif';
+// import cover9 from '../../assets/AVIF/projects/PC/trading.avif';
+import cover10 from '../../assets/AVIF/projects/PC/future-world.avif';
 
-import projectImg1 from '../../assets/AVIF/projects/flackyChat_resized.avif';
-import projectImg2 from '../../assets/AVIF/projects/weather_resized.avif';
-import projectImg3 from '../../assets/AVIF/projects/netflix_resized.avif';
-import projectImg4 from '../../assets/AVIF/projects/facebook_resized.avif';
-import projectImg5 from '../../assets/AVIF/projects/twitter_resized.avif';
-import projectImg7 from '../../assets/AVIF/projects/blogger-gram_resized.avif';
-import projectImg8 from '../../assets/AVIF/projects/book-review_resized.avif';
-import projectImg9 from '../../assets/AVIF/projects/trading_resized.avif';
-import projectImg10 from '../../assets/AVIF/projects/future-world_resized.avif';
+import projectImg1 from '../../assets/AVIF/projects/PC/flackyChat.avif';
+import projectImg2 from '../../assets/AVIF/projects/PC/weather.avif';
+import projectImg3 from '../../assets/AVIF/projects/PC/netflix.avif';
+import projectImg4 from '../../assets/AVIF/projects/PC/facebook.avif';
+// import projectImg5 from '../../assets/AVIF/projects/PC/twitter.avif';
+import projectImg7 from '../../assets/AVIF/projects/PC/blogger-gram.avif';
+import projectImg8 from '../../assets/AVIF/projects/PC/book-review.avif';
+// import projectImg9 from '../../assets/AVIF/projects/PC/trading.avif';
+import projectImg10 from '../../assets/AVIF/projects/PC/future-world.avif';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -64,23 +64,23 @@ const facebookContent = (
     <strong>many other things!</strong>
   </>
 );
-const twitterContent = (
-  <>
-    Twitter like network with Python Dango allows you to Register your
-    mailbox(user@example.com) and select an avatar. User can post posts on the
-    main page, follow users and like posts. Also user can only view following
-    posts as well as open the profile of any other user and see thi user's posts
-  </>
-);
-const mailContent = (
-  <>
-    The mail app built with <strong>Python Dango</strong> allows you to Register
-    your mailbox(user@example.com) and send out emails to other email adresses
-    in the system. The app does not send emails out of its own{' '}
-    <strong>database</strong>. Features as Send/Read/Archive/Compose and Reply
-    are available to use
-  </>
-);
+// const twitterContent = (
+//   <>
+//     Twitter like network with Python Dango allows you to Register your
+//     mailbox(user@example.com) and select an avatar. User can post posts on the
+//     main page, follow users and like posts. Also user can only view following
+//     posts as well as open the profile of any other user and see thi user's posts
+//   </>
+// );
+// const mailContent = (
+//   <>
+//     The mail app built with <strong>Python Dango</strong> allows you to Register
+//     your mailbox(user@example.com) and send out emails to other email adresses
+//     in the system. The app does not send emails out of its own{' '}
+//     <strong>database</strong>. Features as Send/Read/Archive/Compose and Reply
+//     are available to use
+//   </>
+// );
 const bloggerContent = (
   <>
     A small one page instagram clone, allowing user to register and login. Using
@@ -100,19 +100,19 @@ const bookContent = (
     access
   </>
 );
-const tradingContent = (
-  <>
-    <strong>Trading app</strong>, allows user to Sign in/Register and buy or
-    sell stocks with not real money (delault when registered: $10000). Using the
-    <strong>API</strong> to get the
-    <strong>real-time data</strong>
-    about current stocks. Features available: Quote for a stock price / Buy
-    shares of any stock available / Sell one of multiple stocks and shares /
-    History to keep a track on your buys and sells / And the main page to track
-    your current
-    <strong>stock prices</strong>
-  </>
-);
+// const tradingContent = (
+//   <>
+//     <strong>Trading app</strong>, allows user to Sign in/Register and buy or
+//     sell stocks with not real money (delault when registered: $10000). Using the
+//     <strong>API</strong> to get the
+//     <strong>real-time data</strong>
+//     about current stocks. Features available: Quote for a stock price / Buy
+//     shares of any stock available / Sell one of multiple stocks and shares /
+//     History to keep a track on your buys and sells / And the main page to track
+//     your current
+//     <strong>stock prices</strong>
+//   </>
+// );
 const futureContent = (
   <>
     <strong>A Vue app</strong>. Main purpose of this app is to tell about one of
@@ -244,56 +244,56 @@ export const api = [
       },
     ],
   },
-  {
-    name: 'Twitter-Like Django App',
-    desc: 'Django',
-    img: projectImg5,
-    imgOpen: cover5,
-    languages: [
-      { name: 'py', width: '41.1%', summary: 'Python 41.1%' },
-      { name: 'html', width: '40.9%', summary: 'HTML 40.9%' },
-      { name: 'css', width: '12%', summary: 'CSS 12.0%' },
-      { name: 'js', width: '6%', summary: 'JavaScript 6.0%' },
-    ],
-    content: twitterContent,
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/ymmy1/network',
-        icon: <GitHubIcon size='medium' />,
-      },
-      {
-        name: 'YouTube',
-        url: 'https://youtu.be/s70A5L4SdbU',
-        icon: <YouTubeIcon size='medium' />,
-      },
-    ],
-  },
-  {
-    name: 'Django Mail App',
-    desc: 'Django',
-    img: cover6,
-    imgOpen: cover6,
-    languages: [
-      { name: 'py', width: '32.5%', summary: 'Python 32.5%' },
-      { name: 'js', width: '30.1%', summary: 'JavaScript 30.1%' },
-      { name: 'css', width: '28.3%', summary: 'CSS 28.3%' },
-      { name: 'html', width: '9.1%', summary: 'HTML 9.1%' },
-    ],
-    content: mailContent,
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/ymmy1/mail',
-        icon: <GitHubIcon size='medium' />,
-      },
-      {
-        name: 'YouTube',
-        url: 'https://www.youtube.com/watch?v=tqNhI5HGPsk',
-        icon: <YouTubeIcon size='medium' />,
-      },
-    ],
-  },
+  // {
+  //   name: 'Twitter-Like Django App',
+  //   desc: 'Django',
+  //   img: projectImg5,
+  //   imgOpen: cover5,
+  //   languages: [
+  //     { name: 'py', width: '41.1%', summary: 'Python 41.1%' },
+  //     { name: 'html', width: '40.9%', summary: 'HTML 40.9%' },
+  //     { name: 'css', width: '12%', summary: 'CSS 12.0%' },
+  //     { name: 'js', width: '6%', summary: 'JavaScript 6.0%' },
+  //   ],
+  //   content: twitterContent,
+  //   links: [
+  //     {
+  //       name: 'GitHub',
+  //       url: 'https://github.com/ymmy1/network',
+  //       icon: <GitHubIcon size='medium' />,
+  //     },
+  //     {
+  //       name: 'YouTube',
+  //       url: 'https://youtu.be/s70A5L4SdbU',
+  //       icon: <YouTubeIcon size='medium' />,
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: 'Django Mail App',
+  //   desc: 'Django',
+  //   img: cover6,
+  //   imgOpen: cover6,
+  //   languages: [
+  //     { name: 'py', width: '32.5%', summary: 'Python 32.5%' },
+  //     { name: 'js', width: '30.1%', summary: 'JavaScript 30.1%' },
+  //     { name: 'css', width: '28.3%', summary: 'CSS 28.3%' },
+  //     { name: 'html', width: '9.1%', summary: 'HTML 9.1%' },
+  //   ],
+  //   content: mailContent,
+  //   links: [
+  //     {
+  //       name: 'GitHub',
+  //       url: 'https://github.com/ymmy1/mail',
+  //       icon: <GitHubIcon size='medium' />,
+  //     },
+  //     {
+  //       name: 'YouTube',
+  //       url: 'https://www.youtube.com/watch?v=tqNhI5HGPsk',
+  //       icon: <YouTubeIcon size='medium' />,
+  //     },
+  //   ],
+  // },
   {
     name: 'BloggerGram',
     desc: 'SQLite',
@@ -342,30 +342,30 @@ export const api = [
       },
     ],
   },
-  {
-    name: 'CS50 Trading App',
-    desc: 'PostgreSQL',
-    img: projectImg9,
-    imgOpen: cover9,
-    languages: [
-      { name: 'py', width: '51%', summary: 'Python 51.0%' },
-      { name: 'html', width: '46.7%', summary: 'HTML 46.7%' },
-      { name: 'css', width: '2.3%', summary: 'CSS 2.3%' },
-    ],
-    content: tradingContent,
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/ymmy1/finance',
-        icon: <GitHubIcon size='medium' />,
-      },
-      {
-        name: 'YouTube',
-        url: 'https://youtu.be/DS4GYnYPHaw',
-        icon: <YouTubeIcon size='medium' />,
-      },
-    ],
-  },
+  // {
+  //   name: 'CS50 Trading App',
+  //   desc: 'PostgreSQL',
+  //   img: projectImg9,
+  //   imgOpen: cover9,
+  //   languages: [
+  //     { name: 'py', width: '51%', summary: 'Python 51.0%' },
+  //     { name: 'html', width: '46.7%', summary: 'HTML 46.7%' },
+  //     { name: 'css', width: '2.3%', summary: 'CSS 2.3%' },
+  //   ],
+  //   content: tradingContent,
+  //   links: [
+  //     {
+  //       name: 'GitHub',
+  //       url: 'https://github.com/ymmy1/finance',
+  //       icon: <GitHubIcon size='medium' />,
+  //     },
+  //     {
+  //       name: 'YouTube',
+  //       url: 'https://youtu.be/DS4GYnYPHaw',
+  //       icon: <YouTubeIcon size='medium' />,
+  //     },
+  //   ],
+  // },
   {
     name: 'Future World',
     desc: 'Vue',

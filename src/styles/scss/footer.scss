@@ -1,13 +1,12 @@
 footer {
   align-items: center;
-  background: rgb(1, 4, 5);
   display: flex;
   font-size: 30px;
-  height: 85px;
   justify-content: center;
   position: relative;
   width: 100%;
   nav {
+    background: rgb(1, 4, 5);
     .navbar-brand {
       color: #fff;
     }

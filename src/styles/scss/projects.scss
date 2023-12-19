@@ -1,10 +1,30 @@
+.carousel {
+  width: 100%;
+  height: 457px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fa6400;
+  border-radius: 50%;
+}
+.carousel-indicators {
+  bottom: -50px;
+  margin: 0;
+  width: 100%;
+  .active {
+    background-color: #fa6400;
+  }
+}
 .section_4 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  transition: height 0.5s ease;
-
   justify-content: center;
+  transition: height 0.5s ease;
+  height: 100dvh;
+
   position: relative;
   width: 100%;
   background-image: url('../../assets/AVIF/projects.avif');
@@ -12,18 +32,22 @@
   background-attachment: fixed;
   background-position: center;
   h1 {
-    margin-top: 100px;
+    margin-bottom: 80px;
     color: #fff;
     font-size: 4vw;
+    border-bottom: 1px solid #b1b1b1cb;
+    width: 100%;
+    text-align: center;
+    max-width: 700px;
   }
   .all_projects {
-    border-top: 1px solid #b1b1b1cb;
-
     align-items: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     padding: 0 20px;
+    width: 100%;
+    max-width: 1000px;
     &::-webkit-scrollbar {
       display: none;
     }
@@ -38,14 +62,104 @@
       padding: 20px;
       text-align: center;
       width: 100%;
-      transition: transform 0.3s ease;
+      margin-left: auto;
+      margin-right: auto;
 
-      &:hover {
-        transform: scale(1.2);
-      }
-      .project_img {
-        width: 100%;
-        margin: auto;
+      figure {
+        filter: drop-shadow(0px 40px 28px #000000);
+        position: relative;
+
+        &::before {
+          position: absolute;
+          top: 17px;
+          left: 22px;
+          z-index: 2;
+          opacity: 0;
+          display: block;
+          content: '';
+          width: 25%;
+          height: 210px;
+          background: -webkit-linear-gradient(
+            left,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 100%
+          );
+          background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 100%
+          );
+          -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+        }
+        &:hover::before {
+          -webkit-animation: shine 0.75s;
+          animation: shine 0.75s;
+        }
+        @-webkit-keyframes shine {
+          0% {
+            opacity: 0;
+          }
+          13% {
+            opacity: 0.25;
+          }
+          26% {
+            opacity: 0.5;
+          }
+          39% {
+            opacity: 0.75;
+          }
+          50% {
+            opacity: 1;
+          }
+          63% {
+            opacity: 0.75;
+          }
+          76% {
+            opacity: 0.5;
+          }
+          89% {
+            opacity: 0.25;
+          }
+          100% {
+            left: 55%;
+            opacity: 0;
+          }
+        }
+        @keyframes shine {
+          0% {
+            opacity: 0;
+          }
+          13% {
+            opacity: 0.25;
+          }
+          26% {
+            opacity: 0.5;
+          }
+          39% {
+            opacity: 0.75;
+          }
+          50% {
+            opacity: 1;
+          }
+          63% {
+            opacity: 0.75;
+          }
+          76% {
+            opacity: 0.5;
+          }
+          89% {
+            opacity: 0.25;
+          }
+          100% {
+            left: 55%;
+            opacity: 0;
+          }
+        }
+        .project_img {
+          width: 100%;
+          margin: auto;
+        }
       }
     }
     .new_project,
@@ -63,23 +177,6 @@
           width: 100%;
         }
       }
-    }
-  }
-  .bottom-section {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-    .bottom_text {
-      font-size: 40px;
-      color: #fff;
-      margin: 0;
-    }
-    .bottom_buttons {
-      padding-top: 20px;
-      border-top: 1px solid #b1b1b1cb;
-      display: flex;
-      gap: 20px;
     }
   }
 }
@@ -337,13 +434,6 @@
   }
 }
 @media screen and (max-width: 366px) {
-  .section_4 {
-    .bottom-section {
-      .bottom_text {
-        font-size: 10vw;
-      }
-    }
-  }
   .modal_box {
     .new_img {
       display: none;
@@ -357,17 +447,6 @@
           ul {
             flex-direction: column;
           }
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 288px) {
-  .section_4 {
-    .all_projects {
-      .bottom-section {
-        .bottom_buttons {
-          flex-direction: column;
         }
       }
     }
