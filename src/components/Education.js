@@ -154,7 +154,7 @@ export default function Section2(props) {
           </a>
           <a
             className='button-orange'
-            href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=oleg.ymmy@gmail.com.com'
+            href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=oleg.ymmy@gmail.com'
             target='_blank'
             rel='noreferrer'
           >
