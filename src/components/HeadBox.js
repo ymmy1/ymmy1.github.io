@@ -1,6 +1,6 @@
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import '../styles/css/headbox.css';
-import resume from '../assets/png&jpg/Oleg_Nosyrev_FE.pdf';
+import resume from '../assets/png&jpg/Oleg_Nosyrev_Frontend_Resume.pdf';
 
 export default function HeadBox() {
   return (
