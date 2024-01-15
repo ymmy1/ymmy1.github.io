@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9d18f03.css",
-    "main.js": "/static/js/main.ec58b97f.js",
+    "main.css": "/static/css/main.42deed49.css",
+    "main.js": "/static/js/main.0cf180c7.js",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
     "static/media/rocks.png": "/static/media/rocks.e035e5754ae97e602688.png",
     "static/media/bgSmall.avif": "/static/media/bgSmall.6b5ca2b85b9a73fb32db.avif",
     "static/media/bg.avif": "/static/media/bg.dec1c951153bda243748.avif",
+    "static/media/Dysney+.avif": "/static/media/Dysney+.2ee2f9ef5853e896eec5.avif",
     "static/media/netflix.avif": "/static/media/netflix.39da8cf8ca20f9e394f5.avif",
     "static/media/sakura_petal.png": "/static/media/sakura_petal.07d1c20dea1b21cc2349.png",
     "static/media/weather.avif": "/static/media/weather.b9c847e4e18f6f65ff1d.avif",
@@ -18,7 +19,7 @@
     "static/media/FrontendExpert_Certificate.pdf": "/static/media/FrontendExpert_Certificate.dc8575d64f14a24f8184.pdf",
     "static/media/bgMedium.avif": "/static/media/bgMedium.8a0a2f59d92275226a79.avif",
     "static/media/UW_certificate.avif": "/static/media/UW_certificate.fe365195f9c9bcaa1ab8.avif",
-    "static/media/Oleg_Nosyrev_Frontend_Resume.pdf": "/static/media/Oleg_Nosyrev_Frontend_Resume.f420048ad09be8b5707f.pdf",
+    "static/media/Oleg_Nosyrev_Frontend_Resume.pdf": "/static/media/Oleg_Nosyrev_Frontend_Resume.467c59220cb9439e110e.pdf",
     "static/media/CS50.avif": "/static/media/CS50.3ec59da503121b7e868b.avif",
     "static/media/CS50W.avif": "/static/media/CS50W.ea80a357c9ad47d11ae7.avif",
     "static/media/ed.avif": "/static/media/ed.041b9b01299d44d59153.avif",
@@ -62,7 +63,7 @@
     "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif"
   },
   "entrypoints": [
-    "static/css/main.d9d18f03.css",
-    "static/js/main.ec58b97f.js"
+    "static/css/main.42deed49.css",
+    "static/js/main.0cf180c7.js"
   ]
 }
