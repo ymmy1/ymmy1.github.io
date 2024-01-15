@@ -14,7 +14,7 @@ nav {
   font-size: 2dvh;
 }
 nav .navbar-brand {
-  color: #000;
+  color: #fff;
   cursor: pointer;
   display: flex;
   font-size: 2.5dvh;
@@ -23,13 +23,10 @@ nav .navbar-brand {
   transition: ease all 0.5s;
 }
 nav .navbar-brand:hover {
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
-  color: #fa6400;
+  color: #6e6d6d;
   transition: ease all 0.2s;
 }
 nav .nav-item {
-  color: #000;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -37,21 +34,17 @@ nav .nav-item {
 }
 nav .nav-item a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 nav .nav-item a:hover {
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
-  color: #fa6400;
+  color: #6e6d6d;
   transition: ease all 0.2s;
 }
 nav .nav-item svg {
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
 nav .nav-item svg:hover {
-  color: #fa6400;
-  stroke-width: 0.5px;
-  stroke: black;
+  color: #6e6d6d;
   transition: ease all 0.2s;
 }/*# sourceMappingURL=navbar.css.map */
