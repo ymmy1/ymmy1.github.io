@@ -184,6 +184,9 @@
 .languages .skill-bar .vue {
   background-color: #41b883;
 }
+.languages .skill-bar .ts {
+  background-color: #3178c6;
+}
 .languages ul {
   display: flex;
   justify-content: center;
@@ -221,6 +224,9 @@
 }
 .languages ul li .vue {
   background-color: #41b883;
+}
+.languages ul li .ts {
+  background-color: #3178c6;
 }
 
 .modal_box {

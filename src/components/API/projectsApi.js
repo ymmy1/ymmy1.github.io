@@ -2,31 +2,30 @@ import favorite from '../../assets/AVIF/projects/favorite.avif';
 import newL from '../../assets/AVIF/projects/new.avif';
 import recent from '../../assets/AVIF/projects/recent.avif';
 
-import cover1 from '../../assets/AVIF/projects/PC/flackyChat.avif';
-import cover2 from '../../assets/AVIF/projects/PC/weather.avif';
-import cover3 from '../../assets/AVIF/projects/PC/netflix.avif';
-import cover4 from '../../assets/AVIF/projects/PC/facebook.avif';
-// import cover5 from '../../assets/AVIF/projects/PC/twitter.avif';
-// import cover6 from '../../assets/AVIF/projects/PC/mail.avif';
-import cover7 from '../../assets/AVIF/projects/PC/blogger-gram.avif';
-import cover8 from '../../assets/AVIF/projects/PC/book-review.avif';
-// import cover9 from '../../assets/AVIF/projects/PC/trading.avif';
-import cover10 from '../../assets/AVIF/projects/PC/future-world.avif';
-
 import projectImg1 from '../../assets/AVIF/projects/PC/flackyChat.avif';
 import projectImg2 from '../../assets/AVIF/projects/PC/weather.avif';
 import projectImg3 from '../../assets/AVIF/projects/PC/netflix.avif';
 import projectImg4 from '../../assets/AVIF/projects/PC/facebook.avif';
 // import projectImg5 from '../../assets/AVIF/projects/PC/twitter.avif';
+// import projectImg6 from '../../assets/AVIF/projects/PC/mail.avif';
 import projectImg7 from '../../assets/AVIF/projects/PC/blogger-gram.avif';
 import projectImg8 from '../../assets/AVIF/projects/PC/book-review.avif';
 // import projectImg9 from '../../assets/AVIF/projects/PC/trading.avif';
 import projectImg10 from '../../assets/AVIF/projects/PC/future-world.avif';
+import projectImg11 from '../../assets/AVIF/projects/PC/Dysney+.avif';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import PreviewIcon from '@mui/icons-material/Preview';
 
+const disneyContent = (
+  <>
+    <strong>Next.js + Tailwind + TypeScript</strong> project to display movies
+    details - Images, titles, descriptions, ratings, etc.{' '}
+    <strong>TMDB API</strong> used to fetch movies. As well as the Dark/Light
+    Theme, Search and Genre functionality.
+  </>
+);
 const flackyChatContent = (
   <>
     <strong>React</strong> Real-Time Chat App connected with firebase database.
@@ -126,12 +125,43 @@ const futureContent = (
 
 export const api = [
   {
+    labelClass: 'new_project',
+    label: newL,
+    name: 'Dysney+ Clone',
+    desc: 'Next.js + TailwindCSS + Typescript',
+    img: projectImg11,
+    imgOpen: projectImg11,
+    languages: [
+      { name: 'ts', width: '95.2%', summary: 'TypeScript 95.2%' },
+      { name: 'css', width: '3.9%', summary: 'CSS 3.9%' },
+      { name: 'js', width: '0.9%', summary: 'JavaScript 0.9%' },
+    ],
+    content: disneyContent,
+    links: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/ymmy1/disney-clone',
+        icon: <GitHubIcon size='medium' />,
+      },
+      {
+        name: 'Website',
+        url: 'https://disney-clone-ymmy.netlify.app/',
+        icon: <PreviewIcon size='medium' />,
+      },
+      {
+        name: 'YouTube',
+        url: 'https://youtu.be/T7pQZk2V3lg',
+        icon: <YouTubeIcon size='medium' />,
+      },
+    ],
+  },
+  {
     labelClass: 'favorite_project',
     label: favorite,
     name: 'FlackyChat',
     desc: 'React + Firebase',
     img: projectImg1,
-    imgOpen: cover1,
+    imgOpen: projectImg1,
     languages: [
       { name: 'scss', width: '58.2%', summary: 'SCSS 58.2%' },
       { name: 'js', width: '35.3%', summary: 'JavaScript 35.3%' },
@@ -158,12 +188,12 @@ export const api = [
     ],
   },
   {
-    labelClass: 'new_project',
-    label: newL,
+    labelClass: 'recent_project',
+    label: recent,
     name: 'Vue Weather',
     desc: 'Vue.js',
     img: projectImg2,
-    imgOpen: cover2,
+    imgOpen: projectImg2,
     languages: [
       { name: 'vue', width: '92.1%', summary: 'Vue.js 92.1%' },
       { name: 'html', width: '6.1%', summary: 'HTML 6.1%' },
@@ -189,12 +219,10 @@ export const api = [
     ],
   },
   {
-    labelClass: 'recent_project',
-    label: recent,
     name: 'React Netflix',
     desc: 'React',
     img: projectImg3,
-    imgOpen: cover3,
+    imgOpen: projectImg3,
     languages: [
       { name: 'js', width: '65.1%', summary: 'JavaScript 65.1%' },
       { name: 'css', width: '19.7%', summary: 'CSS 19.7%' },
@@ -223,7 +251,7 @@ export const api = [
     name: 'Facebook Clone',
     desc: 'Django',
     img: projectImg4,
-    imgOpen: cover4,
+    imgOpen: projectImg4,
     languages: [
       { name: 'html', width: '44.5%', summary: 'HTML 44.5%' },
       { name: 'scss', width: '30.2%', summary: 'SCSS 30.2%' },
@@ -248,7 +276,7 @@ export const api = [
   //   name: 'Twitter-Like Django App',
   //   desc: 'Django',
   //   img: projectImg5,
-  //   imgOpen: cover5,
+  //   imgOpen: projectImg5,
   //   languages: [
   //     { name: 'py', width: '41.1%', summary: 'Python 41.1%' },
   //     { name: 'html', width: '40.9%', summary: 'HTML 40.9%' },
@@ -272,8 +300,8 @@ export const api = [
   // {
   //   name: 'Django Mail App',
   //   desc: 'Django',
-  //   img: cover6,
-  //   imgOpen: cover6,
+  //   img: projectImg6,
+  //   imgOpen: projectImg6,
   //   languages: [
   //     { name: 'py', width: '32.5%', summary: 'Python 32.5%' },
   //     { name: 'js', width: '30.1%', summary: 'JavaScript 30.1%' },
@@ -298,7 +326,7 @@ export const api = [
     name: 'BloggerGram',
     desc: 'SQLite',
     img: projectImg7,
-    imgOpen: cover7,
+    imgOpen: projectImg7,
     languages: [
       { name: 'html', width: '59.8%', summary: 'HTML 59.8%' },
       { name: 'py', width: '29.7%', summary: 'Python 29.7%' },
@@ -322,7 +350,7 @@ export const api = [
     name: 'Book Review',
     desc: 'PostgreSQL',
     img: projectImg8,
-    imgOpen: cover8,
+    imgOpen: projectImg8,
     languages: [
       { name: 'py', width: '42.5%', summary: 'Python 42.5%' },
       { name: 'html', width: '34.3%', summary: 'HTML 34.3%' },
@@ -346,7 +374,7 @@ export const api = [
   //   name: 'CS50 Trading App',
   //   desc: 'PostgreSQL',
   //   img: projectImg9,
-  //   imgOpen: cover9,
+  //   imgOpen: projectImg9,
   //   languages: [
   //     { name: 'py', width: '51%', summary: 'Python 51.0%' },
   //     { name: 'html', width: '46.7%', summary: 'HTML 46.7%' },
@@ -370,7 +398,7 @@ export const api = [
     name: 'Future World',
     desc: 'Vue',
     img: projectImg10,
-    imgOpen: cover10,
+    imgOpen: projectImg10,
     languages: [
       { name: 'vue', width: '92.6%', summary: 'Vue 92.6%' },
       { name: 'js', width: '7.4%', summary: 'JavaScript 7.4%' },
