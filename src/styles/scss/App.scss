@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;0,600;0,700;1,400&family=Yatra+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Yatra One', cursive;
 }
 #main_container {
   height: 100dvh;
@@ -16,4 +16,17 @@
 html::-webkit-scrollbar,
 #main_container::-webkit-scrollbar {
   display: none;
+}
+
+.falling-leaves,
+.about-modal-box,
+.modal_box {
+  font-family: 'Yatra One', cursive;
+}
+
+.section_2,
+.section_3,
+.section_4,
+#nav {
+  font-family: 'Josefin Slab', serif;
 }
