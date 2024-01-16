@@ -367,6 +367,7 @@
 @media screen and (max-width: 522px) {
   .section_4 h1 {
     font-size: calc(25px + 6vw);
+    margin-bottom: 40px;
   }
   .section_4 .all_projects .new_project,
   .section_4 .all_projects .favorite_project,

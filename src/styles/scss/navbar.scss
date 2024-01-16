@@ -7,6 +7,8 @@ audio {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 3;
+  background: rgba(#2e2a2a, 0.15);
 }
 nav {
   font-size: 2dvh;
@@ -25,10 +27,16 @@ nav {
     }
   }
   .nav-item {
+    color: #fff;
     align-items: center;
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    cursor: pointer;
+    &:hover {
+      color: #6e6d6d;
+      transition: ease all 0.2s;
+    }
     a {
       text-decoration: none;
       color: #fff;
@@ -45,5 +53,9 @@ nav {
         transition: ease all 0.2s;
       }
     }
+  }
+}
+@media screen and (max-width: 767px) {
+  #nav {
   }
 }

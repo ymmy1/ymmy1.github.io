@@ -9,10 +9,12 @@ import audioFile from '../assets/png&jpg/bg_music.mp3';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import AboutModal from './AboutModal';
 
 export default function NavBar(main) {
   const [isPaused, setIsPaused] = useState(true);
   const [isMain] = useState(main.main);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   const toggle = (action) => {
     let audioElement = document.getElementById('backgroundMusic');
@@ -23,17 +25,19 @@ export default function NavBar(main) {
     }
   };
 
+  const handleAboutOpen = () => {
+    setAboutOpen(true);
+  };
+  const handleAboutClose = () => setAboutOpen(false);
+
   return (
     <>
       <Navbar id='nav' collapseOnSelect expand='md'>
         <Navbar.Toggle />
+        <Navbar.Brand href='https://ymmy1.github.io/' className='navbar-brand'>
+          Portfolio
+        </Navbar.Brand>
         <Navbar.Collapse>
-          <Navbar.Brand
-            href='https://ymmy1.github.io/'
-            className='navbar-brand'
-          >
-            Portfolio
-          </Navbar.Brand>
           <Nav className='navbar-nav ms-auto'>
             <Nav.Item className='nav-item ml-auto'>
               <Nav.Link href='#education'>Education</Nav.Link>
@@ -44,6 +48,7 @@ export default function NavBar(main) {
             <Nav.Item>
               <Nav.Link href='#projects'>Projects</Nav.Link>
             </Nav.Item>
+            <Nav.Item onClick={() => handleAboutOpen()}>About Me</Nav.Item>
             <Nav.Item className='nav-item ml-auto'>
               <Nav.Link
                 className='nav-social-link'
@@ -76,6 +81,7 @@ export default function NavBar(main) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <AboutModal aboutOpen={aboutOpen} handleAboutClose={handleAboutClose} />
     </>
   );
 }

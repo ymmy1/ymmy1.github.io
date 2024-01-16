@@ -6,7 +6,7 @@ export default function HeadBox() {
   return (
     <div className='head-box'>
       <h1>Oleg Nosyrev</h1>
-      <p>Front-End Software Engineer [UI/UX]</p>
+      <p>Front-End Software Engineer</p>
       <a
         className='button-orange'
         href={resume}

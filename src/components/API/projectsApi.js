@@ -128,7 +128,7 @@ export const api = [
     labelClass: 'new_project',
     label: newL,
     name: 'Dysney+ Clone',
-    desc: 'Next.js + TailwindCSS + Typescript',
+    desc: 'Next.js + TailwindCSS',
     img: projectImg11,
     imgOpen: projectImg11,
     languages: [
