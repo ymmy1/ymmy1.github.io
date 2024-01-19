@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.e59df2d5.css",
-    "main.js": "/static/js/main.a2055ae7.js",
+    "main.css": "/static/css/main.9f2edf38.css",
+    "main.js": "/static/js/main.45a6f80f.js",
+    "static/media/bg.png": "/static/media/bg.fc68580dc51208061346.png",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
-    "static/media/rocks.png": "/static/media/rocks.e035e5754ae97e602688.png",
     "static/media/bgSmall.avif": "/static/media/bgSmall.6b5ca2b85b9a73fb32db.avif",
     "static/media/bg.avif": "/static/media/bg.dec1c951153bda243748.avif",
     "static/media/Dysney+.avif": "/static/media/Dysney+.2ee2f9ef5853e896eec5.avif",
@@ -19,11 +19,13 @@
     "static/media/FrontendExpert_Certificate.pdf": "/static/media/FrontendExpert_Certificate.dc8575d64f14a24f8184.pdf",
     "static/media/bgMedium.avif": "/static/media/bgMedium.8a0a2f59d92275226a79.avif",
     "static/media/UW_certificate.avif": "/static/media/UW_certificate.fe365195f9c9bcaa1ab8.avif",
-    "static/media/Oleg_Nosyrev_Frontend_Resume.pdf": "/static/media/Oleg_Nosyrev_Frontend_Resume.467c59220cb9439e110e.pdf",
+    "static/media/Front-End_Oleg-Nosyrev.pdf": "/static/media/Front-End_Oleg-Nosyrev.2097cf38b6f573cd36ce.pdf",
+    "static/media/minimalisticBg.png": "/static/media/minimalisticBg.7acccfca31720c7e53f3.png",
     "static/media/CS50.avif": "/static/media/CS50.3ec59da503121b7e868b.avif",
     "static/media/CS50W.avif": "/static/media/CS50W.ea80a357c9ad47d11ae7.avif",
     "static/media/ed.avif": "/static/media/ed.041b9b01299d44d59153.avif",
     "static/media/edMedium.avif": "/static/media/edMedium.1142ff13f3fc1285fd67.avif",
+    "static/media/rocks.avif": "/static/media/rocks.1cccb93003e2b917db42.avif",
     "static/media/edSmall.avif": "/static/media/edSmall.598bef8018b694aab540.avif",
     "static/media/uw-logo.avif": "/static/media/uw-logo.b31fe8418504a54db0b1.avif",
     "static/media/recent.avif": "/static/media/recent.171ed19b08c3ed619a51.avif",
@@ -37,6 +39,9 @@
     "static/media/jquery.avif": "/static/media/jquery.ecf27a8ca465ee169db1.avif",
     "static/media/github.avif": "/static/media/github.4e53b9cf13ea3dfdd6cc.avif",
     "static/media/css.avif": "/static/media/css.5e004dee079c0882c253.avif",
+    "static/media/minimalisticBgSmall.avif": "/static/media/minimalisticBgSmall.b5bbdf823dfab2572c2d.avif",
+    "static/media/minimalisticBgMedium.avif": "/static/media/minimalisticBgMedium.263244e5f3f2d0d90e74.avif",
+    "static/media/minimalisticBg.avif": "/static/media/minimalisticBg.e607df0ee683f0b6f656.avif",
     "static/media/gitlab.avif": "/static/media/gitlab.964ab58b4e0cb89812e0.avif",
     "static/media/slack.avif": "/static/media/slack.91a80ce8f8f810c86c0c.avif",
     "static/media/html.avif": "/static/media/html.158cd2181c317d64f8d2.avif",
@@ -63,7 +68,7 @@
     "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif"
   },
   "entrypoints": [
-    "static/css/main.e59df2d5.css",
-    "static/js/main.a2055ae7.js"
+    "static/css/main.9f2edf38.css",
+    "static/js/main.45a6f80f.js"
   ]
 }
