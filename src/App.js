@@ -6,6 +6,11 @@ import bgLarge from './assets/AVIF/bg.avif';
 import bgMedium from './assets/AVIF/bgMedium.avif';
 import bgSmall from './assets/AVIF/bgSmall.avif';
 
+// minimalistic Bg
+import minBgLarge from './assets/AVIF/minimalisticBg.avif';
+import minBgMedium from './assets/AVIF/minimalisticBgMedium.avif';
+import minBgSmall from './assets/AVIF/minimalisticBgSmall.avif';
+
 // education Bg
 import edLarge from './assets/AVIF/ed.avif';
 import edMedium from './assets/AVIF/edMedium.avif';
@@ -18,24 +23,35 @@ import Section3 from './components/Projects.js';
 
 function App() {
   const [bgImage, setBgImage] = useState(bgSmall); // Default image
+  const [theme, setTheme] = useState(false); // Default image
   const [edImage, setEdImage] = useState(edSmall); // Default image
+
+  const switchTheme = () => {
+    setTheme(!theme);
+  };
 
   useEffect(() => {
     const handleResize = () => {
       const aspectRatio = window.innerWidth / window.innerHeight;
-
-      if (aspectRatio >= 1.5) {
-        // Wide aspect ratio, load large image
-        setBgImage(bgLarge);
-        setEdImage(edLarge);
-      } else if (aspectRatio >= 1) {
-        // Standard aspect ratio, load medium image
-        setBgImage(bgMedium);
-        setEdImage(edMedium);
+      if (theme) {
+        if (aspectRatio >= 1.5) {
+          // Wide aspect ratio, load large image
+          setBgImage(bgLarge);
+          setEdImage(edLarge);
+        } else if (aspectRatio >= 1) {
+          // Standard aspect ratio, load medium image
+          setBgImage(bgMedium);
+          setEdImage(edMedium);
+        } else {
+          // Tall aspect ratio, load small image
+          setBgImage(bgSmall);
+          setEdImage(edSmall);
+        }
       } else {
-        // Tall aspect ratio, load small image
-        setBgImage(bgSmall);
-        setEdImage(edSmall);
+        setBgImage('none');
+        if (aspectRatio >= 1.5) setEdImage(minBgLarge);
+        else if (aspectRatio >= 1) setEdImage(minBgMedium);
+        else setEdImage(minBgSmall);
       }
     };
     const handleHashChange = () => {
@@ -54,12 +70,7 @@ function App() {
       }
     };
 
-    // Attach the event listener for hash changes
-
-    // Check on component mount
     handleHashChange();
-
-    // Initial call
     handleResize();
 
     // Attach event listener for window resize
@@ -70,10 +81,10 @@ function App() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [theme]);
   return (
     <div id='main_container'>
-      <Section1 bg={bgImage} />
+      <Section1 bg={bgImage} theme={theme} switchTheme={switchTheme} />
       <Section3 />
       <Section2 bg={edImage} />
       <Footer />

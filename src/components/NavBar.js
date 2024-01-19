@@ -11,7 +11,7 @@ import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import AboutModal from './AboutModal';
 
-export default function NavBar(main) {
+export default function NavBar({ main, theme, switchTheme }) {
   const [isPaused, setIsPaused] = useState(true);
   const [isMain] = useState(main.main);
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -39,6 +39,20 @@ export default function NavBar(main) {
         </Navbar.Brand>
         <Navbar.Collapse>
           <Nav className='navbar-nav ms-auto'>
+            <Nav.Item className='nav-item ml-auto'>
+              {theme ? (
+                <button
+                  className='minimalistic_button'
+                  onClick={() => switchTheme()}
+                >
+                  <span>Minimalistic </span>
+                </button>
+              ) : (
+                <button className='japan_button' onClick={() => switchTheme()}>
+                  <span>Japan Theme</span>
+                </button>
+              )}
+            </Nav.Item>
             <Nav.Item className='nav-item ml-auto'>
               <Nav.Link href='#education'>Education</Nav.Link>
             </Nav.Item>

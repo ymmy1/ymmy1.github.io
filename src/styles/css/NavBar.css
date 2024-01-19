@@ -56,6 +56,25 @@ nav .nav-item svg:hover {
   color: #6e6d6d;
   transition: ease all 0.2s;
 }
+nav .nav-item button {
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+}
+nav .nav-item button span {
+  padding: 2px 12px;
+  height: 100%;
+  display: block;
+  background: rgba(46, 42, 42, 0.5);
+}
+nav .nav-item .minimalistic_button {
+  background-image: url("../../assets/png&jpg/minimalisticBg.png");
+  background-position: center bottom;
+}
+nav .nav-item .japan_button {
+  background-image: url("../../assets/png&jpg/bg.png");
+  background-position: center center;
+}
 
 @media screen and (max-width: 767px) {
   #nav {

@@ -53,6 +53,25 @@ nav {
         transition: ease all 0.2s;
       }
     }
+    button {
+      background-size: cover;
+      color: white;
+      font-weight: bold;
+      span {
+        padding: 2px 12px;
+        height: 100%;
+        display: block;
+        background: rgba(#2e2a2a, 0.5);
+      }
+    }
+    .minimalistic_button {
+      background-image: url('../../assets/png&jpg/minimalisticBg.png');
+      background-position: center bottom;
+    }
+    .japan_button {
+      background-image: url('../../assets/png&jpg/bg.png');
+      background-position: center center;
+    }
   }
 }
 @media screen and (max-width: 767px) {

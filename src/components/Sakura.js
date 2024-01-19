@@ -79,7 +79,6 @@ export default class LeafSceneComponent extends Component {
       this.leaves.push(leaf);
       this.worldRef.current.appendChild(leaf.el);
     }
-
     this.worldRef.current.classList.add('leaf-scene');
 
     // Start the animation right away
@@ -192,8 +191,8 @@ export default class LeafSceneComponent extends Component {
 
   renderScene = () => {
     // Update wind options at the beginning of each frame
-    this._updateWind();
 
+    this._updateWind();
     for (let i = 0; i < this.leaves.length; i++) {
       this._updateLeaf(this.leaves[i]);
     }
@@ -203,14 +202,21 @@ export default class LeafSceneComponent extends Component {
     requestAnimationFrame(this.renderScene);
   };
   render() {
-    const { bg } = this.props;
+    const { bg, theme, switchTheme } = this.props;
     return (
       <Parallax strength={200} bgImage={bg}>
         <div ref={this.viewportRef} className='relative falling-leaves'>
-          <div ref={this.worldRef} style={{ perspective: '400px' }}></div>
-          <NavBar main={true} />
-          <HeadBox />
-          <img className='rocks' src={rocks} alt='rocks' />
+          <div
+            ref={this.worldRef}
+            style={{
+              perspective: '400px',
+              visibility: theme ? 'visible' : 'hidden',
+            }}
+          ></div>
+
+          <NavBar main={true} switchTheme={switchTheme} theme={theme} />
+          <HeadBox theme={theme} />
+          {theme && <img className='rocks' src={rocks} alt='rocks' />}
           <div className='icon-scroll'></div>
         </div>
       </Parallax>
