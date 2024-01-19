@@ -4,7 +4,8 @@ import '../styles/css/sakura.css';
 import { Parallax } from 'react-parallax';
 import HeadBox from './HeadBox';
 import NavBar from './NavBar';
-import rocks from '../assets/png&jpg/rocks.png';
+// import rocks from '../assets/png&jpg/rocks.png';
+import rocks from '../assets/AVIF/rocks.avif';
 
 export default class LeafSceneComponent extends Component {
   constructor(props) {
