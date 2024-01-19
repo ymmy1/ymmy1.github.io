@@ -13,7 +13,6 @@ import AboutModal from './AboutModal';
 
 export default function NavBar({ main, theme, switchTheme }) {
   const [isPaused, setIsPaused] = useState(true);
-  const [isMain] = useState(main.main);
   const [aboutOpen, setAboutOpen] = useState(false);
 
   const toggle = (action) => {
@@ -40,19 +39,24 @@ export default function NavBar({ main, theme, switchTheme }) {
         <Navbar.Collapse>
           <Nav className='navbar-nav ms-auto'>
             <Nav.Item className='nav-item ml-auto'>
-              {theme ? (
-                <button
-                  className='minimalistic_button'
-                  onClick={() => switchTheme()}
-                >
-                  <span>Minimalistic </span>
-                </button>
-              ) : (
-                <button className='japan_button' onClick={() => switchTheme()}>
-                  <span>Japan Theme</span>
-                </button>
-              )}
+              {main &&
+                (theme ? (
+                  <button
+                    className='minimalistic_button'
+                    onClick={() => switchTheme()}
+                  >
+                    <span>Minimalistic </span>
+                  </button>
+                ) : (
+                  <button
+                    className='japan_button'
+                    onClick={() => switchTheme()}
+                  >
+                    <span>Japan Theme</span>
+                  </button>
+                ))}
             </Nav.Item>
+
             <Nav.Item className='nav-item ml-auto'>
               <Nav.Link href='#education'>Education</Nav.Link>
             </Nav.Item>
@@ -74,22 +78,24 @@ export default function NavBar({ main, theme, switchTheme }) {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              {isMain && (
-                <audio id='backgroundMusic'>
-                  <source src={audioFile} type='audio/mpeg' autoPlay />
-                  Your browser does not support the audio element.
-                </audio>
-              )}
-              {isPaused ? (
-                <VolumeOffIcon
-                  fontSize='medium'
-                  onClick={() => toggle('play')}
-                />
-              ) : (
-                <VolumeUpIcon
-                  fontSize='medium'
-                  onClick={() => toggle('pause')}
-                />
+              {main && (
+                <>
+                  <audio id='backgroundMusic' autoPlay>
+                    <source src={audioFile} type='audio/mpeg' />
+                    Your browser does not support the audio element.
+                  </audio>
+                  {isPaused ? (
+                    <VolumeOffIcon
+                      fontSize='medium'
+                      onClick={() => toggle('play')}
+                    />
+                  ) : (
+                    <VolumeUpIcon
+                      fontSize='medium'
+                      onClick={() => toggle('pause')}
+                    />
+                  )}
+                </>
               )}
             </Nav.Item>
           </Nav>
