@@ -86,7 +86,7 @@ function App() {
     <div id='main_container'>
       <Section1 bg={bgImage} theme={theme} switchTheme={switchTheme} />
       <Section3 />
-      <Section2 bg={edImage} />
+      <Section2 bg={edImage} theme={theme} />
       <Footer />
     </div>
   );

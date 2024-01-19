@@ -101,7 +101,11 @@ export default function NavBar({ main, theme, switchTheme }) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <AboutModal aboutOpen={aboutOpen} handleAboutClose={handleAboutClose} />
+      <AboutModal
+        aboutOpen={aboutOpen}
+        theme={theme}
+        handleAboutClose={handleAboutClose}
+      />
     </>
   );
 }

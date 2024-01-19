@@ -8,7 +8,7 @@ export default function HeadBox({ theme }) {
       <h1>Oleg Nosyrev</h1>
       <p>Front-End Software Engineer</p>
       <a
-        className='button-orange'
+        className={`button-orange ${theme ? '' : 'button-gray'}`}
         href={resume}
         target='_blank'
         rel='noreferrer'

@@ -23,7 +23,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import { main, other } from './API/skills';
 
 export default function Section2(props) {
-  const { bg } = props;
+  const { bg, theme } = props;
   const reveal = () => {
     const reveals = document.querySelectorAll('.boxes, .skillsbox');
 
@@ -94,7 +94,7 @@ export default function Section2(props) {
           <div className='button-section'>
             <a
               href={FE}
-              className='button-orange'
+              className={`button-orange ${theme ? '' : 'button-gray'}`}
               target='_blank'
               rel='noreferrer'
             >
@@ -102,7 +102,7 @@ export default function Section2(props) {
             </a>
             <a
               href={MPA}
-              className='button-orange'
+              className={`button-orange ${theme ? '' : 'button-gray'}`}
               target='_blank'
               rel='noreferrer'
             >
@@ -136,7 +136,7 @@ export default function Section2(props) {
         <p className='bottom_text'>Find Out More</p>
         <div className='bottom_buttons'>
           <a
-            className='button-orange'
+            className={`button-orange ${theme ? '' : 'button-gray'}`}
             href='https://www.linkedin.com/in/oleg-nosyrev-440640114'
             target='_blank'
             rel='noreferrer'
@@ -145,7 +145,7 @@ export default function Section2(props) {
             LinkedIn
           </a>
           <a
-            className='button-orange'
+            className={`button-orange ${theme ? '' : 'button-gray'}`}
             href={resume}
             target='_blank'
             rel='noreferrer'
@@ -153,7 +153,7 @@ export default function Section2(props) {
             <FileDownloadIcon fontSize='medium' color='#fff' /> Resume
           </a>
           <a
-            className='button-orange'
+            className={`button-orange ${theme ? '' : 'button-gray'}`}
             href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=oleg.ymmy@gmail.com'
             target='_blank'
             rel='noreferrer'

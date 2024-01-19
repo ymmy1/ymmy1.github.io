@@ -3,7 +3,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import '../styles/css/about.css';
 
-function AboutModal({ aboutOpen, handleAboutClose }) {
+function AboutModal({ aboutOpen, handleAboutClose, theme }) {
   console.log(aboutOpen);
   return (
     <Modal
@@ -51,7 +51,10 @@ function AboutModal({ aboutOpen, handleAboutClose }) {
             Languages that I speak: English, Russian, Lithuanian and Japanese
             (beginner).
           </p>
-          <button className='button-orange' onClick={handleAboutClose}>
+          <button
+            className={`button-orange ${theme ? '' : 'button-gray'}`}
+            onClick={handleAboutClose}
+          >
             Close
           </button>
         </div>
