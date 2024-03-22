@@ -4,7 +4,6 @@ import Fade from '@mui/material/Fade';
 import '../styles/css/about.css';
 
 function AboutModal({ aboutOpen, handleAboutClose, theme }) {
-  console.log(aboutOpen);
   return (
     <Modal
       open={aboutOpen}

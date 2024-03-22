@@ -22,9 +22,9 @@ import Section2 from './components/Education.js';
 import Section3 from './components/Projects.js';
 
 function App() {
-  const [bgImage, setBgImage] = useState(bgSmall); // Default image
+  const [bgImage, setBgImage] = useState(null); // Default image
   const [theme, setTheme] = useState(false); // Default image
-  const [edImage, setEdImage] = useState(edSmall); // Default image
+  const [edImage, setEdImage] = useState(null); // Default image
 
   const switchTheme = () => {
     setTheme(!theme);
@@ -59,7 +59,6 @@ function App() {
       if (window.location.hash) {
         // Get the target element using the fragment identifier
         const targetElement = document.querySelector(window.location.hash);
-        console.log(targetElement);
 
         // Scroll to the target element if it exists
         if (targetElement) {
