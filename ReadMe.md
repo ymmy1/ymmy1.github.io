@@ -6,6 +6,6 @@
 ![](https://i.imgur.com/EBAcXhA.png)
 ### My Education
 ![](https://i.imgur.com/rdkKKIs.png)
-### My Skills
+### My Skills 
 ![](https://i.imgur.com/xLEIR96.png)
 ###### For Contact Information Visit the Portfolio link to contact me directly.
