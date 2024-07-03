@@ -13,7 +13,7 @@ import MPA from '../assets/png&jpg/MPA-Internship-Completion-Certificate-Oleg-1.
 import FE from '../assets/png&jpg/FrontendExpert_Certificate.pdf';
 import UWC from '../assets/AVIF/UW_certificate.avif';
 
-import resume from '../assets/Resumes/OLEG NOSYREV Resume - Dark.pdf';
+import resume from '../assets/Resumes/OLEG NOSYREV Resume.pdf';
 
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
