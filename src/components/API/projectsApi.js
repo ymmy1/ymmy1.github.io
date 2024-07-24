@@ -412,7 +412,7 @@ export const api = [
       },
       {
         name: 'Website',
-        url: 'https://future-world.netlify.com/',
+        url: 'https://future-world.netlify.app/',
         icon: <PreviewIcon size='medium' />,
       },
       {
