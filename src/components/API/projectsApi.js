@@ -13,6 +13,7 @@ import projectImg8 from '../../assets/AVIF/projects/PC/book-review.avif';
 // import projectImg9 from '../../assets/AVIF/projects/PC/trading.avif';
 import projectImg10 from '../../assets/AVIF/projects/PC/future-world.avif';
 import projectImg11 from '../../assets/AVIF/projects/PC/Dysney+.avif';
+import projectImg12 from '../../assets/AVIF/projects/PC/walker.avif';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -122,11 +123,50 @@ const futureContent = (
     Price/Title/Image/Youtube Review link and more
   </>
 );
+const walkerContent = (
+  <>
+    <strong>A Vue app</strong>. Main purpose of this app is to tell about one of
+    the world problems, the global warming and suggest some solutions for it
+    such as switching gasoline cars to electric or hybrid. Created json file for
+    future API requests for Electric Cars & Hybrid Cars links.
+    <strong>The API</strong> is being use to get data for
+    Price/Title/Image/Youtube Review link and more
+  </>
+);
 
 export const api = [
   {
     labelClass: 'new_project',
     label: newL,
+    name: 'Mindless 3D Walker',
+    desc: 'Three.js',
+    img: projectImg12,
+    imgOpen: projectImg12,
+    languages: [
+      { name: 'js', width: '96.6%', summary: 'JavaScript 96.6%' },
+      { name: 'html', width: '2.9%', summary: 'HTML 2.9%' },
+      { name: 'css', width: '0.5%', summary: 'CSS 0.5%' },
+    ],
+    content: walkerContent,
+    links: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/ymmy1/walker',
+        icon: <GitHubIcon size='medium' />,
+      },
+      {
+        name: 'Website',
+        url: 'https://ymmy1.github.io/walker/',
+        icon: <PreviewIcon size='medium' />,
+      },
+      {
+        name: 'YouTube',
+        url: 'https://youtu.be/T7pQZk2V3lg',
+        icon: <YouTubeIcon size='medium' />,
+      },
+    ],
+  },
+  {
     name: 'Dysney+ Clone',
     desc: 'Next.js + TailwindCSS',
     img: projectImg11,
