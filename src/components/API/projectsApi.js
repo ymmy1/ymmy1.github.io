@@ -161,7 +161,7 @@ export const api = [
       },
       {
         name: 'YouTube',
-        url: 'https://youtu.be/T7pQZk2V3lg',
+        url: 'https://youtu.be/jOrh4QNJC7I',
         icon: <YouTubeIcon size='medium' />,
       },
     ],
