@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.76a3eb64.css",
-    "main.js": "/static/js/main.6bb681e1.js",
+    "main.js": "/static/js/main.dad5fad3.js",
     "static/media/bg.png": "/static/media/bg.fc68580dc51208061346.png",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
@@ -19,6 +19,7 @@
     "static/media/FrontendExpert_Certificate.pdf": "/static/media/FrontendExpert_Certificate.dc8575d64f14a24f8184.pdf",
     "static/media/bgMedium.avif": "/static/media/bgMedium.8a0a2f59d92275226a79.avif",
     "static/media/UW_certificate.avif": "/static/media/UW_certificate.fe365195f9c9bcaa1ab8.avif",
+    "static/media/walker.avif": "/static/media/walker.a9bbd2ffc6b4c8485083.avif",
     "static/media/minimalisticBg.png": "/static/media/minimalisticBg.7acccfca31720c7e53f3.png",
     "static/media/OLEG NOSYREV Resume.pdf": "/static/media/OLEG NOSYREV Resume.154de14ac89f85508769.pdf",
     "static/media/CS50.avif": "/static/media/CS50.3ec59da503121b7e868b.avif",
@@ -69,6 +70,6 @@
   },
   "entrypoints": [
     "static/css/main.76a3eb64.css",
-    "static/js/main.6bb681e1.js"
+    "static/js/main.dad5fad3.js"
   ]
 }
