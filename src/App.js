@@ -23,7 +23,7 @@ import Section3 from './components/Projects.js';
 
 function App() {
   const [bgImage, setBgImage] = useState(null); // Default image
-  const [theme, setTheme] = useState(false); // Default image
+  const [theme, setTheme] = useState(true); // Default image
   const [edImage, setEdImage] = useState(null); // Default image
 
   const switchTheme = () => {
