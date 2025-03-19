@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.76a3eb64.css",
-    "main.js": "/static/js/main.dad5fad3.js",
+    "main.css": "/static/css/main.80039d3b.css",
+    "main.js": "/static/js/main.5e072501.js",
     "static/media/bg.png": "/static/media/bg.fc68580dc51208061346.png",
     "static/media/bg_music.mp3": "/static/media/bg_music.776a58dcc68cf663e777.mp3",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
@@ -21,7 +21,7 @@
     "static/media/UW_certificate.avif": "/static/media/UW_certificate.fe365195f9c9bcaa1ab8.avif",
     "static/media/walker.avif": "/static/media/walker.a9bbd2ffc6b4c8485083.avif",
     "static/media/minimalisticBg.png": "/static/media/minimalisticBg.7acccfca31720c7e53f3.png",
-    "static/media/OLEG NOSYREV Resume.pdf": "/static/media/OLEG NOSYREV Resume.154de14ac89f85508769.pdf",
+    "static/media/OLEG NOSYREV Resume.pdf": "/static/media/OLEG NOSYREV Resume.46f5d052b3840cd36150.pdf",
     "static/media/CS50.avif": "/static/media/CS50.3ec59da503121b7e868b.avif",
     "static/media/CS50W.avif": "/static/media/CS50W.ea80a357c9ad47d11ae7.avif",
     "static/media/ed.avif": "/static/media/ed.041b9b01299d44d59153.avif",
@@ -69,7 +69,7 @@
     "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif"
   },
   "entrypoints": [
-    "static/css/main.76a3eb64.css",
-    "static/js/main.dad5fad3.js"
+    "static/css/main.80039d3b.css",
+    "static/js/main.5e072501.js"
   ]
 }
