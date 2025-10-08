@@ -5,24 +5,11 @@ import '../styles/css/entry.css';
 import '../styles/css/NavBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import audioFile from '../assets/png&jpg/bg_music.mp3';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import VolumeOffIcon from '@mui/icons-material/VolumeOff';
-import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import AboutModal from './AboutModal';
 
 export default function NavBar({ main, theme, switchTheme }) {
-  const [isPaused, setIsPaused] = useState(true);
   const [aboutOpen, setAboutOpen] = useState(false);
-
-  const toggle = (action) => {
-    let audioElement = document.getElementById('backgroundMusic');
-    if (audioElement) {
-      if (action === 'play') audioElement.play();
-      else audioElement.pause();
-      setIsPaused(!isPaused);
-    }
-  };
 
   const handleAboutOpen = () => {
     setAboutOpen(true);
@@ -76,27 +63,6 @@ export default function NavBar({ main, theme, switchTheme }) {
               >
                 <LinkedInIcon fontSize='medium' />
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              {main && (
-                <>
-                  <audio id='backgroundMusic' autoPlay>
-                    <source src={audioFile} type='audio/mpeg' />
-                    Your browser does not support the audio element.
-                  </audio>
-                  {isPaused ? (
-                    <VolumeOffIcon
-                      fontSize='medium'
-                      onClick={() => toggle('play')}
-                    />
-                  ) : (
-                    <VolumeUpIcon
-                      fontSize='medium'
-                      onClick={() => toggle('pause')}
-                    />
-                  )}
-                </>
-              )}
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

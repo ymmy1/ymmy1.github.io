@@ -26,7 +26,6 @@
   flex-direction: column;
   justify-content: center;
   transition: height 0.5s ease;
-  height: 100dvh;
   position: relative;
   width: 100%;
   background-size: cover;
@@ -47,7 +46,8 @@
   justify-content: center;
   padding: 0 20px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1640px;
+  /* grid layout and animated tiles */
 }
 .section_4 .all_projects::-webkit-scrollbar {
   display: none;
@@ -59,8 +59,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px;
-  padding: 20px;
+  max-width: none;
+  padding: 28px;
+  border-radius: 12px;
   text-align: center;
   width: 100%;
   margin-left: auto;
@@ -69,6 +70,14 @@
 .section_4 .all_projects .project_block figure {
   filter: drop-shadow(0px 40px 28px #000000);
   position: relative;
+  /* Use a fixed aspect ratio container so the laptop image isn't cropped.
+     We prefer object-fit: contain on the img to preserve the whole laptop PNG. */
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow: hidden;
 }
 .section_4 .all_projects .project_block figure::before {
   position: absolute;
@@ -80,11 +89,44 @@
   content: "";
   width: 25%;
   height: 210px;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
   transform: skewX(-25deg);
 }
 .section_4 .all_projects .project_block figure:hover::before {
+  -webkit-animation: shine 0.75s;
   animation: shine 0.75s;
+}
+@-webkit-keyframes shine {
+  0% {
+    opacity: 0;
+  }
+  13% {
+    opacity: 0.25;
+  }
+  26% {
+    opacity: 0.5;
+  }
+  39% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+  63% {
+    opacity: 0.75;
+  }
+  76% {
+    opacity: 0.5;
+  }
+  89% {
+    opacity: 0.25;
+  }
+  100% {
+    left: 55%;
+    opacity: 0;
+  }
 }
 @keyframes shine {
   0% {
@@ -117,8 +159,12 @@
   }
 }
 .section_4 .all_projects .project_block figure .project_img {
+  /* preserve full laptop PNG without cropping */
   width: 100%;
-  margin: auto;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
 }
 .section_4 .all_projects .new_project,
 .section_4 .all_projects .favorite_project,
@@ -139,6 +185,47 @@
 .section_4 .all_projects .favorite_project .new_img img,
 .section_4 .all_projects .recent_project .new_img img {
   width: 100%;
+}
+.section_4 .all_projects.projects_grid {
+  display: grid;
+  gap: 32px;
+  /* 3 columns for a 3x3 layout when you have 9 projects */
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+}
+.section_4 .all_projects .project_tile {
+  opacity: 0;
+  transform-origin: 50% 100%;
+  transform: translateY(40px) rotate(-6deg) scale(0.97);
+  transition: transform 700ms cubic-bezier(0.22, 1.2, 0.35, 1), opacity 420ms ease;
+  will-change: transform, opacity;
+  --delay: 0ms;
+}
+.section_4 .all_projects .project_tile.in-view {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg) scale(1);
+  transition-delay: var(--delay);
+}
+@keyframes wavy-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(42px) rotate(-8deg) scale(0.96);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-8px) rotate(3deg) scale(1.03);
+  }
+  80% {
+    transform: translateY(4px) rotate(-1deg) scale(0.995);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+.section_4 .all_projects .project_tile.in-view .project_block {
+  animation: wavy-pop 720ms cubic-bezier(0.2, 1, 0.22, 1) both;
+  animation-delay: var(--delay);
 }
 
 .languages {
@@ -330,6 +417,10 @@
   .section_4 .all_projects {
     justify-content: flex-start;
   }
+  .section_4 .all_projects .projects_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+  }
   .modal_box {
     padding: 30px;
     position: relative;
@@ -367,6 +458,10 @@
     font-size: calc(25px + 6vw);
     margin-bottom: 40px;
   }
+  .section_4 .all_projects .projects_grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
   .section_4 .all_projects .new_project,
   .section_4 .all_projects .favorite_project,
   .section_4 .all_projects .recent_project {
@@ -392,5 +487,31 @@
   }
   .modal_box .box_content .right_box .project_links ul {
     flex-direction: column;
+  }
+}
+/* Accessibility: respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .project_tile,
+  .project_tile.in-view .project_block {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+/* Desktop hover micro-interaction */
+@media (hover: hover) and (pointer: fine) {
+  .section_4 .all_projects .project_tile .project_block {
+    transition: transform 220ms ease, box-shadow 220ms ease;
+  }
+  .section_4 .all_projects .project_tile .project_block:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 22px 36px rgba(2, 6, 23, 0.48);
+  }
+}
+/* small tweak: reduce project image height on narrow screens */
+@media screen and (max-width: 660px) {
+  .section_4 .all_projects .project_block figure .project_img {
+    height: 180px;
   }
 }/*# sourceMappingURL=projects.css.map */

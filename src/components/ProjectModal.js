@@ -3,42 +3,42 @@ import Fade from '@mui/material/Fade';
 import CloseIcon from '@mui/icons-material/Close';
 
 export default function ProjectBox(props) {
-  const opennedProject = props.opennedProject;
+  const openedProject = props.openedProject;
   return (
     <Modal
-      open={Object.keys(opennedProject).length > 0}
+      open={Object.keys(openedProject).length > 0}
       onClose={props.handleClose}
       aria-labelledby='modal-modal-title'
       aria-describedby='modal-modal-description'
       closeAfterTransition
     >
-      <Fade in={Object.keys(opennedProject).length > 0}>
-        <div className={'modal_box ' + opennedProject.labelClass}>
+      <Fade in={Object.keys(openedProject).length > 0}>
+        <div className={'modal_box ' + openedProject.labelClass}>
           <CloseIcon
             size='large'
             className='closeIcon'
             onClick={() => props.handleClose()}
           />
-          {opennedProject.labelClass && (
+          {openedProject.labelClass && (
             <div className='new_img'>
-              <img src={opennedProject.label} alt='status of a project' />
+              <img src={openedProject.label} alt='status of a project' />
             </div>
           )}
-          <h1 className='project_title'>{opennedProject.name}</h1>
+          <h1 className='project_title'>{openedProject.name}</h1>
           <p>
-            <strong>{opennedProject.desc}</strong>
+            <strong>{openedProject.desc}</strong>
           </p>
           <div className='box_content'>
             <div className='left_box'>
-              <a href={opennedProject.imgOpen} target='_blank' rel='noreferrer'>
-                <img src={opennedProject.img} alt='project look' />
+              <a href={openedProject.imgOpen} target='_blank' rel='noreferrer'>
+                <img src={openedProject.img} alt='project look' />
               </a>
             </div>
             <div className='right_box'>
-              <p>{opennedProject.content}</p>
+              <p>{openedProject.content}</p>
               <div className='project_links'>
                 <ul>
-                  {opennedProject.links?.map((link, index) => (
+                  {openedProject.links?.map((link, index) => (
                     <li key={index}>
                       <a
                         href={link.url}
@@ -54,7 +54,7 @@ export default function ProjectBox(props) {
               </div>
               <div className='languages'>
                 <div className='skill-bar'>
-                  {opennedProject.languages?.map((lng, index) => (
+                  {openedProject.languages?.map((lng, index) => (
                     <div
                       key={index}
                       className={lng.name}
@@ -64,7 +64,7 @@ export default function ProjectBox(props) {
                 </div>
                 <div className='details'>
                   <ul>
-                    {opennedProject.languages?.map((lng, index) => (
+                    {openedProject.languages?.map((lng, index) => (
                       <li key={index}>
                         <div className={lng.name}></div>
                         {lng.summary}

@@ -6,7 +6,7 @@ export default function HeadBox({ theme }) {
   return (
     <div className='head-box' id={theme ? '' : 'notheme'}>
       <h1>Oleg Nosyrev</h1>
-      <p>Front-End Software Engineer</p>
+      <p>Front End Software Engineer</p>
       <a
         className={`button-orange ${theme ? '' : 'button-gray'}`}
         href={resume}

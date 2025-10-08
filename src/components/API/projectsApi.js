@@ -125,12 +125,15 @@ const futureContent = (
 );
 const walkerContent = (
   <>
-    <strong>A Vue app</strong>. Main purpose of this app is to tell about one of
-    the world problems, the global warming and suggest some solutions for it
-    such as switching gasoline cars to electric or hybrid. Created json file for
-    future API requests for Electric Cars & Hybrid Cars links.
-    <strong>The API</strong> is being use to get data for
-    Price/Title/Image/Youtube Review link and more
+    <strong>A Three.js web app.</strong> A browser-based third-person 3D walker
+    with a follow camera.
+    <strong>Controls:</strong> keyboard movement (WASD/arrow keys) with
+    mouse/touch look.
+    <strong>Rendering:</strong> real-time WebGL via Three.js; lightweight and
+    runs entirely in the browser.
+    <strong>Assets:</strong> loads GLTF/GLB scenes so environments can be
+    swapped easily.
+    <strong>Stack:</strong> JavaScript + Three.js (bundled with Vite).
   </>
 );
 
