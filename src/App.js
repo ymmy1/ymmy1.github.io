@@ -17,9 +17,10 @@ import edMedium from './assets/AVIF/edMedium.avif';
 import edSmall from './assets/AVIF/edSmall.avif';
 
 import Footer from './components/Footer.js';
-import Section1 from './components/Sakura.js';
-import Section2 from './components/Education.js';
-import Section3 from './components/Projects.js';
+import MainHeader from './components/Sakura.js';
+import EducationAndSkills from './components/Education.js';
+import ProjectList from './components/Projects.js';
+import LinkedInAssesments from './components/LinkedInAssesments.js';
 
 function App() {
   const [bgImage, setBgImage] = useState(null); // Default image
@@ -83,9 +84,10 @@ function App() {
   }, [theme]);
   return (
     <div id='main_container'>
-      <Section1 bg={bgImage} theme={theme} switchTheme={switchTheme} />
-      <Section3 />
-      <Section2 bg={edImage} theme={theme} />
+      <MainHeader bg={bgImage} theme={theme} switchTheme={switchTheme} />
+      <ProjectList />
+      <LinkedInAssesments theme={theme} />
+      <EducationAndSkills bg={edImage} theme={theme} />
       <Footer />
     </div>
   );

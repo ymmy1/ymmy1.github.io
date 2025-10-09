@@ -1,0 +1,165 @@
+.assessments-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 120px;
+}
+.assessments-section.fade-bottom {
+  opacity: 0;
+}
+.assessments-section.active.fade-bottom {
+  opacity: 1;
+  animation: fade-bottom 1s ease-in;
+  transition: height 1s ease;
+}
+.assessments-section h1 {
+  margin: 0 auto 20px;
+  color: #fff;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.assessments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 32px;
+  width: 100%;
+  max-width: 1100px;
+  border-top: 1px solid rgba(177, 177, 177, 0.8);
+  padding-top: 24px;
+}
+
+.assessment-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radial {
+  --size: 180px;
+  --thickness: 14px;
+  --bg: rgba(20, 20, 20, 0.9);
+  --fill: #ff7a18;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 19px -2px #000;
+  background: radial-gradient(closest-side, var(--bg) calc(50% - var(--thickness)), rgba(0, 0, 0, 0) 0);
+}
+.radial::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--fill);
+  -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(50% - var(--thickness)), #000 0);
+  mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(50% - var(--thickness)), #000 0);
+}
+
+.radial::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(from -90deg, rgba(0, 0, 0, 0) 0deg, var(--accent, var(--fill)) 20deg, rgba(0, 0, 0, 0) 40deg);
+  -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(50% - var(--thickness)), #000 0);
+  mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(50% - var(--thickness)), #000 0);
+  opacity: 0;
+}
+
+.radial.animate::after {
+  animation: sweep 1.6s ease-out forwards;
+}
+
+@keyframes sweep {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes fade-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.radial-gray {
+  --fill: #bdbdbd;
+}
+
+.radial-center {
+  position: absolute;
+  inset: calc(var(--thickness));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
+}
+.radial-center .percent {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+.radial-center .label {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 16px;
+}
+.radial-center .pool {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+.skill-css {
+  --fill: #7b61ff;
+  --accent: #a792ff;
+}
+
+.skill-html {
+  --fill: #e34f26;
+  --accent: #ff9a73;
+}
+
+.skill-javascript {
+  --fill: #f7df1e;
+  --accent: #ffe873;
+}
+
+.skill-react {
+  --fill: #61dafb;
+  --accent: #a6ecff;
+}
+
+@media screen and (max-width: 1100px) {
+  .assessments-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+@media screen and (max-width: 520px) {
+  .assessments-section h1 {
+    font-size: calc(25px + 6vw);
+  }
+  .assessments-grid {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=assessments.css.map */

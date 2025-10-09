@@ -22,7 +22,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 
 import { main, other } from './API/skills';
 
-export default function Section2(props) {
+export default function EducationAndSkills(props) {
   const { bg, theme } = props;
   const reveal = () => {
     const reveals = document.querySelectorAll('.boxes, .skillsbox');
