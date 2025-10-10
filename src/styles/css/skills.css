@@ -4,7 +4,6 @@
   padding: 20px;
   align-items: center;
   padding-bottom: 150px;
-  opacity: 0;
 }
 .skillsbox h1 {
   margin: 0 auto;
@@ -13,6 +12,7 @@
   padding-top: 100px;
   text-align: center;
   font-family: "Josefin Slab", serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .skillsbox .main-skills,
 .skillsbox .other-skills {
@@ -21,7 +21,6 @@
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
-  border-top: 1px solid rgba(177, 177, 177, 0.7960784314);
   padding-top: 20px;
   width: 100%;
   max-width: 885px;
@@ -50,9 +49,12 @@
 .skillsbox .other-skills .skill-box:hover {
   transform: scale(1.3);
 }
-
-.skillsbox.active {
+.skillsbox.fade-bottom .fade-target {
+  opacity: 0;
+}
+.skillsbox.active.fade-bottom .fade-target {
   opacity: 1;
+  animation: fade-bottom 600ms ease-in;
 }
 
 .bottom-section {
@@ -73,18 +75,9 @@
   gap: 20px;
 }
 
-.active.fade-bottom {
-  animation: fade-bottom 1s ease-in;
-  transition: height 1s ease;
-}
-
 @keyframes fade-bottom {
   0% {
     opacity: 0;
-    transform: translateY(250px);
-  }
-  10% {
-    transform: translateY(0);
   }
   100% {
     opacity: 1;

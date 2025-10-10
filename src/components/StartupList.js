@@ -14,37 +14,31 @@ export default function StartupList() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-    const tiles = Array.from(container.querySelectorAll('.project_tile'));
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const el = entry.target;
-          if (entry.isIntersecting) {
-            const idx = Number(el.dataset.index) || 0;
-            el.style.setProperty('--delay', `${idx * 80}ms`);
-            el.classList.add('in-view');
-            observer.unobserve(el);
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    tiles.forEach((t) => observer.observe(t));
-    return () => observer.disconnect();
+    const el = containerRef.current;
+    if (!el) return;
+    const reveal = () => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const elementVisible = 200;
+      if (elementTop < windowHeight - elementVisible) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    };
+    reveal();
+    window.addEventListener('scroll', reveal);
+    return () => window.removeEventListener('scroll', reveal);
   }, []);
 
   return (
     <section id='startups' className='section_4'>
       <h1>Start Ups</h1>
-      <div className='all_projects projects_grid' ref={containerRef}>
+      <div className='all_projects projects_grid fade-bottom' ref={containerRef}>
         {startups.map((item, index) => (
           <div
             key={index}
             className='project_tile'
-            data-index={index}
             style={startups.length === 1 ? { gridColumnStart: 2 } : undefined}
           >
             <ProjectBox api={item} handleOpen={handleOpen} />

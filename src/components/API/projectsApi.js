@@ -1,6 +1,6 @@
 import favorite from '../../assets/AVIF/projects/favorite.avif';
 import newL from '../../assets/AVIF/projects/new.avif';
-import recent from '../../assets/AVIF/projects/recent.avif';
+// import recent from '../../assets/AVIF/projects/recent.avif';
 
 import projectImg1 from '../../assets/AVIF/projects/PC/flackyChat.avif';
 import projectImg2 from '../../assets/AVIF/projects/PC/weather.avif';
@@ -9,7 +9,7 @@ import projectImg4 from '../../assets/AVIF/projects/PC/facebook.avif';
 // import projectImg5 from '../../assets/AVIF/projects/PC/twitter.avif';
 // import projectImg6 from '../../assets/AVIF/projects/PC/mail.avif';
 import projectImg7 from '../../assets/AVIF/projects/PC/blogger-gram.avif';
-import projectImg8 from '../../assets/AVIF/projects/PC/book-review.avif';
+// import projectImg8 from '../../assets/AVIF/projects/PC/book-review.avif';
 // import projectImg9 from '../../assets/AVIF/projects/PC/trading.avif';
 import projectImg10 from '../../assets/AVIF/projects/PC/future-world.avif';
 import projectImg11 from '../../assets/AVIF/projects/PC/Dysney+.avif';
@@ -90,16 +90,16 @@ const bloggerContent = (
     <strong>like them and leave comments</strong>
   </>
 );
-const bookContent = (
-  <>
-    One of my favorite apps. A gentle copy of goodreads.com. Allows user to
-    register login and review one of the 5000 books in our collection. Using the{' '}
-    <strong>API</strong> from goodreads to display the reviewing book's
-    credentials, once user leaves a star and posts a review, a
-    <strong>new API</strong> now of our website is now generated for future
-    access
-  </>
-);
+// const bookContent = (
+//   <>
+//     One of my favorite apps. A gentle copy of goodreads.com. Allows user to
+//     register login and review one of the 5000 books in our collection. Using the{' '}
+//     <strong>API</strong> from goodreads to display the reviewing book's
+//     credentials, once user leaves a star and posts a review, a
+//     <strong>new API</strong> now of our website is now generated for future
+//     access
+//   </>
+// );
 // const tradingContent = (
 //   <>
 //     <strong>Trading app</strong>, allows user to Sign in/Register and buy or
@@ -146,7 +146,7 @@ export const api = [
     img: projectImg12,
     imgOpen: projectImg12,
     languages: [
-      { name: 'js', width: '96.6%', summary: 'JavaScript 96.6%' },
+      { name: 'js', width: '96.6%', summary: 'JS 96.6%' },
       { name: 'html', width: '2.9%', summary: 'HTML 2.9%' },
       { name: 'css', width: '0.5%', summary: 'CSS 0.5%' },
     ],
@@ -177,7 +177,7 @@ export const api = [
     img: projectImg12,
     imgOpen: projectImg12,
     languages: [
-      { name: 'js', width: '96.6%', summary: 'JavaScript 96.6%' },
+      { name: 'js', width: '96.6%', summary: 'JS 96.6%' },
       { name: 'html', width: '2.9%', summary: 'HTML 2.9%' },
       { name: 'css', width: '0.5%', summary: 'CSS 0.5%' },
     ],
@@ -206,9 +206,9 @@ export const api = [
     img: projectImg11,
     imgOpen: projectImg11,
     languages: [
-      { name: 'ts', width: '95.2%', summary: 'TypeScript 95.2%' },
+      { name: 'ts', width: '95.2%', summary: 'TS 95.2%' },
       { name: 'css', width: '3.9%', summary: 'CSS 3.9%' },
-      { name: 'js', width: '0.9%', summary: 'JavaScript 0.9%' },
+      { name: 'js', width: '0.9%', summary: 'JS 0.9%' },
     ],
     content: disneyContent,
     links: [
@@ -238,7 +238,7 @@ export const api = [
     imgOpen: projectImg1,
     languages: [
       { name: 'scss', width: '58.2%', summary: 'SCSS 58.2%' },
-      { name: 'js', width: '35.3%', summary: 'JavaScript 35.3%' },
+      { name: 'js', width: '35.3%', summary: 'JS 35.3%' },
       { name: 'html', width: '5.4%', summary: 'HTML 5.4%' },
       { name: 'css', width: '1.1%', summary: 'CSS 1.1%' },
     ],
@@ -269,7 +269,7 @@ export const api = [
     languages: [
       { name: 'vue', width: '92.1%', summary: 'Vue.js 92.1%' },
       { name: 'html', width: '6.1%', summary: 'HTML 6.1%' },
-      { name: 'js', width: '1.8%', summary: 'JavaScript 1.8%' },
+      { name: 'js', width: '1.8%', summary: 'JS 1.8%' },
     ],
     content: weatherContent,
     links: [
@@ -296,7 +296,7 @@ export const api = [
     img: projectImg3,
     imgOpen: projectImg3,
     languages: [
-      { name: 'js', width: '65.1%', summary: 'JavaScript 65.1%' },
+      { name: 'js', width: '65.1%', summary: 'JS 65.1%' },
       { name: 'css', width: '19.7%', summary: 'CSS 19.7%' },
       { name: 'html', width: '15.2%', summary: 'HTML 15.2%' },
     ],
@@ -328,7 +328,7 @@ export const api = [
       { name: 'html', width: '44.5%', summary: 'HTML 44.5%' },
       { name: 'scss', width: '30.2%', summary: 'SCSS 30.2%' },
       { name: 'py', width: '18.6%', summary: 'Python 18.6%' },
-      { name: 'js', width: '6.7%', summary: 'JavaScript 6.7%' },
+      { name: 'js', width: '6.7%', summary: 'JS 6.7%' },
     ],
     content: facebookContent,
     links: [
@@ -353,7 +353,7 @@ export const api = [
   //     { name: 'py', width: '41.1%', summary: 'Python 41.1%' },
   //     { name: 'html', width: '40.9%', summary: 'HTML 40.9%' },
   //     { name: 'css', width: '12%', summary: 'CSS 12.0%' },
-  //     { name: 'js', width: '6%', summary: 'JavaScript 6.0%' },
+  //     { name: 'js', width: '6%', summary: 'JS 6.0%' },
   //   ],
   //   content: twitterContent,
   //   links: [
@@ -376,7 +376,7 @@ export const api = [
   //   imgOpen: projectImg6,
   //   languages: [
   //     { name: 'py', width: '32.5%', summary: 'Python 32.5%' },
-  //     { name: 'js', width: '30.1%', summary: 'JavaScript 30.1%' },
+  //     { name: 'js', width: '30.1%', summary: 'JS 30.1%' },
   //     { name: 'css', width: '28.3%', summary: 'CSS 28.3%' },
   //     { name: 'html', width: '9.1%', summary: 'HTML 9.1%' },
   //   ],
@@ -473,7 +473,7 @@ export const api = [
     imgOpen: projectImg10,
     languages: [
       { name: 'vue', width: '92.6%', summary: 'Vue 92.6%' },
-      { name: 'js', width: '7.4%', summary: 'JavaScript 7.4%' },
+      { name: 'js', width: '7.4%', summary: 'JS 7.4%' },
     ],
     content: futureContent,
     links: [

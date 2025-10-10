@@ -31,7 +31,7 @@ export default function Skills({ theme = true }) {
     <section>
       <div id='skills' className='skillsbox fade-bottom'>
         <h1 id='main_skills'>Main Skills</h1>
-        <div className='main-skills'>
+        <div className='main-skills fade-target'>
           {main.map((skill, index) => (
             <div key={index} className='skill-box'>
               <img src={skill.icon} alt={skill.name} />
@@ -40,7 +40,7 @@ export default function Skills({ theme = true }) {
           ))}
         </div>
         <h1>Additional Skills</h1>
-        <div className='other-skills'>
+        <div className='other-skills fade-target'>
           {other.map((skill, index) => (
             <div id={skill.name} key={index} className='skill-box'>
               <img src={skill.icon} alt={skill.name} />

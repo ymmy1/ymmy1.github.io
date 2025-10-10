@@ -11,7 +11,6 @@
     z-index: -1;
   }
   .boxes {
-    opacity: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -25,11 +24,11 @@
         font-size: 4vw;
         margin: 0;
         padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       }
 
       .img-container {
         display: flex;
-        border-top: 1px solid #b1b1b1cb;
         padding-top: 20px;
         img {
           width: 7vw;
@@ -80,22 +79,21 @@
       }
     }
   }
-  .boxes.active {
+  // Only fade the content, not the title
+  .boxes.fade-bottom .fade-target {
+    opacity: 0;
+  }
+  .boxes.active.fade-bottom .fade-target {
     opacity: 1;
+    animation: fade-bottom 600ms ease-in;
   }
 }
 
-.active.fade-bottom {
-  animation: fade-bottom 1s ease-in;
-  transition: height 1s ease;
-}
+// Global helper (kept for compatibility)
+// Note: avoid global .active.fade-bottom to prevent affecting other sections
 @keyframes fade-bottom {
   0% {
     opacity: 0;
-    transform: translateY(250px);
-  }
-  10% {
-    transform: translateY(0);
   }
   100% {
     opacity: 1;

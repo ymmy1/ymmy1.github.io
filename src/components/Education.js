@@ -45,12 +45,12 @@ export default function Education(props) {
       <div className='boxes fade-bottom'>
         <div className='left-box'>
           <h1>Education</h1>
-          <div className='img-container'>
+          <div className='img-container fade-target'>
             <img src={harvard} alt='harvard title' />
             <img className='uw_title' src={uw} alt='uw title' />
           </div>
         </div>
-        <div className='right-box'>
+        <div className='right-box fade-target'>
           <div className='img-container'>
             <a
               className='img_certificate left-cert'
