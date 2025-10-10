@@ -67,7 +67,7 @@
 .li-card {
   --accent: #7b61ff;
   position: relative;
-  background: #252525;
+  background: #3b3b3b;
   border-radius: 18px;
   padding: 22px 22px 56px;
   box-shadow: 0 3px 8px rgba(255, 255, 255, 0.08), 0 1px 0 rgba(0, 0, 0, 0.04);
