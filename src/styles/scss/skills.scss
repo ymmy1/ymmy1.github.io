@@ -1,0 +1,115 @@
+.skillsbox {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  padding-bottom: 150px;
+  opacity: 0;
+
+  h1 {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 4vw;
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+  }
+
+  .main-skills,
+  .other-skills {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    border-top: 1px solid #b1b1b1cb;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 885px;
+
+    .skill-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      img {
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
+      }
+      p {
+        color: #fff;
+        margin-top: 10px;
+      }
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
+
+.skillsbox.active {
+  opacity: 1;
+}
+
+.bottom-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  .bottom_text {
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+  }
+  .bottom_buttons {
+    padding-top: 20px;
+    border-top: 1px solid #b1b1b1cb;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+  transition: height 1s ease;
+}
+@keyframes fade-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .skillsbox h1 {
+    font-size: calc(25px + 6vw);
+  }
+}
+@media screen and (max-width: 522px) {
+  .bottom-section .bottom_buttons {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 330px) {
+  .skillsbox h1 {
+    text-align: center;
+  }
+  .bottom-section .bottom_text {
+    font-size: 10vw;
+  }
+}
+@media screen and (max-width: 288px) {
+  .bottom-section .bottom_buttons {
+    flex-direction: column;
+  }
+}

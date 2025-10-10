@@ -31,7 +31,7 @@
   background-attachment: fixed;
   background-position: center;
   h1 {
-    margin-bottom: 80px;
+    margin: 80px 0;
     color: #fff;
     font-size: 4vw;
     border-bottom: 1px solid #b1b1b1cb;
@@ -71,7 +71,6 @@
         display: block;
         width: 100%;
         aspect-ratio: 16 / 9;
-        background: rgba(0, 0, 0, 0.04);
         border-radius: 8px;
         overflow: hidden;
 
@@ -280,6 +279,9 @@
     .ts {
       background-color: #3178c6;
     }
+    .other {
+      background-color: #e8e8e8; // white-ish for misc
+    }
   }
 
   ul {
@@ -320,6 +322,9 @@
       }
       .ts {
         background-color: #3178c6;
+      }
+      .other {
+        background-color: #e8e8e8; // white-ish for misc
       }
     }
   }
@@ -538,19 +543,6 @@
 }
 
 /* Desktop hover micro-interaction */
-@media (hover: hover) and (pointer: fine) {
-  .section_4 {
-    .all_projects {
-      .project_tile .project_block {
-        transition: transform 220ms ease, box-shadow 220ms ease;
-      }
-      .project_tile .project_block:hover {
-        transform: translateY(-6px) scale(1.01);
-        box-shadow: 0 22px 36px rgba(2, 6, 23, 0.48);
-      }
-    }
-  }
-}
 
 /* small tweak: reduce project image height on narrow screens */
 @media screen and (max-width: 660px) {

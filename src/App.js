@@ -18,9 +18,11 @@ import edSmall from './assets/AVIF/edSmall.avif';
 
 import Footer from './components/Footer.js';
 import MainHeader from './components/Sakura.js';
-import EducationAndSkills from './components/Education.js';
+import Education from './components/Education.js';
+import Skills from './components/Skills.js';
 import ProjectList from './components/Projects.js';
-import LinkedInAssesments from './components/LinkedInAssesments.js';
+import StartupList from './components/StartupList.js';
+import LinkedInAssessments from './components/LinkedInAssessments.js';
 
 function App() {
   const [bgImage, setBgImage] = useState(null); // Default image
@@ -85,9 +87,11 @@ function App() {
   return (
     <div id='main_container'>
       <MainHeader bg={bgImage} theme={theme} switchTheme={switchTheme} />
+      <StartupList />
       <ProjectList />
-      <LinkedInAssesments theme={theme} />
-      <EducationAndSkills bg={edImage} theme={theme} />
+      <Education bg={edImage} theme={theme} />
+      <LinkedInAssessments theme={theme} />
+      <Skills theme={theme} />
       <Footer />
     </div>
   );

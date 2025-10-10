@@ -141,6 +141,37 @@ export const api = [
   {
     labelClass: 'new_project',
     label: newL,
+    name: 'In Progress',
+    desc: 'In Progress',
+    img: projectImg12,
+    imgOpen: projectImg12,
+    languages: [
+      { name: 'js', width: '96.6%', summary: 'JavaScript 96.6%' },
+      { name: 'html', width: '2.9%', summary: 'HTML 2.9%' },
+      { name: 'css', width: '0.5%', summary: 'CSS 0.5%' },
+    ],
+    content: walkerContent,
+    links: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/ymmy1/walker',
+        icon: <GitHubIcon size='medium' />,
+      },
+      {
+        name: 'Website',
+        url: 'https://ymmy1.github.io/walker/',
+        icon: <PreviewIcon size='medium' />,
+      },
+      {
+        name: 'YouTube',
+        url: 'https://youtu.be/jOrh4QNJC7I',
+        icon: <YouTubeIcon size='medium' />,
+      },
+    ],
+  },
+  {
+    labelClass: 'new_project',
+    label: newL,
     name: 'Mindless 3D Walker',
     desc: 'Three.js',
     img: projectImg12,
@@ -231,8 +262,6 @@ export const api = [
     ],
   },
   {
-    labelClass: 'recent_project',
-    label: recent,
     name: 'Vue Weather',
     desc: 'Vue.js',
     img: projectImg2,
@@ -389,30 +418,30 @@ export const api = [
       },
     ],
   },
-  {
-    name: 'Book Review',
-    desc: 'PostgreSQL',
-    img: projectImg8,
-    imgOpen: projectImg8,
-    languages: [
-      { name: 'py', width: '42.5%', summary: 'Python 42.5%' },
-      { name: 'html', width: '34.3%', summary: 'HTML 34.3%' },
-      { name: 'css', width: '23.2%', summary: 'CSS 23.2%' },
-    ],
-    content: bookContent,
-    links: [
-      {
-        name: 'GitHub',
-        url: 'https://github.com/ymmy1/book-review',
-        icon: <GitHubIcon size='medium' />,
-      },
-      {
-        name: 'YouTube',
-        url: 'https://youtu.be/-tfpc1wXBzM',
-        icon: <YouTubeIcon size='medium' />,
-      },
-    ],
-  },
+  // {
+  //   name: 'Book Review',
+  //   desc: 'PostgreSQL',
+  //   img: projectImg8,
+  //   imgOpen: projectImg8,
+  //   languages: [
+  //     { name: 'py', width: '42.5%', summary: 'Python 42.5%' },
+  //     { name: 'html', width: '34.3%', summary: 'HTML 34.3%' },
+  //     { name: 'css', width: '23.2%', summary: 'CSS 23.2%' },
+  //   ],
+  //   content: bookContent,
+  //   links: [
+  //     {
+  //       name: 'GitHub',
+  //       url: 'https://github.com/ymmy1/book-review',
+  //       icon: <GitHubIcon size='medium' />,
+  //     },
+  //     {
+  //       name: 'YouTube',
+  //       url: 'https://youtu.be/-tfpc1wXBzM',
+  //       icon: <YouTubeIcon size='medium' />,
+  //     },
+  //   ],
+  // },
   // {
   //   name: 'CS50 Trading App',
   //   desc: 'PostgreSQL',

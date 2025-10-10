@@ -33,7 +33,7 @@
   background-position: center;
 }
 .section_4 h1 {
-  margin-bottom: 80px;
+  margin: 80px 0;
   color: #fff;
   font-size: 4vw;
   border-bottom: 1px solid rgba(177, 177, 177, 0.7960784314);
@@ -75,7 +75,6 @@
   display: block;
   width: 100%;
   aspect-ratio: 16/9;
-  background: rgba(0, 0, 0, 0.04);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -272,6 +271,9 @@
 .languages .skill-bar .ts {
   background-color: #3178c6;
 }
+.languages .skill-bar .other {
+  background-color: #e8e8e8;
+}
 .languages ul {
   display: flex;
   justify-content: center;
@@ -312,6 +314,9 @@
 }
 .languages ul li .ts {
   background-color: #3178c6;
+}
+.languages ul li .other {
+  background-color: #e8e8e8;
 }
 
 .modal_box {
@@ -500,15 +505,6 @@
   }
 }
 /* Desktop hover micro-interaction */
-@media (hover: hover) and (pointer: fine) {
-  .section_4 .all_projects .project_tile .project_block {
-    transition: transform 220ms ease, box-shadow 220ms ease;
-  }
-  .section_4 .all_projects .project_tile .project_block:hover {
-    transform: translateY(-6px) scale(1.01);
-    box-shadow: 0 22px 36px rgba(2, 6, 23, 0.48);
-  }
-}
 /* small tweak: reduce project image height on narrow screens */
 @media screen and (max-width: 660px) {
   .section_4 .all_projects .project_block figure .project_img {

@@ -2,7 +2,7 @@ import aws from '../../assets/AVIF/skills/aws.avif';
 import azure from '../../assets/AVIF/skills/azure.avif';
 import bootstrap from '../../assets/AVIF/skills/bootstrap.avif';
 import c from '../../assets/AVIF/skills/c.avif';
-import css from '../../assets/AVIF/skills/css.avif';
+import css from '../../assets/AVIF/skills/css_new.avif';
 import django from '../../assets/AVIF/skills/django.avif';
 import figma from '../../assets/AVIF/skills/figma.avif';
 import git from '../../assets/AVIF/skills/git.avif';
