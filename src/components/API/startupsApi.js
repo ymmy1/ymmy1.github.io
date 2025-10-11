@@ -1,9 +1,10 @@
-import projectImg from '../../assets/AVIF/projects/PC/future-world.avif';
+import projectImg from '../../assets/AVIF/projects/PC/PandaBash.avif';
+import PreviewIcon from '@mui/icons-material/Preview';
 
 export const startups = [
   {
     name: 'PandaBash',
-    desc: 'MVP — Future World prototype',
+    desc: 'Vite + Typescript',
     img: projectImg,
     imgOpen: projectImg,
     languages: [
@@ -12,11 +13,13 @@ export const startups = [
       { name: 'scss', width: '18.9%', summary: 'SCSS 18.9%' },
       { name: 'other', width: '0.6%', summary: 'Other 0.6%' },
     ],
-    content: (
-      <>
-        Placeholder MVP using the Future World visuals while features are being
-        designed. Tech stack distribution reflects early planning.
-      </>
-    ),
+    content: <>Placeholder</>,
+    links: [
+      {
+        name: 'Website',
+        url: 'https://pandabash.com/',
+        icon: <PreviewIcon size='medium' />,
+      },
+    ],
   },
 ];

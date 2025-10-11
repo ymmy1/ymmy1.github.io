@@ -1,9 +1,12 @@
 import React from 'react';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
+import CloseIcon from '@mui/icons-material/Close';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 import '../styles/css/about.css';
 
-function AboutModal({ aboutOpen, handleAboutClose, theme }) {
+function AboutModal({ aboutOpen, handleAboutClose }) {
   return (
     <Modal
       open={aboutOpen}
@@ -13,49 +16,56 @@ function AboutModal({ aboutOpen, handleAboutClose, theme }) {
       closeAfterTransition
     >
       <Fade in={aboutOpen}>
-        <div className='about-modal-box'>
-          <h1>About Me</h1>
-          <p>
-            My name is Oleg Nosyrev, I also go by Logan Nosyrev. Logan as my
-            American first name. Please refer to me whatever is easier for you.
-          </p>
-          <p>
-            I am a self-taught Front End Developer with{' '}
-            <strong>4+ of professional</strong> and{' '}
-            <strong>9+ years of personal development</strong> experience. I
-            accrued certificates from Harvard and University of Washington and
-            my first degree is an Associate's Degree in Culinary Arts.
-          </p>
-          <p>
-            While my culinary education may not seem immediately relevant, it
-            has instilled in me a strong work ethic, attention to detail, and a
-            passion for creative problem-solving—qualities that I believe are
-            transferable and valuable in software engineering.
-          </p>
-          <p>
-            I'm a world class gymnast and coach with 20+ years of experience.
-            Some of my greates achievements are included in my resume and I'm
-            happy to talk more about it.
-          </p>
-          <p>
-            I'm highly motivated, attention-to-detail-focused, organized, a
-            quick learner and a great communicator in both personal and
-            professional settings.
-          </p>
-          <p>
-            It takes patience and motivation to guide yourself through the
-            self-learning process.
-          </p>
-          <p>
-            Languages that I speak: English, Russian, Lithuanian and Japanese
-            (beginner).
-          </p>
-          <button
-            className={`button-orange ${theme ? '' : 'button-gray'}`}
+        <div className='modal_box about_modal'>
+          <CloseIcon
+            size='large'
+            className='closeIcon'
             onClick={handleAboutClose}
-          >
-            Close
-          </button>
+          />
+          <h1 className='project_title'>About Me</h1>
+          <div className='box_content'>
+            <div className='left_box'>
+              <img
+                src='https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg'
+                alt='portrait placeholder'
+              />
+            </div>
+            <div className='right_box'>
+              <p>
+                Hi, I’m Oleg (Logan) Nosyrev — a front‑end developer who loves
+                crafting clean, thoughtful interfaces and smooth user
+                experiences. I’m curious by nature, pragmatic in execution, and
+                happiest when design and code click.
+              </p>
+              <p>
+                I bring a builder’s mindset: iterate quickly, sweat the details,
+                and communicate clearly. Outside of code, I’m a high‑energy
+                coach and lifelong learner. If you’re exploring a role,
+                collaboration, or just want to talk shop — I’d love to connect.
+              </p>
+
+              <div className='about_actions'>
+                <a
+                  className='action_btn LinkedIn'
+                  href='https://www.linkedin.com/in/oleg-nosyrev/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <LinkedInIcon /> LinkedIn
+                </a>
+                <a
+                  className='action_btn Contact'
+                  href='mailto:oleg.ymmy@gmail.com'
+                  rel='noreferrer'
+                >
+                  <EmailIcon /> Contact Me
+                </a>
+                <button className='action_btn Close' onClick={handleAboutClose}>
+                  <CloseIcon /> Close
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </Fade>
     </Modal>

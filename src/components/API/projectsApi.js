@@ -1,5 +1,6 @@
 import favorite from '../../assets/AVIF/projects/favorite.avif';
 import newL from '../../assets/AVIF/projects/new.avif';
+import inProgress from '../../assets/AVIF/projects/in-progress.avif';
 // import recent from '../../assets/AVIF/projects/recent.avif';
 
 import projectImg1 from '../../assets/AVIF/projects/PC/flackyChat.avif';
@@ -14,6 +15,7 @@ import projectImg7 from '../../assets/AVIF/projects/PC/blogger-gram.avif';
 import projectImg10 from '../../assets/AVIF/projects/PC/future-world.avif';
 import projectImg11 from '../../assets/AVIF/projects/PC/Dysney+.avif';
 import projectImg12 from '../../assets/AVIF/projects/PC/walker.avif';
+import projectImg13 from '../../assets/AVIF/projects/PC/Apple-iPhone-Ad.avif';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -136,21 +138,26 @@ const walkerContent = (
     <strong>Stack:</strong> JavaScript + Three.js (bundled with Vite).
   </>
 );
+const appleContent = (
+  <>
+    <strong>In Progress</strong>
+  </>
+);
 
 export const api = [
   {
     labelClass: 'new_project',
-    label: newL,
+    label: inProgress,
     name: 'In Progress',
     desc: 'In Progress',
-    img: projectImg12,
-    imgOpen: projectImg12,
+    img: projectImg13,
+    imgOpen: projectImg13,
     languages: [
-      { name: 'js', width: '96.6%', summary: 'JS 96.6%' },
-      { name: 'html', width: '2.9%', summary: 'HTML 2.9%' },
-      { name: 'css', width: '0.5%', summary: 'CSS 0.5%' },
+      { name: 'ts', width: '96.6%', summary: 'TS 96.6%' },
+      { name: 'scss', width: '2.9%', summary: 'SCSS 2.9%' },
+      { name: 'html', width: '0.5%', summary: 'HTML 0.5%' },
     ],
-    content: walkerContent,
+    content: appleContent,
     links: [
       {
         name: 'GitHub',

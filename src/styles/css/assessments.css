@@ -5,7 +5,6 @@
   padding: 60px 20px 20px;
   font-family: "Josefin Slab", serif;
 }
-/* keep section visible; fade inner content only */
 .assessments-section h1 {
   margin: 0 0 24px 0;
   color: #fff;
@@ -23,8 +22,13 @@
   gap: 28px;
   padding: 40px 0 20px 0;
 }
-.assessments-wrap.fade-bottom .fade-target { opacity: 0; }
-.assessments-wrap.active.fade-bottom .fade-target { opacity: 1; animation: fade-bottom 600ms ease-in; }
+.assessments-wrap.fade-bottom .fade-target {
+  opacity: 0;
+}
+.assessments-wrap.active.fade-bottom .fade-target {
+  opacity: 1;
+  animation: fade-bottom 600ms ease-in;
+}
 
 .cards-grid {
   display: grid;
@@ -116,7 +120,14 @@
   --accent: #16b5d9;
 }
 
-@keyframes fade-bottom { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes fade-bottom {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 1100px) {
   .cards-grid {
     grid-template-columns: repeat(2, minmax(220px, 1fr));
