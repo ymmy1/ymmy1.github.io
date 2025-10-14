@@ -19,7 +19,8 @@ export default function Skills({ theme = true }) {
       const windowHeight = window.innerHeight;
       const elementTop = el.getBoundingClientRect().top;
       const elementVisible = 200;
-      if (elementTop < windowHeight - elementVisible) el.classList.add('active');
+      if (elementTop < windowHeight - elementVisible)
+        el.classList.add('active');
       else el.classList.remove('active');
     };
     window.addEventListener('scroll', reveal);
@@ -52,6 +53,7 @@ export default function Skills({ theme = true }) {
       <div className='bottom-section'>
         <p className='bottom_text'>Find Out More</p>
         <div className='bottom_buttons'>
+          
           <a
             className={`button-orange ${theme ? '' : 'button-gray'}`}
             href='https://www.linkedin.com/in/oleg-nosyrev-440640114'
@@ -79,7 +81,7 @@ export default function Skills({ theme = true }) {
           </a>
         </div>
       </div>
+      
     </section>
   );
 }
-

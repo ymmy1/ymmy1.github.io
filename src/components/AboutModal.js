@@ -7,6 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import '../styles/css/about.css';
 
 function AboutModal({ aboutOpen, handleAboutClose }) {
+  const years = new Date().getFullYear() - 2018;
   return (
     <Modal
       open={aboutOpen}
@@ -31,18 +32,44 @@ function AboutModal({ aboutOpen, handleAboutClose }) {
               />
             </div>
             <div className='right_box'>
-              <p>
-                Hi, I’m Oleg (Logan) Nosyrev — a front‑end developer who loves
-                crafting clean, thoughtful interfaces and smooth user
-                experiences. I’m curious by nature, pragmatic in execution, and
-                happiest when design and code click.
-              </p>
-              <p>
-                I bring a builder’s mindset: iterate quickly, sweat the details,
-                and communicate clearly. Outside of code, I’m a high‑energy
-                coach and lifelong learner. If you’re exploring a role,
-                collaboration, or just want to talk shop — I’d love to connect.
-              </p>
+              <section className='about'>
+                <p>
+                  Front End Engineer with{' '}
+                  <span className='blue'>{years} years</span> of experience.
+                </p>
+                <p>
+                  <i>Self-taught. Disciplined. Fast Paced.</i>
+                </p>
+                <p>
+                  My focus is on creating fast, intuitive, and scalable
+                  front-end systems. I work primarily with <b>React</b>,{' '}
+                  <b>TypeScript</b>, <b>Vite</b>, <b>Firebase</b>, and{' '}
+                  <b>Cloudflare</b>, delivering modern, secure, and visually
+                  polished applications.
+                </p>
+                <p>
+                  <span className='red'>
+                    No one outworks a self-taught engineer.
+                  </span>{' '}
+                  We learn quicker, integrate faster, and stay longer until it’s
+                  right.
+                </p>
+
+                <hr />
+
+                <p>
+                  Trampoline Gymnast - 5 time World Championship participant and
+                  finalist of a European Championship .
+                </p>
+                <p>
+                  I’ve been involved in gymnastics since early childhood,
+                  shaping a mindset built on precision, consistency, and
+                  continuous growth. I value discipline, travel, and exploring
+                  the stories behind new places. I coach occasionally and
+                  currently serve as a certified Trampoline Gymnastics Judge in
+                  the <b>U.S.</b>, <b>U.K.</b>, and <b>Lithuania</b>.
+                </p>
+              </section>
 
               <div className='about_actions'>
                 <a

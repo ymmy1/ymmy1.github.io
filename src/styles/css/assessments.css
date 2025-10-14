@@ -44,9 +44,8 @@
   border-radius: 18px;
   padding: 22px 22px 56px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(0, 0, 0, 0.08);
   transition: transform 220ms ease, box-shadow 220ms ease;
-  border: 10px solid #1f46d5;
+  border: 7px solid var(--accent);
   cursor: pointer;
 }
 .li-card:hover {

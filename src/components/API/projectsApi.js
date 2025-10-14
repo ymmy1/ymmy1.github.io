@@ -140,7 +140,9 @@ const walkerContent = (
 );
 const appleContent = (
   <>
-    <strong>In Progress</strong>
+    <strong>[In Progress]</strong> Creating a close up copy of Apple's iPhone 17
+    Pro landing page. Exploring Three.js + GSAP. Possibly trying to even make it
+    better than the original. :)
   </>
 );
 
@@ -148,8 +150,8 @@ export const api = [
   {
     labelClass: 'new_project',
     label: inProgress,
-    name: 'In Progress',
-    desc: 'In Progress',
+    name: 'iPhone Landing Page',
+    desc: 'Three.js + GSAP',
     img: projectImg13,
     imgOpen: projectImg13,
     languages: [
@@ -161,17 +163,17 @@ export const api = [
     links: [
       {
         name: 'GitHub',
-        url: 'https://github.com/ymmy1/walker',
+        url: '#',
         icon: <GitHubIcon size='medium' />,
       },
       {
         name: 'Website',
-        url: 'https://ymmy1.github.io/walker/',
+        url: '#',
         icon: <PreviewIcon size='medium' />,
       },
       {
         name: 'YouTube',
-        url: 'https://youtu.be/jOrh4QNJC7I',
+        url: '#',
         icon: <YouTubeIcon size='medium' />,
       },
     ],

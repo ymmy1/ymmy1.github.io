@@ -23,6 +23,7 @@ import Skills from './components/Skills.js';
 import ProjectList from './components/Projects.js';
 import StartupList from './components/StartupList.js';
 import LinkedInAssessments from './components/LinkedInAssessments.js';
+import AboutSection from './components/AboutSection.js';
 
 function App() {
   const [bgImage, setBgImage] = useState(null); // Default image
@@ -91,6 +92,7 @@ function App() {
       <ProjectList />
       <Education bg={edImage} theme={theme} />
       <LinkedInAssessments theme={theme} />
+      <AboutSection />
       <Skills theme={theme} />
       <Footer />
     </div>
