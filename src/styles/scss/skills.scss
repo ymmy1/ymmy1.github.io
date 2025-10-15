@@ -1,20 +1,11 @@
 .skillsbox {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   align-items: center;
-  padding-bottom: 150px;
 
-  h1 {
-    margin: 0 auto;
-    color: #fff;
-    font-size: 4vw;
-    padding-top: 100px;
-    text-align: center;
-    font-family: 'Josefin Slab', serif;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  .main-skills {
+    padding-bottom: 100px;
   }
-
   .main-skills,
   .other-skills {
     align-items: center;
@@ -22,7 +13,6 @@
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
-    padding-top: 20px;
     width: 100%;
     max-width: 885px;
 
@@ -58,53 +48,11 @@
   }
 }
 
-.bottom-section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 40px;
-  .bottom_text {
-    font-size: 40px;
-    color: #fff;
-    margin: 0;
-  }
-  .bottom_buttons {
-    padding-top: 20px;
-    border-top: 1px solid #b1b1b1cb;
-    display: flex;
-    gap: 20px;
-  }
-}
-
 @keyframes fade-bottom {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-
-@media screen and (max-width: 1299px) {
-  .skillsbox h1 {
-    font-size: calc(25px + 6vw);
-  }
-}
-@media screen and (max-width: 522px) {
-  .bottom-section .bottom_buttons {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 330px) {
-  .skillsbox h1 {
-    text-align: center;
-  }
-  .bottom-section .bottom_text {
-    font-size: 10vw;
-  }
-}
-@media screen and (max-width: 288px) {
-  .bottom-section .bottom_buttons {
-    flex-direction: column;
   }
 }

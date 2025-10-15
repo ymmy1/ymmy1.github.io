@@ -26,6 +26,8 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  border-bottom: none; /* override global */
+  font-family: Yatra One, cursive;
 }
 .head-box p {
   color: #fff;
@@ -33,12 +35,8 @@
   text-align: center;
 }
 
-.button-orange.button-gray {
-  background-color: #474747;
-}
-
-.button-orange {
-  background-color: #fa6400;
+.button-main {
+  background-color: rgba(10, 102, 194, 0.9);
   border-radius: 0.25rem;
   border: 1px solid transparent;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -58,14 +56,10 @@
   transition: all 250ms;
   width: auto;
 }
-.button-orange:hover, .button-orange:focus {
-  background-color: #fb8332;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+.button-main:hover, .button-main:focus {
+  background-color: rgba(192, 27, 30, 0.9);
 }
-.button-orange:hover {
-  transform: translateY(-1px);
-}
-.button-orange:disabled {
+.button-main:disabled {
   background-color: dimgrey;
   cursor: not-allowed;
 }

@@ -4,24 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px 20px;
+  /* uses global section padding */
   font-family: 'Josefin Slab', serif;
-
-  // reveal on scroll: pop up from bottom (match education style)
-  // keep section always visible; fade only inner content
-  &.fade-bottom {
-  }
-  &.active.fade-bottom {
-  }
-
-  h1 {
-    margin: 0 0 24px 0;
-    color: #fff;
-    font-size: 4vw;
-
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
 }
 
 .assessments-wrap {
@@ -31,7 +15,6 @@
   flex-direction: column;
   align-items: center;
   gap: 28px;
-  padding: 40px 0 20px 0;
 
   // Fade only targets inside
   &.fade-bottom .fade-target {

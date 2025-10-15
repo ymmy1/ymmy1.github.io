@@ -14,22 +14,21 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 300px 0 100px 0;
     .left-box {
       display: flex;
       flex-direction: column;
       margin-top: 80px;
-      h1 {
-        color: #fff;
-        font-size: 4vw;
-        margin: 0;
-        padding: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      }
 
       .img-container {
         display: flex;
-        padding-top: 20px;
+        // background: #bcbcc596;
+        background: linear-gradient(
+          to right,
+          rgb(215 48 48 / 44%),
+          rgba(255, 255, 255, 0.719)
+        );
+        padding: 20px 10px;
+        border-radius: 13px;
         img {
           width: 7vw;
         }
@@ -72,7 +71,7 @@
         gap: 10px;
         justify-content: center;
         width: 100%;
-        .button-orange {
+        .button-main {
           max-width: 300px;
           width: 95%;
         }
@@ -106,10 +105,6 @@
       .left-box {
         width: auto;
         margin: 0 auto 40px;
-        h1 {
-          font-size: calc(25px + 6vw);
-          margin: 0 auto;
-        }
 
         .img-container {
           justify-content: space-around;

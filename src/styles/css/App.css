@@ -18,15 +18,29 @@ html::-webkit-scrollbar,
   display: none;
 }
 
-.falling-leaves,
-.about-modal-box,
-.modal_box {
-  font-family: "Yatra One", cursive;
-}
-
 .section_2,
 .section_3,
 .section_4,
 #nav {
   font-family: "Josefin Slab", serif;
+}
+
+/* Global heading styles */
+h1 {
+  font-size: 4vw;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Josefin Slab", serif;
+}
+
+/* Global section padding */
+section {
+  padding: 100px 20px 60px;
+}
+
+@media screen and (max-width: 1299px) {
+  h1 {
+    font-size: calc(25px + 6vw);
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -12,9 +12,6 @@ audio {
 }
 nav {
   font-size: 2.5dvh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   .navbar-brand {
     color: #fff;
@@ -28,12 +25,6 @@ nav {
       color: #6e6d6d;
       transition: ease all 0.2s;
     }
-  }
-  .nav-items {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: auto;
   }
   .nav-item {
     color: #fff;

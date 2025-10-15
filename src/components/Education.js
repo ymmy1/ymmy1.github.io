@@ -87,7 +87,7 @@ export default function Education(props) {
           <div className='button-section'>
             <a
               href={FE}
-              className={`button-orange ${theme ? '' : 'button-gray'}`}
+              className='button-main'
               target='_blank'
               rel='noreferrer'
             >
@@ -95,7 +95,7 @@ export default function Education(props) {
             </a>
             <a
               href={MPA}
-              className={`button-orange ${theme ? '' : 'button-gray'}`}
+              className='button-main'
               target='_blank'
               rel='noreferrer'
             >

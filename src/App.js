@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/css/App.css';
 
 // main Bg
@@ -88,11 +89,11 @@ function App() {
   return (
     <div id='main_container'>
       <MainHeader bg={bgImage} theme={theme} switchTheme={switchTheme} />
+      <AboutSection />
       <StartupList />
       <ProjectList />
       <Education bg={edImage} theme={theme} />
       <LinkedInAssessments theme={theme} />
-      <AboutSection />
       <Skills theme={theme} />
       <Footer />
     </div>

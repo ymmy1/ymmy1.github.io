@@ -50,38 +50,6 @@ export default function Skills({ theme = true }) {
           ))}
         </div>
       </div>
-      <div className='bottom-section'>
-        <p className='bottom_text'>Find Out More</p>
-        <div className='bottom_buttons'>
-          
-          <a
-            className={`button-orange ${theme ? '' : 'button-gray'}`}
-            href='https://www.linkedin.com/in/oleg-nosyrev-440640114'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <LinkedInIcon fontSize='medium' color='#fff' />
-            LinkedIn
-          </a>
-          <a
-            className={`button-orange ${theme ? '' : 'button-gray'}`}
-            href={resume}
-            target='_blank'
-            rel='noreferrer'
-          >
-            <FileDownloadIcon fontSize='medium' color='#fff' /> Resume
-          </a>
-          <a
-            className={`button-orange ${theme ? '' : 'button-gray'}`}
-            href='https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=oleg.ymmy@gmail.com'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <SendIcon fontSize='medium' color='#fff' /> Contact Me
-          </a>
-        </div>
-      </div>
-      
     </section>
   );
 }

@@ -1,106 +1,10 @@
-.modal_box.about_modal {
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  line-height: 1.55;
-}
-.modal_box.about_modal h1 {
-  text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  padding-bottom: 17px;
-  margin: 0;
-}
-.modal_box.about_modal .box_content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 17px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16px;
-}
-.modal_box.about_modal .box_content .left_box img {
-  width: 100%;
-  max-width: 260px; /* smaller portrait */
-  border-radius: 14px;
-  object-fit: cover;
-  aspect-ratio: 3/4;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-}
-.modal_box.about_modal .box_content .right_box {
-  max-width: 560px;
-  color: #e6e3e3;
-}
-.modal_box.about_modal .box_content .right_box p + p {
-  margin-top: 10px;
-}
-.modal_box.about_modal .box_content .right_box .blue {
-  color: #4eaaff;
-  font-weight: 600;
-}
-.modal_box.about_modal .box_content .right_box .red {
-  color: #ff4e4e;
-  font-weight: 600;
-}
-.modal_box.about_modal .about_actions {
-  margin-top: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.modal_box.about_modal .about_actions .action_btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 20px;
-  border-radius: 14px;
-  text-decoration: none;
-  color: #f6f7f9;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  transition: transform 0.15s ease, background 0.15s ease, border 0.15s ease;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
-.modal_box.about_modal .about_actions .action_btn:hover {
-  transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.22);
-}
-.modal_box.about_modal .about_actions .action_btn.LinkedIn {
-  background: rgba(10, 102, 194, 0.9);
-}
-.modal_box.about_modal .about_actions .action_btn.Contact {
-  background: rgba(192, 27, 30, 0.9);
-}
-.modal_box.about_modal .about_actions .action_btn.Close {
-  background: rgba(255, 255, 255, 0.08);
-}
-@media screen and (max-width: 660px) {
-  .modal_box.about_modal .box_content .left_box img {
-    max-width: 100%;
-  }
-  .modal_box.about_modal .about_actions {
-    justify-content: center;
-  }
-}
-
-/* Inline About section (non-modal) */
+/* Inline About section */
 .about_section {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   line-height: 1.55;
-  padding: 60px 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.about_section h1 {
-  margin: 0 0 24px 0;
-  color: #fff;
-  font-size: 4vw;
-  text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  font-family: "Josefin Slab", serif;
 }
 .about_section .box_content {
   display: flex;
@@ -108,16 +12,84 @@
   flex-wrap: wrap;
   padding-top: 17px;
   justify-content: center;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: stretch; /* equal-height columns */
+  gap: 30px;
+  /* Fade animation like other sections */
+  /* Mobile: stack naturally and let image size itself */
 }
-.about_section .box_content .left_box img {
+.about_section .box_content.fade-bottom .fade-target {
+  opacity: 0;
+}
+.about_section .box_content.active.fade-bottom .fade-target {
+  opacity: 1;
+  animation: fade-bottom 600ms ease-in;
+}
+.about_section .box_content .left_box {
+  display: flex;
+  /* Give the flex item a concrete width so percentage children can resolve */
+  flex: 0 0 309px;
+  /* Flip card container */
+}
+.about_section .box_content .left_box .flip-card {
   width: 100%;
-  max-width: 260px;
-  border-radius: 14px;
+  max-width: 309px;
+  height: 100%;
+  perspective: 1000px;
+}
+.about_section .box_content .left_box .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.about_section .box_content .left_box .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.about_section .box_content .left_box .flip-card-front,
+.about_section .box_content .left_box .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 13px;
+  overflow: hidden;
+}
+.about_section .box_content .left_box .flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.about_section .box_content .left_box .flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.about_section .box_content .left_box .flip-card img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  aspect-ratio: 3/4;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  display: block;
+}
+.about_section .box_content .right_box p {
+  text-align: left;
+}
+@media screen and (max-width: 660px) {
+  .about_section .box_content .left_box {
+    flex: 0 0 auto;
+  }
+  .about_section .box_content .flip-card {
+    max-width: 100%;
+    height: auto;
+  }
+  .about_section .box_content .flip-card-inner {
+    height: auto;
+  }
+  .about_section .box_content .flip-card img {
+    height: auto;
+  }
 }
 .about_section .box_content .right_box {
   max-width: 560px;
@@ -133,6 +105,14 @@
 .about_section .box_content .right_box .red {
   color: #ff4e4e;
   font-weight: 600;
+}
+@keyframes fade-bottom {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .about_section .about_actions {
   margin-top: 18px;
@@ -157,7 +137,6 @@
   letter-spacing: 0.2px;
 }
 .about_section .about_actions .action_btn:hover {
-  transform: translateY(-1px);
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.22);
 }
@@ -167,11 +146,6 @@
 .about_section .about_actions .action_btn.Contact {
   background: rgba(192, 27, 30, 0.9);
 }
-@media screen and (max-width: 660px) {
-  .about_section .box_content .left_box img {
-    max-width: 100%;
-  }
-  .about_section h1 {
-    font-size: calc(25px + 6vw);
-  }
+.about_section .about_actions .action_btn.Resume {
+  background: rgba(27, 192, 55, 0.9);
 }/*# sourceMappingURL=about.css.map */

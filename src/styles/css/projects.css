@@ -32,13 +32,6 @@
   background-attachment: fixed;
   background-position: center;
 }
-.section_4 h1 {
-  margin: 80px 0;
-  color: #fff;
-  font-size: 4vw;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  text-align: center;
-}
 .section_4 .all_projects {
   opacity: 0;
   align-items: center;
@@ -332,12 +325,14 @@
   line-height: 1.1;
   font-weight: 800;
   letter-spacing: 0.2px;
+  text-align: center;
 }
 .modal_box > p strong {
   display: inline-block;
   color: #cfcfcf;
   font-weight: 600;
   margin-bottom: 12px;
+  text-align: center;
 }
 .modal_box .closeIcon {
   position: absolute;
@@ -446,9 +441,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .section_4 h1 {
-    font-size: calc(25px + 6vw);
-  }
   .section_4 .all_projects {
     justify-content: flex-start;
   }
@@ -489,10 +481,6 @@
   }
 }
 @media screen and (max-width: 522px) {
-  .section_4 h1 {
-    font-size: calc(25px + 6vw);
-    margin-bottom: 40px;
-  }
   .section_4 .all_projects.projects_grid {
     gap: 20px;
   }

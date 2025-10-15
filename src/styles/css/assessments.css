@@ -2,15 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px 20px;
+  /* uses global section padding */
   font-family: "Josefin Slab", serif;
-}
-.assessments-section h1 {
-  margin: 0 0 24px 0;
-  color: #fff;
-  font-size: 4vw;
-  text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .assessments-wrap {
@@ -20,7 +13,6 @@
   flex-direction: column;
   align-items: center;
   gap: 28px;
-  padding: 40px 0 20px 0;
 }
 .assessments-wrap.fade-bottom .fade-target {
   opacity: 0;

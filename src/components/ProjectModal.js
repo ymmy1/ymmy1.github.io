@@ -24,7 +24,7 @@ export default function ProjectBox(props) {
               <img src={openedProject.label} alt='status of a project' />
             </div>
           )}
-          <h1 className='project_title'>{openedProject.name}</h1>
+          <h3 className='project_title'>{openedProject.name}</h3>
           <p>
             <strong>{openedProject.desc}</strong>
           </p>
