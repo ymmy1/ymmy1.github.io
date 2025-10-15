@@ -16,7 +16,7 @@ import UWC from '../assets/AVIF/UW_certificate.avif';
 import DescriptionIcon from '@mui/icons-material/Description';
 
 export default function Education(props) {
-  const { bg, theme } = props;
+  const { bg } = props;
   const reveal = () => {
     const reveals = document.querySelectorAll('.boxes');
 

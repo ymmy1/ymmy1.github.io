@@ -2,12 +2,6 @@ import React, { useEffect } from 'react';
 
 import '../styles/css/skills.css';
 
-import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import SendIcon from '@mui/icons-material/Send';
-
-import resume from '../assets/Resumes/Oleg_Nosyrev_Resume.pdf';
-
 import { main, other } from './API/skills';
 
 export default function Skills({ theme = true }) {
