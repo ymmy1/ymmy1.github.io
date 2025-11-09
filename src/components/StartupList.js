@@ -8,9 +8,16 @@ import ProjectModal from './ProjectModal';
 import { startups } from './API/startupsApi';
 
 export default function StartupList() {
-  const [openedProject, setOpenedProject] = useState({});
-  const handleOpen = (api) => setOpenedProject(api);
-  const handleClose = () => setOpenedProject({});
+  const [project, setProject] = useState(null);
+  const closeGuardRef = useRef(0);
+  const onOpen = (api) => {
+    if (Date.now() - closeGuardRef.current < 300) return;
+    setProject(api);
+  };
+  const onClose = () => setProject(null);
+  const onClosingStart = () => {
+    closeGuardRef.current = Date.now();
+  };
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -41,11 +48,11 @@ export default function StartupList() {
             className='project_tile'
             style={startups.length === 1 ? { gridColumnStart: 2 } : undefined}
           >
-            <ProjectBox api={item} handleOpen={handleOpen} />
+            <ProjectBox api={item} onOpen={onOpen} />
           </div>
         ))}
 
-        <ProjectModal openedProject={openedProject} handleClose={handleClose} />
+        <ProjectModal project={project} onClose={onClose} onClosingStart={onClosingStart} />
       </div>
     </section>
   );

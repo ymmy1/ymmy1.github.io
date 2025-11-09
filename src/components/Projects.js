@@ -9,11 +9,16 @@ import { api } from './API/projectsApi';
 import { useEffect, useRef } from 'react';
 
 export default function Projects() {
-  const [openedProject, setOpenedProject] = useState({});
-  const handleOpen = (api) => {
-    setOpenedProject(api);
+  const [project, setProject] = useState(null);
+  const closeGuardRef = useRef(0);
+  const onOpen = (api) => {
+    if (Date.now() - closeGuardRef.current < 300) return;
+    setProject(api);
   };
-  const handleClose = () => setOpenedProject({});
+  const onClose = () => setProject(null);
+  const onClosingStart = () => {
+    closeGuardRef.current = Date.now();
+  };
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -42,11 +47,11 @@ export default function Projects() {
       <div className='all_projects projects_grid fade-bottom' ref={containerRef}>
         {api.map((item, index) => (
           <div key={index} className='project_tile'>
-            <ProjectBox api={item} handleOpen={handleOpen} />
+            <ProjectBox api={item} onOpen={onOpen} />
           </div>
         ))}
 
-        <ProjectModal openedProject={openedProject} handleClose={handleClose} />
+        <ProjectModal project={project} onClose={onClose} onClosingStart={onClosingStart} />
       </div>
     </section>
   );
