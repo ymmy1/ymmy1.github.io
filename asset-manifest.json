@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab93422c.css",
-    "main.js": "/static/js/main.ab0ebc48.js",
+    "main.css": "/static/css/main.de244235.css",
+    "main.js": "/static/js/main.cd67e263.js",
     "static/media/bg.png": "/static/media/bg.fc68580dc51208061346.png",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
     "static/media/bgSmall.avif": "/static/media/bgSmall.6b5ca2b85b9a73fb32db.avif",
@@ -17,6 +17,7 @@
     "static/media/FrontendExpert_Certificate.pdf": "/static/media/FrontendExpert_Certificate.dc8575d64f14a24f8184.pdf",
     "static/media/bgMedium.avif": "/static/media/bgMedium.8a0a2f59d92275226a79.avif",
     "static/media/UW_certificate.avif": "/static/media/UW_certificate.fe365195f9c9bcaa1ab8.avif",
+    "static/media/iPhone.avif": "/static/media/iPhone.caeb3e5fb53cedee70ed.avif",
     "static/media/walker.avif": "/static/media/walker.97ba962aca98d17cab01.avif",
     "static/media/minimalisticBg.png": "/static/media/minimalisticBg.7acccfca31720c7e53f3.png",
     "static/media/Oleg_Nosyrev_Resume.pdf": "/static/media/Oleg_Nosyrev_Resume.f5906aa755a1fff9f2ec.pdf",
@@ -25,7 +26,6 @@
     "static/media/CS50.avif": "/static/media/CS50.3ec59da503121b7e868b.avif",
     "static/media/CS50W.avif": "/static/media/CS50W.ea80a357c9ad47d11ae7.avif",
     "static/media/PandaBash.avif": "/static/media/PandaBash.d9fc4e86f838120a2b1e.avif",
-    "static/media/Apple-iPhone-Ad.avif": "/static/media/Apple-iPhone-Ad.70f36b94ca2fa6ff3bf0.avif",
     "static/media/ed.avif": "/static/media/ed.041b9b01299d44d59153.avif",
     "static/media/edMedium.avif": "/static/media/edMedium.1142ff13f3fc1285fd67.avif",
     "static/media/rocks.avif": "/static/media/rocks.1cccb93003e2b917db42.avif",
@@ -71,7 +71,7 @@
     "static/media/uw-logo-sm.avif": "/static/media/uw-logo-sm.58e266901d5fb219560b.avif"
   },
   "entrypoints": [
-    "static/css/main.ab93422c.css",
-    "static/js/main.ab0ebc48.js"
+    "static/css/main.de244235.css",
+    "static/js/main.cd67e263.js"
   ]
 }
