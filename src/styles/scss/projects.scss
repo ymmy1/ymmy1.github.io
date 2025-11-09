@@ -318,12 +318,12 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 92%;
-  max-width: 1200px;
+  max-width: 788px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   /* Keep layout vertical and allow scrolling when content exceeds viewport */
-  max-height: 90dvh;
+  max-height: 95dvh;
   overflow-y: auto;
   overscroll-behavior: contain;
   padding: 32px 36px;
@@ -334,6 +334,7 @@
   box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
   -webkit-backdrop-filter: blur(14px) saturate(1.1);
   backdrop-filter: blur(14px) saturate(1.1);
+  outline: none;
 
   /* Subtle scrollbar styling */
   &::-webkit-scrollbar {
@@ -358,8 +359,7 @@
     text-align: center;
   }
 
-  > p strong {
-    display: inline-block;
+  .project_desc {
     color: #cfcfcf;
     font-weight: 600;
     margin-bottom: 12px;
@@ -383,10 +383,10 @@
   }
 
   .box_content {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 28px;
-    align-items: start;
+    align-items: center;
 
     .left_box {
       display: flex;
@@ -394,6 +394,7 @@
       a,
       img {
         width: 100%;
+        max-width: 600px;
       }
     }
 

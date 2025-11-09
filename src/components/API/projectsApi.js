@@ -15,7 +15,7 @@ import projectImg7 from '../../assets/AVIF/projects/PC/blogger-gram.avif';
 import projectImg10 from '../../assets/AVIF/projects/PC/future-world.avif';
 import projectImg11 from '../../assets/AVIF/projects/PC/Dysney+.avif';
 import projectImg12 from '../../assets/AVIF/projects/PC/walker.avif';
-import projectImg13 from '../../assets/AVIF/projects/PC/Apple-iPhone-Ad.avif';
+import projectImg13 from '../../assets/AVIF/projects/PC/iPhone.avif';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -140,47 +140,42 @@ const walkerContent = (
 );
 const appleContent = (
   <>
-    <strong>[In Progress]</strong> Creating a close up copy of Apple's iPhone 17
-    Pro landing page. Exploring Three.js + GSAP. Possibly trying to even make it
-    better than the original. :)
+    This is an interactive landing page inspired by Apple's iPhone product site.
+    It features a responsive hero, scroll‑triggered highlights, a 3D iPhone
+    viewer with lighting and orbit controls, video sections, and subtle UI
+    polish, all built with modern React, Vite, Tailwind v4, GSAP, and React
+    Three Fiber.
   </>
 );
 
 export const api = [
   {
     labelClass: 'new_project',
-    label: inProgress,
+    label: newL,
     name: 'iPhone Landing Page',
-    desc: 'Three.js + GSAP',
+    desc: 'Three + GSAP',
     img: projectImg13,
     imgOpen: projectImg13,
     languages: [
-      { name: 'ts', width: '96.6%', summary: 'TS 96.6%' },
-      { name: 'scss', width: '2.9%', summary: 'SCSS 2.9%' },
-      { name: 'html', width: '0.5%', summary: 'HTML 0.5%' },
+      { name: 'ts', width: '91.8%', summary: 'TS 91.8%' },
+      { name: 'css', width: '6.2%', summary: 'CSS 6.2%' },
+      { name: 'js', width: '2.0%', summary: 'JS 2.0%' },
     ],
     content: appleContent,
     links: [
       {
         name: 'GitHub',
-        url: '#',
+        url: 'https://github.com/ymmy1/iPhoneLanding',
         icon: <GitHubIcon size='medium' />,
       },
       {
         name: 'Website',
-        url: '#',
+        url: 'https://ymmy1.github.io/iPhoneLanding/',
         icon: <PreviewIcon size='medium' />,
-      },
-      {
-        name: 'YouTube',
-        url: '#',
-        icon: <YouTubeIcon size='medium' />,
       },
     ],
   },
   {
-    labelClass: 'new_project',
-    label: newL,
     name: 'Mindless 3D Walker',
     desc: 'Three.js',
     img: projectImg12,

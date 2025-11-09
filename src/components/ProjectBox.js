@@ -2,7 +2,7 @@ export default function ProjectBox(props) {
   const api = props.api;
   return (
     <div
-      onClick={() => props.handleOpen(api)}
+      onClick={() => props.onOpen(api)}
       className={`project_block ${api.labelClass ? api.labelClass : ''}`}
     >
       {api.labelClass && (
