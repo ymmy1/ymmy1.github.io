@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.de244235.css",
-    "main.js": "/static/js/main.cd67e263.js",
+    "main.js": "/static/js/main.49ad16e8.js",
     "static/media/bg.png": "/static/media/bg.fc68580dc51208061346.png",
     "static/media/MPA-Internship-Completion-Certificate-Oleg-1.png": "/static/media/MPA-Internship-Completion-Certificate-Oleg-1.455ea7599332c4717bac.png",
     "static/media/bgSmall.avif": "/static/media/bgSmall.6b5ca2b85b9a73fb32db.avif",
@@ -20,7 +20,7 @@
     "static/media/iPhone.avif": "/static/media/iPhone.caeb3e5fb53cedee70ed.avif",
     "static/media/walker.avif": "/static/media/walker.97ba962aca98d17cab01.avif",
     "static/media/minimalisticBg.png": "/static/media/minimalisticBg.7acccfca31720c7e53f3.png",
-    "static/media/Oleg_Nosyrev_Resume.pdf": "/static/media/Oleg_Nosyrev_Resume.f5906aa755a1fff9f2ec.pdf",
+    "static/media/Oleg_Nosyrev_Resume.pdf": "/static/media/Oleg_Nosyrev_Resume.41da4c8be383094edb55.pdf",
     "static/media/about_me_fe.avif": "/static/media/about_me_fe.c9a852092906d4c91db5.avif",
     "static/media/about_me_tramp.avif": "/static/media/about_me_tramp.ef3f3dda108ed55a8dcc.avif",
     "static/media/CS50.avif": "/static/media/CS50.3ec59da503121b7e868b.avif",
@@ -36,7 +36,6 @@
     "static/media/new.avif": "/static/media/new.0ca24e8f5542505d93dc.avif",
     "static/media/sass.avif": "/static/media/sass.28e598038488bfae81dc.avif",
     "static/media/react.avif": "/static/media/react.c8de35c8b293a5ab9b41.avif",
-    "static/media/in-progress.avif": "/static/media/in-progress.9e17aae8bc2bd27b313e.avif",
     "static/media/aws.avif": "/static/media/aws.644b192146b16f178c05.avif",
     "static/media/postgresql.avif": "/static/media/postgresql.955d81a243cd32d059d9.avif",
     "static/media/jquery.avif": "/static/media/jquery.ecf27a8ca465ee169db1.avif",
@@ -72,6 +71,6 @@
   },
   "entrypoints": [
     "static/css/main.de244235.css",
-    "static/js/main.cd67e263.js"
+    "static/js/main.49ad16e8.js"
   ]
 }
