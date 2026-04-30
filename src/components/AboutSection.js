@@ -6,7 +6,7 @@ import resume from '../assets/Resumes/Oleg_Nosyrev_Resume.pdf';
 import '../styles/css/about.css';
 
 export default function AboutSection() {
-  const years = new Date().getFullYear() - 2018;
+  const years = new Date().getFullYear() - 2020;
   // Reveal on scroll like other sections
   useEffect(() => {
     const el = document.querySelector('.about_section .box_content');
@@ -15,7 +15,8 @@ export default function AboutSection() {
       const windowHeight = window.innerHeight;
       const elementTop = el.getBoundingClientRect().top;
       const elementVisible = 200;
-      if (elementTop < windowHeight - elementVisible) el.classList.add('active');
+      if (elementTop < windowHeight - elementVisible)
+        el.classList.add('active');
       else el.classList.remove('active');
     };
     window.addEventListener('scroll', reveal);
@@ -41,37 +42,19 @@ export default function AboutSection() {
         <div className='right_box fade-target'>
           <div className='about'>
             <p>
-              Front End Engineer with{' '}
-              <span className='blue'>{years}+ years</span> of experience.
-            </p>
-            <p>
-              <i>Self-taught. Disciplined. Fast Paced.</i>
-            </p>
-            <p>
-              My focus is on creating fast, intuitive, and scalable front-end
-              systems. I work primarily with <b>React</b>, <b>TypeScript</b>,{' '}
-              <b>Vite</b>, <b>Firebase</b>, and <b>Cloudflare</b>, delivering
-              modern, secure, and visually polished applications.
-            </p>
-            <p>
-              <span className='red'>
-                No one outworks a self-taught engineer.
-              </span>{' '}
-              We learn quicker, integrate faster, and stay longer until it’s
-              right.
-            </p>
-
-            <hr />
-
-            <p>
-              My hobby is Gymnastics. I'm a 5 time World Championship
-              participant and finalist of a European Championship.
-            </p>
-            <p>
-              I value discipline, travel, and exploring the stories behind new
-              places. I coach occasionally and currently serve as a certified
-              Trampoline Gymnastics Judge in the <b>U.S.</b>, <b>U.K.</b>, and{' '}
-              <b>Lithuania</b>.
+              Software Engineer with {years}+ years of experience building and
+              maintaining production web applications. <br />
+              I specialize in frontend systems using React and TypeScript, with
+              hands-on experience owning features end-to-end, from UI and state
+              management to auth, payments, and cloud deployment. <br />
+              My background spans enterprise SaaS, early-stage startups, and
+              founder-led projects, where I’ve worked on real products with real
+              users and real constraints.
+              <br />
+              <hr />
+              Outside of engineering, I have an elite gymnastics background,
+              having competed at World and European Championships. I value
+              discipline, long-term growth, and building things that last.
             </p>
           </div>
           <div className='about_actions'>

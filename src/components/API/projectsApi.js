@@ -1,6 +1,6 @@
 import favorite from '../../assets/AVIF/projects/favorite.avif';
 import newL from '../../assets/AVIF/projects/new.avif';
-import inProgress from '../../assets/AVIF/projects/in-progress.avif';
+// import inProgress from '../../assets/AVIF/projects/in-progress.avif';
 // import recent from '../../assets/AVIF/projects/recent.avif';
 
 import projectImg1 from '../../assets/AVIF/projects/PC/flackyChat.avif';
