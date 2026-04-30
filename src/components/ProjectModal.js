@@ -14,7 +14,7 @@ export default function ProjectModal({ project, onClose, onClosingStart }) {
     } else if (data) {
       setOpen(false);
     }
-  }, [project]);
+  }, [data, project]);
 
   const handleInternalClose = (event, reason) => {
     if (onClosingStart) onClosingStart();
