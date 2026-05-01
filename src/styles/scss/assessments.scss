@@ -1,143 +1,74 @@
-// Apple-style cards for LinkedIn Assessments
+.assessments-section {}
 
-.assessments-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* uses global section padding */
-  font-family: 'Josefin Slab', serif;
-}
-
-.assessments-wrap {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 28px;
-
-  // Fade only targets inside
-  &.fade-bottom .fade-target {
-    opacity: 0;
-  }
-  &.active.fade-bottom .fade-target {
-    opacity: 1;
-    animation: fade-bottom 600ms ease-in;
-  }
-}
-
-// legacy columns removed in favor of title-above-cards layout
-
-.cards-grid {
+.assessments-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(220px, 1fr));
-  gap: 24px;
-  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  max-width: 960px;
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.li-card {
-  --accent: #7b61ff; // default fallback
-  position: relative;
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 22px 22px 56px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 220ms ease, box-shadow 220ms ease;
-  // Match border to the per-skill accent color
-  border: 7px solid var(--accent);
-  cursor: pointer;
+.assessment-card {
+  background: var(--color-surface-solid);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-md) var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color var(--transition), transform var(--transition);
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-border-strong);
+    transform: translateY(-3px);
   }
 
-  .card-top {
+  &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: var(--space-xs);
   }
-  .skill-icon {
-    width: 28px;
-    height: 28px;
+
+  &__icon {
+    width: 36px;
+    height: 36px;
     object-fit: contain;
   }
-  .year {
-    background: #f3f4f6;
-    color: #111;
-    border-radius: 999px;
-    padding: 4px 10px;
-    font-size: 12px;
-    letter-spacing: 0.2px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
+
+  &__year {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--color-muted);
+    letter-spacing: 0.05em;
   }
 
-  .card-title {
-    margin: 2px 0 8px;
-    font-size: 20px;
-    line-height: 1.25;
-    color: #222;
+  &__percentile {
+    font-size: 2rem;
     font-weight: 700;
-  }
-  .highlight {
-    color: var(--accent);
-  }
-  .card-sub {
-    margin: 0;
-    color: #000000;
-    font-size: 14px;
+    color: var(--color-accent);
+    line-height: 1;
   }
 
-  .card-cta {
-    position: absolute;
-    right: 14px;
-    bottom: 14px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: none;
-    background: #f3f4f6;
-    color: #111;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 0;
-    cursor: default; // decorative
+  &__label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-top: 0.25rem;
   }
-}
 
-// Per-skill accent colors
-.skill-css {
-  --accent: #7b61ff;
-}
-.skill-html {
-  --accent: #e34f26;
-}
-.skill-javascript {
-  --accent: #f29900;
-}
-.skill-react {
-  --accent: #16b5d9;
-}
-
-// Match the education section's reveal animation
-@keyframes fade-bottom {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .cards-grid {
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .cards-grid {
-    grid-template-columns: 1fr;
+  &__sub {
+    font-size: 0.72rem;
+    color: var(--color-text-secondary);
+    margin-top: auto;
+    padding-top: 0.25rem;
   }
 }

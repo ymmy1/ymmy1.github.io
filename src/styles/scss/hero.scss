@@ -1,0 +1,171 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+
+  /* Minimal theme: gradient + subtle dot grid */
+  &[data-theme-bg='minimal'] {
+    background:
+      radial-gradient(
+        ellipse 80% 60% at 65% 25%,
+        rgba(99, 102, 241, 0.13) 0%,
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 40% 40% at 20% 80%,
+        rgba(99, 102, 241, 0.07) 0%,
+        transparent 60%
+      ),
+      linear-gradient(160deg, #0a0a14 0%, #0e0e1e 50%, #0a0a14 100%);
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(
+        rgba(99, 102, 241, 0.07) 1px,
+        transparent 1px
+      );
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+  }
+}
+
+/* Leaf canvas world */
+.leaf-world {
+  position: absolute;
+  inset: 0;
+  perspective: 400px;
+  pointer-events: none;
+}
+
+/* Hero name — upper sky zone, no card */
+.hero-name {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  pointer-events: none;
+  white-space: nowrap;
+
+  &__text {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    text-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.45),
+      0 8px 32px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Hero footer — anchored above the rocks */
+.hero-footer {
+  position: absolute;
+  bottom: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+
+  &__title {
+    font-family: var(--font-body);
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.82);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  &__resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text);
+    background: rgba(var(--color-accent-rgb), 0.18);
+    border: 1px solid rgba(var(--color-accent-rgb), 0.5);
+    border-radius: 24px;
+    padding: 0.5rem 1.5rem;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition:
+      background var(--transition),
+      border-color var(--transition);
+
+    &:hover {
+      background: rgba(var(--color-accent-rgb), 0.32);
+      border-color: var(--color-accent);
+    }
+  }
+}
+
+/* Rocks decorative image */
+.hero-rocks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0.95;
+
+  @media (max-width: 768px) {
+    width: 120px;
+  }
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 48px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 10px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.6);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+}
+
+@keyframes scrollPulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.2;
+    transform: translateY(10px);
+  }
+}
+
+/* Sakura leaf particles */
+.leaf-scene div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url('/src/assets/AVIF/sakura_petal.avif') no-repeat center /
+    contain;
+}

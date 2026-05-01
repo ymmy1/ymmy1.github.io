@@ -1,58 +1,72 @@
-.skillsbox {
+.skills-section {}
+
+.skills-groups {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--space-xl);
+  max-width: 960px;
+  margin: 0 auto;
+}
 
-  .main-skills {
-    padding-bottom: 100px;
+.skills-group {
+  &__label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
   }
-  .main-skills,
-  .other-skills {
-    align-items: center;
+
+  &__grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    width: 100%;
-    max-width: 885px;
-
-    .skill-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-
-      img {
-        width: 75px;
-        height: 75px;
-        object-fit: contain;
-      }
-      p {
-        color: #fff;
-        margin-top: 10px;
-      }
-      &:hover {
-        transform: scale(1.3);
-      }
-    }
-  }
-  // Only content fades, titles remain visible
-  &.fade-bottom .fade-target {
-    opacity: 0;
-  }
-  &.active.fade-bottom .fade-target {
-    opacity: 1;
-    animation: fade-bottom 600ms ease-in;
+    gap: var(--space-md);
   }
 }
 
-@keyframes fade-bottom {
-  0% {
-    opacity: 0;
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 80px;
+  cursor: default;
+  transition: transform var(--transition);
+
+  &:hover {
+    transform: translateY(-4px);
+
+    .skill-item__name {
+      color: var(--color-accent);
+    }
   }
-  100% {
-    opacity: 1;
+
+  &__icon {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+  }
+
+  &__name {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    text-align: center;
+    transition: color var(--transition);
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-item {
+    width: 64px;
+
+    &__icon {
+      width: 42px;
+      height: 42px;
+    }
   }
 }
