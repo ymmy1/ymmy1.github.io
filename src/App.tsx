@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import type { Theme } from './types';
 
 import './styles/scss/global.scss';
@@ -27,12 +27,20 @@ function getJapanBg(): { hero: string; ed: string } {
 }
 
 export default function App() {
-  const [theme, setTheme] = useState<Theme>('japan');
+  const [theme, setTheme] = useState<Theme>('minimal');
   const [heroBg, setHeroBg] = useState<string | null>(null);
   const [edBg, setEdBg] = useState<string | null>(null);
+  const [fading, setFading] = useState(false);
+  const fadeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const switchTheme = () =>
-    setTheme((t) => (t === 'japan' ? 'minimal' : 'japan'));
+  const switchTheme = () => {
+    if (fading) return;
+    setFading(true);
+    fadeTimer.current = setTimeout(() => {
+      setTheme((t) => (t === 'japan' ? 'minimal' : 'japan'));
+      fadeTimer.current = setTimeout(() => setFading(false), 50);
+    }, 260);
+  };
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -57,6 +65,7 @@ export default function App() {
 
   return (
     <div id='main_container'>
+      <div className={`theme-fade${fading ? ' active' : ''}`} aria-hidden />
       <Sakura bg={heroBg} theme={theme} switchTheme={switchTheme} />
       <div className='content-wrapper' style={contentStyle}>
         <AboutSection />

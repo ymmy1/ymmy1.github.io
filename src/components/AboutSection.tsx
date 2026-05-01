@@ -14,7 +14,6 @@ export default function AboutSection() {
       <h1 className='section-title'>About Me</h1>
 
       <div className='about-layout fade-bottom' ref={ref}>
-
         <div className='about-stats'>
           <div className='about-stat'>
             <span className='about-stat__value'>{years}+</span>
@@ -25,12 +24,12 @@ export default function AboutSection() {
             <span className='about-stat__label'>Startups Launched</span>
           </div>
           <div className='about-stat'>
-            <span className='about-stat__value'>Judge</span>
-            <span className='about-stat__label'>US · UK · Lithuania</span>
-          </div>
-          <div className='about-stat'>
             <span className='about-stat__value'>5×</span>
             <span className='about-stat__label'>World Championships</span>
+          </div>
+          <div className='about-stat'>
+            <span className='about-stat__value'>Judge</span>
+            <span className='about-stat__label'>US · UK · Lithuania</span>
           </div>
         </div>
 
@@ -45,7 +44,8 @@ export default function AboutSection() {
               delivering modern, secure, and visually polished applications.
             </p>
             <p className='about-bio__callout'>
-              I learn by building, ship quickly, and stay with a problem until it's genuinely right.
+              I learn by building, ship quickly, and stay with a problem until
+              it's resolved.
             </p>
             <p className='about-bio__tagline'>
               <em>Self-taught. Disciplined. Fast Paced.</em>
@@ -59,10 +59,10 @@ export default function AboutSection() {
               Championship in Trampoline Gymnastics.
             </p>
             <p>
-              Certified Trampoline Gymnastics Judge in the{' '}
-              <strong>U.S.</strong>, <strong>U.K.</strong>, and{' '}
-              <strong>Lithuania</strong>. I coach occasionally and value
-              discipline, travel, and the stories behind new places.
+              Certified Trampoline Gymnastics Judge in the <strong>U.S.</strong>
+              , <strong>U.K.</strong>, and <strong>Lithuania</strong>. I coach
+              occasionally and value discipline, travel, and the stories behind
+              new places.
             </p>
           </div>
         </div>
@@ -92,7 +92,6 @@ export default function AboutSection() {
             Resume
           </a>
         </div>
-
       </div>
     </section>
   );

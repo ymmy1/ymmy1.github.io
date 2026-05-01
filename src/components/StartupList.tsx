@@ -22,7 +22,7 @@ export default function StartupList() {
     <section id='startups' className='startups-section'>
       <h1 className='section-title'>Start Ups</h1>
       <div
-        className='projects-grid fade-bottom'
+        className='projects-grid'
         ref={gridRef}
         style={startups.length === 1 ? { maxWidth: 400, margin: '0 auto' } : undefined}
       >

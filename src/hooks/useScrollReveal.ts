@@ -9,8 +9,10 @@ export function useScrollReveal(
     if (!el) return;
 
     const reveal = () => {
-      const top = el.getBoundingClientRect().top;
-      el.classList.toggle('active', top < window.innerHeight - threshold);
+      if (el.getBoundingClientRect().top < window.innerHeight - threshold) {
+        el.classList.add('active');
+        window.removeEventListener('scroll', reveal);
+      }
     };
 
     window.addEventListener('scroll', reveal, { passive: true });

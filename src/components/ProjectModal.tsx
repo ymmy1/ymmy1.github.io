@@ -63,7 +63,7 @@ export default function ProjectModal({ project, onClose, onClosingStart }: Proje
               <img src={data?.img} alt={`${data?.name} preview`} />
             </a>
 
-            <div>
+            <div className='modal-box__right'>
               <p className='modal-box__desc'>{data?.content}</p>
 
               <ul className='modal-box__links'>
@@ -92,8 +92,7 @@ export default function ProjectModal({ project, onClose, onClosingStart }: Proje
               </div>
               <ul className='modal-box__lang-list'>
                 {data?.languages?.map((lng) => (
-                  <li key={lng.name} className='modal-box__lang-item'>
-                    <span className={lng.name} />
+                  <li key={lng.name} className={`modal-box__lang-item ${lng.name}`}>
                     {lng.summary}
                   </li>
                 ))}

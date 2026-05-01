@@ -180,7 +180,16 @@ export default function Sakura({ bg, theme, switchTheme }: SakuraProps) {
   const isJapan = theme === 'japan';
 
   return (
-    <Parallax strength={200} bgImage={bg ?? undefined}>
+    <Parallax
+      strength={200}
+      bgImage={bg ?? undefined}
+      bgImageStyle={{
+        minWidth: '100vw',
+        minHeight: '100vh',
+        objectFit: 'cover',
+        objectPosition: 'center center',
+      }}
+    >
       <div
         ref={viewportRef}
         className='hero'
@@ -194,11 +203,8 @@ export default function Sakura({ bg, theme, switchTheme }: SakuraProps) {
 
         <NavBar showThemeToggle theme={theme} switchTheme={switchTheme} />
 
-        <div className='hero-name'>
+        <div className='hero-content'>
           <h1 className='hero-name__text'>Oleg Nosyrev</h1>
-        </div>
-
-        <div className='hero-footer'>
           <p className='hero-footer__title'>
             Software Engineer — Frontend-Leaning Full Stack
           </p>

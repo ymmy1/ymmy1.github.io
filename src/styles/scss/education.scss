@@ -61,7 +61,7 @@
     }
   }
 
-  // ── Cert image — natural height, full width ────────────────────────────────
+  // ── Cert image — natural height, full width ──────────────────────────────────
   &__img {
     width: 100%;
     height: auto;
@@ -138,15 +138,6 @@
   }
 }
 
-// ── AlgoExpert frame — adds 12px green padding outside the cert image ──────────
-.edu-card--cert-border {
-  .edu-card__img-frame {
-    background: #006752;
-    padding: 6px;
-    flex-shrink: 0;
-    line-height: 0;
-  }
-}
 
 // ── Other credentials strip ────────────────────────────────────────────────────
 .edu-other {
@@ -194,5 +185,72 @@
 @media (max-width: 480px) {
   .edu-grid {
     grid-template-columns: minmax(0, 340px);
+  }
+}
+
+// ── Certificate modal ──────────────────────────────────────────────────────────
+.cert-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(580px, 94vw);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--color-surface-solid);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(var(--color-accent-rgb), 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  &::-webkit-scrollbar { display: none; }
+
+  &__close {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: color var(--transition);
+    background: none;
+    border: none;
+    padding: 4px;
+    line-height: 0;
+
+    &:hover { color: var(--color-accent); }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-sm);
+  }
+
+  &__download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-text);
+    background: rgba(var(--color-accent-rgb), 0.12);
+    border: 1px solid rgba(var(--color-accent-rgb), 0.4);
+    border-radius: 24px;
+    padding: 0.45rem 1.4rem;
+    transition: background var(--transition), border-color var(--transition);
+
+    &:hover {
+      background: rgba(var(--color-accent-rgb), 0.24);
+      border-color: var(--color-accent);
+    }
   }
 }

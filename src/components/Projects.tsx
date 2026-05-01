@@ -21,7 +21,7 @@ export default function Projects() {
   return (
     <section id='projects' className='projects-section'>
       <h1 className='section-title'>Projects</h1>
-      <div className='projects-grid fade-bottom' ref={gridRef}>
+      <div className='projects-grid' ref={gridRef}>
         {api.map((item) => (
           <ProjectBox key={item.name} project={item} onOpen={onOpen} />
         ))}

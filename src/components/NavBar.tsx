@@ -23,6 +23,20 @@ export default function NavBar({ showThemeToggle, theme, switchTheme }: NavBarPr
     <nav className='navbar'>
       <a href='#' className='navbar__brand'>Portfolio</a>
 
+      {showThemeToggle && switchTheme && (
+        <button
+          className={`theme-toggle${theme === 'japan' ? ' theme-toggle--japan' : ''}`}
+          onClick={switchTheme}
+          aria-label={`Switch to ${theme === 'japan' ? 'minimal' : 'Japan'} theme`}
+        >
+          <span className='theme-toggle__label theme-toggle__label--min'>Min</span>
+          <span className='theme-toggle__track'>
+            <span className='theme-toggle__thumb' />
+          </span>
+          <span className='theme-toggle__label theme-toggle__label--jp'>Japan</span>
+        </button>
+      )}
+
       <button
         className={`navbar__toggle ${menuOpen ? 'open' : ''}`}
         onClick={() => setMenuOpen((o) => !o)}
@@ -34,13 +48,6 @@ export default function NavBar({ showThemeToggle, theme, switchTheme }: NavBarPr
       </button>
 
       <ul className={`navbar__links ${menuOpen ? 'open' : ''}`}>
-        {showThemeToggle && switchTheme && (
-          <li>
-            <button className='navbar__theme-btn' onClick={switchTheme}>
-              {theme === 'japan' ? 'Minimal' : 'Japan'}
-            </button>
-          </li>
-        )}
         {links.map(({ label, href }) => (
           <li key={label}>
             <a

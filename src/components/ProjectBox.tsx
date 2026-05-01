@@ -38,8 +38,7 @@ export default function ProjectBox({ project, onOpen }: ProjectBoxProps) {
         </div>
         <ul className='project-tile__langs'>
           {languages.map((lng) => (
-            <li key={lng.name} className='project-tile__lang'>
-              <span className={lng.name} />
+            <li key={lng.name} className={`project-tile__lang ${lng.name}`}>
               {lng.summary}
             </li>
           ))}
