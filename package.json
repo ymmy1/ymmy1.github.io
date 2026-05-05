@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --repo https://github.com/ymmy1/ymmy1.github.io.git"
+    "deploy": "node.exe scripts/deploy.cjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
